@@ -1,0 +1,57 @@
+name: Novo idioma
+description: Propor e coordenar a tradução em um novo idioma
+title: "[Idioma] "
+labels: ["novo-idioma"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cada idioma tem uma equipe e a mesma barra de qualidade. Veja os requisitos na [RFC-0004](../blob/main/rfcs/0004-processo-e-versoes.md#5-novos-idiomas).
+  - type: input
+    id: idioma
+    attributes:
+      label: Idioma (e código BCP 47, se souber)
+      placeholder: "es · Español"
+    validations:
+      required: true
+  - type: textarea
+    id: quem
+    attributes:
+      label: Quem você é e quem mais está com você
+      description: Experiência com o idioma, com a Bíblia e com os originais. Quantas pessoas, em que papéis.
+    validations:
+      required: true
+  - type: dropdown
+    id: originais
+    attributes:
+      label: Há alguém na equipe que consiga conferir a tradução contra o hebraico, o aramaico ou o grego?
+      options:
+        - Sim, já temos
+        - Ainda não, mas estamos procurando
+        - Não sabemos como
+    validations:
+      required: true
+  - type: textarea
+    id: existente
+    attributes:
+      label: Existe uma tradução livre ou outra iniciativa neste idioma?
+      description: Com a licença, se souber. Queremos cooperar com o que já existe.
+    validations:
+      required: false
+  - type: dropdown
+    id: estrategia
+    attributes:
+      label: Como vocês pensam em começar?
+      options:
+        - Do zero, a partir dos originais
+        - Revisando uma base aberta contra os originais
+        - Ainda não sei
+    validations:
+      required: true
+  - type: textarea
+    id: comunidade
+    attributes:
+      label: Comunidade falante
+      description: Para idiomas minoritários, como a comunidade participa e decide?
+    validations:
+      required: false

@@ -1,0 +1,56 @@
+name: Nota, introdução ou título de seção
+description: Sugerir nota, introdução de livro, título de seção (perícope), referência, mapa ou comentário
+title: "[Camada] "
+labels: ["camada"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Notas, introduções, títulos de seção e listas de referências de outras edições **são protegidos**. Escreva o seu a partir do texto e das fontes livres do [registro de fontes](../blob/main/docs/registro-de-fontes.md), sem olhar os de outras edições.
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: O que você está sugerindo?
+      options:
+        - Nota (alternativa literal)
+        - Nota (variante textual)
+        - Nota (esclarecimento cultural)
+        - Introdução de livro
+        - Título de seção (perícope)
+        - Referência cruzada ou citação AT/NT
+        - Mapa ou ilustração
+        - Comentário
+        - Outro
+    validations:
+      required: true
+  - type: input
+    id: referencia
+    attributes:
+      label: Referência
+      placeholder: "Jonas 1:1-3"
+    validations:
+      required: true
+  - type: textarea
+    id: conteudo
+    attributes:
+      label: Sua proposta
+    validations:
+      required: true
+  - type: textarea
+    id: fontes
+    attributes:
+      label: Fontes
+      description: De onde vem a informação (obras e dados livres, ou o próprio original). Para mapas e imagens, a origem e a licença.
+    validations:
+      required: true
+  - type: checkboxes
+    id: declaracao
+    attributes:
+      label: Declaração de originalidade
+      options:
+        - label: Sou autor(a) desta contribuição ou tenho direito de licenciá-la.
+          required: true
+        - label: Não copiei nem parafraseei de perto notas, títulos, introduções, listas ou mapas de edições protegidas.
+          required: true
+        - label: Concordo em licenciá-la sob CC BY 4.0.
+          required: true

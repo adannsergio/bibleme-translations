@@ -1,0 +1,64 @@
+name: Sugestão de tradução
+description: Sugerir o texto (ou uma mudança) para um versículo
+title: "[Tradução] "
+labels: ["texto"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado! Antes de escrever, leia a [política de direitos autorais](../blob/main/docs/direitos-autorais-e-referencias.md): **escreva a sua versão a partir do original, antes de consultar outras traduções**, e não cole trechos de traduções protegidas aqui.
+  - type: input
+    id: referencia
+    attributes:
+      label: Referência
+      description: Livro, capítulo e versículo(s).
+      placeholder: "Rute 1:16-17"
+    validations:
+      required: true
+  - type: input
+    id: idioma
+    attributes:
+      label: Idioma e versão
+      placeholder: "pt-BR"
+    validations:
+      required: true
+  - type: textarea
+    id: texto-atual
+    attributes:
+      label: Texto atual (se houver)
+    validations:
+      required: false
+  - type: textarea
+    id: sugestao
+    attributes:
+      label: Sua sugestão
+    validations:
+      required: true
+  - type: textarea
+    id: justificativa
+    attributes:
+      label: Justificativa a partir do original
+      description: Palavra do original, número de Strong, gramática, contexto. Quanto mais específico, melhor.
+    validations:
+      required: true
+  - type: dropdown
+    id: ia
+    attributes:
+      label: Usou IA para escrever ou conferir?
+      options:
+        - Não
+        - Sim, para conferir (inconsistências, ocorrências, perguntas)
+        - Sim, para outro uso (explique na justificativa)
+    validations:
+      required: true
+  - type: checkboxes
+    id: declaracao
+    attributes:
+      label: Declaração de originalidade
+      options:
+        - label: Sou autor(a) desta contribuição ou tenho direito de licenciá-la.
+          required: true
+        - label: Fiz a partir dos textos originais e das fontes do registro de fontes. Não copiei nem parafraseei de perto nenhuma tradução, nota ou título protegidos.
+          required: true
+        - label: Concordo em licenciá-la sob CC BY 4.0.
+          required: true

@@ -1,0 +1,33 @@
+name: Proposta (RFC)
+description: Propor uma regra nova ou a mudança de uma regra do projeto
+title: "[RFC] "
+labels: ["rfc"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Uma RFC é uma proposta escrita para decisões que valem para o projeto todo. Veja como funciona em [rfcs/README.md](../blob/main/rfcs/README.md). Para comentar uma RFC existente, comente na Issue ou Discussion dela.
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual é o problema?
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Qual é a proposta?
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Que alternativas você considerou?
+    validations:
+      required: false
+  - type: textarea
+    id: impacto
+    attributes:
+      label: O que muda para tradutores, revisores, usuários do texto e apps?
+    validations:
+      required: false

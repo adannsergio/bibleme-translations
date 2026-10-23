@@ -1,0 +1,41 @@
+name: Site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # O código-fonte usa __REPO__ onde vai o endereço do repositório (dono/nome),
+      # para o site acompanhar uma eventual mudança de nome ou de organização.
+      - name: Preencher o endereço do repositório
+        run: grep -rl '__REPO__' site | xargs -r sed -i "s#__REPO__#${GITHUB_REPOSITORY}#g"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

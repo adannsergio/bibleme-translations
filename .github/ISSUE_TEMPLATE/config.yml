@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Conversar nas Discussions
+    url: https://github.com/adannsergio/bibleme-translations/discussions
+    about: Perguntas, ideias e conversas abertas (se o repositório mudar de nome ou dono, atualize este endereço).
+  - name: Ler as propostas abertas (RFCs)
+    url: https://github.com/adannsergio/bibleme-translations/tree/main/rfcs
+    about: As decisões do projeto estão em RFCs. Comente nas que lhe interessam.

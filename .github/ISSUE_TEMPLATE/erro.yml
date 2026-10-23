@@ -1,0 +1,24 @@
+name: Erro ou problema
+description: Digitação, link quebrado, formato, site, ferramenta
+title: "[Erro] "
+labels: ["erro"]
+body:
+  - type: textarea
+    id: o-que
+    attributes:
+      label: O que está errado?
+    validations:
+      required: true
+  - type: input
+    id: onde
+    attributes:
+      label: Onde?
+      description: Arquivo, referência bíblica ou endereço da página.
+    validations:
+      required: false
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Como deveria ser?
+    validations:
+      required: false

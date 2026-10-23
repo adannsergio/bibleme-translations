@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.claude/
+*.log
+
+# Cópias locais de traduções com direitos autorais, usadas só para comparação,
+# NUNCA devem entrar no repositório (veja docs/direitos-autorais-e-referencias.md)
+/referencias-locais/
