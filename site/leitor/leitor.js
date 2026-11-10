@@ -67,6 +67,9 @@ const OB_NOME = { Gen: "Gênesis", Exod: "Êxodo", Lev: "Levítico", Num: "Núme
 const OB_NT = { Matt: "Mat", Mark: "Mrk", Luke: "Luk", John: "Jhn", Acts: "Act", Rom: "Rom", "1Cor": "1Co", "2Cor": "2Co", Gal: "Gal", Eph: "Eph", Phil: "Php",
   Col: "Col", "1Thess": "1Th", "2Thess": "2Th", "1Tim": "1Ti", "2Tim": "2Ti", Titus: "Tit", Phlm: "Phm", Heb: "Heb", Jas: "Jas", "1Pet": "1Pe", "2Pet": "2Pe",
   "1John": "1Jn", "2John": "2Jn", "3John": "3Jn", Jude: "Jud", Rev: "Rev" };
+/* edições do grego comparadas pelo TAGNT (bits na mesma ordem do site.py) */
+const EDS = [["NA28", "Nestle-Aland, 28ª ed. (2012)"], ["NA27", "Nestle-Aland, 27ª ed."], ["Tyn", "Tyndale House GNT (2017)"], ["SBL", "SBLGNT, Holmes (2010): o texto-base do leitor"],
+  ["WH", "Westcott-Hort (1881)"], ["Treg", "Tregelles (1879) com Jongkind (2009)"], ["TR", "Textus Receptus, Scrivener (1894)"], ["Byz", "Bizantino, Robinson-Pierpont (2005)"]];
 const SEM_FUNC = /^(T-|PREP|CONJ|PRT|COND|ADV|INJ|P-)/;   // morfologia de palavra funcional (artigo, preposição…): não leva Strong em destaque
 
 /* ------------------------------------------------------------------ estado */
@@ -176,11 +179,12 @@ function abrirGaveta(modo, id) {
   nav.hidden = false; $("#veil").hidden = false; $("#b-livros").setAttribute("aria-expanded", "true");
 }
 function fecharGaveta() { $("#livros").hidden = true; $("#veil").hidden = true; $("#b-livros").setAttribute("aria-expanded", "false"); }
-function chipRev(m, curto) {
-  const r = m.rev;
-  if (r === "aprovado") return h("span", { class: "rv ok", title: "Revisado pela outra IA (não é revisão humana)" }, curto ? "revisado por IA" : "revisado pela outra IA");
-  if (r === "ajustes") return h("span", { class: "rv aj", title: "Revisão pela outra IA com ajustes aplicados; aguarda a 2ª rodada" }, "ajustes em revisão");
-  return h("span", { class: "rv", title: "Ainda sem revisão cruzada" }, "sem revisão");
+function chipRev(m) {
+  const n = m.rev_n || 0;
+  const cls = n && m.rev === "aprovado" ? "rv ok" : n && m.rev === "ajustes" ? "rv aj" : "rv";
+  const sit = m.rev === "aprovado" ? "aprovado pela IA revisora" + (m.caps_ap && m.caps_ap !== "–" ? ` (${m.caps_ap.replace("/", " de ")} capítulos)` : "")
+    : m.rev === "ajustes" ? "ajustes pedidos; aguarda a próxima rodada" : "ainda sem revisão cruzada";
+  return h("span", { class: cls, title: `Revisão cruzada feita por IA (não é revisão humana). Rodadas: ${n}. Situação: ${sit}.` }, `revisão de IA: ${n}x`);
 }
 
 /* ------------------------------------------------------------------ rodapé de fontes */
@@ -188,7 +192,7 @@ function rodape() {
   return h("footer", { class: "card", style: "margin-top:32px;font-size:.82rem;color:var(--muted)" },
     h("p", { style: "margin:0 0 6px" }, h("b", null, "Rascunho de IA em quarentena. "), "Tradução produzida por IA a partir do grego e ainda sem revisão humana; não é texto aprovado do projeto. ",
       h("a", { href: "../traducao/" }, "Como foi feito e o que falta →")),
-    h("p", { style: "margin:0" }, "Texto grego: ", h("a", { href: "https://github.com/LogosBible/SBLGNT" }, "SBLGNT"), " (SBL e Logos, CC BY 4.0). Strong, lema e morfologia: ",
+    h("p", { style: "margin:0" }, "Texto grego: ", h("a", { href: "https://github.com/LogosBible/SBLGNT" }, "SBLGNT"), " (SBL e Logos, CC BY 4.0), uma edição crítica e não um manuscrito único. Strong, lema, morfologia e as edições de cada palavra: ",
       h("a", { href: "https://github.com/STEPBible/STEPBible-Data" }, "STEPBible TAGNT/TBESG"), " (Tyndale House e STEPBible.org, CC BY 4.0), reformatados e combinados com o alinhamento deste projeto. Referências cruzadas: ",
       h("a", { href: "https://www.openbible.info/labs/cross-references/" }, "OpenBible.info"), " (CC BY)."));
 }
@@ -397,12 +401,37 @@ function renderPainel() {
       h("button", { class: "btn sm", type: "button", onclick: () => ir(1), disabled: pos >= todos.length - 1 ? true : null, "aria-label": "Próximo versículo" }, "próximo ›"),
       h("button", { class: "btn sm", type: "button", onclick: ev => copiar(`“${texto}” (${ref}, bibleme Traduções, rascunho de IA, pt-BR)`, "Copie o texto:", ev.currentTarget) }, "Copiar texto"),
       h("button", { class: "btn sm", type: "button", onclick: ev => copiar(location.href, "Copie o link:", ev.currentTarget) }, "Copiar link")),
-    h("details", { open: true }, h("summary", null, h("span", null, "Grego palavra a palavra", h("span", { class: "n" }, String(V.g.length)))), pal,
-      h("p", { class: "leg" }, "Strong, lema e morfologia: STEPBible TAGNT. Glosa em inglês: TBESG (Abbott-Smith). O alinhamento ao português é deste projeto e está em revisão.")),
+    h("details", { open: true }, h("summary", null, h("span", null, "Grego palavra a palavra", h("span", { class: "n" }, String(V.g.length)))), painelGrego(V, pal)),
     h("details", { open: nts.length > 0 }, h("summary", null, h("span", null, "Notas", h("span", { class: "n" }, String(nts.length)))), notas),
     h("details", { open: true }, h("summary", null, h("span", null, "Versículos relacionados")), relBox));
   painelRel(relBox, meta, V);
   if (cur.nota != null) { const n = $(".nota.sel", box); if (n) n.scrollIntoView({ block: "nearest" }); }
+}
+
+function edChips(mask) {
+  return h("span", { class: "eds" }, EDS.map(([sg, nome], i) => h("span", { class: "ed " + (mask & (1 << i) ? "sim" : "nao"), title: nome + (mask & (1 << i) ? ": traz esta palavra" : ": não traz esta palavra") }, sg)));
+}
+function painelGrego(V, pal) {
+  const parc = V.g.filter(g => g[4] != null).length;
+  const intro = h("p", { class: "leg", style: "margin:0 0 8px" }, h("b", null, "Texto grego: SBLGNT"), " (Holmes, 2010), uma edição crítica, não um manuscrito único. ",
+    V.s ? "Este versículo não está no SBLGNT: o grego vem de outras edições do TAGNT (marcadas em cada palavra). "
+      : (parc ? `${parc} de ${V.g.length} palavras não estão em todas as edições comparadas (marcadas abaixo). ` : "Todas as palavras estão em todas as edições comparadas. "));
+  const out = [intro, pal];
+  if (V.x && V.x.length) {
+    out.push(h("div", { class: "card", style: "margin:12px 0 0" },
+      h("h3", { style: "font:600 .92rem var(--sans);margin:0 0 4px" }, "Outras edições trazem a mais"),
+      h("p", { class: "leg", style: "margin:0 0 8px" }, "Palavras que estas edições têm neste versículo e o SBLGNT não tem (por isso não estão traduzidas no texto):"),
+      h("ul", { class: "vx", lang: "grc" }, V.x.map(([gr, s, mo, mask]) => {
+        const L = s ? lexOf(String(s).split(",")[0]) : null;
+        return h("li", null, h("span", { class: "gr" }, gr), " ", s ? h("a", { href: "#/g/" + String(s).split(",")[0] }, "G" + String(s).split(",")[0]) : null,
+          L && L.g ? h("span", { class: "leg", lang: "en" }, " " + L.g) : null, " ", edChips(mask));
+      }))));
+  }
+  out.push(h("details", { class: "eds-leg" }, h("summary", null, h("span", null, "Edições comparadas")),
+    h("ul", { class: "leg", style: "margin:4px 0;padding-inline-start:1.1em" }, EDS.map(([sg, nome]) => h("li", null, h("b", null, sg), ": ", nome))),
+    h("p", { class: "leg" }, "O TAGNT compara edições impressas, não manuscritos individuais. Manuscritos (Sinaítico, Vaticano, papiros) aparecem só nas variantes que o aparato do SBLGNT cita; este leitor não os consulta diretamente. ",
+      "Strong, lema, morfologia e as edições de cada palavra: STEPBible TAGNT. Glosa em inglês: TBESG (Abbott-Smith). O alinhamento ao português é deste projeto e está em revisão.")));
+  return h("div", null, ...out);
 }
 
 function painelPal(V) {
@@ -427,7 +456,8 @@ function painelPal(V) {
     const li = h("li", { class: "gw" + (sel.has(i) ? " sel" : ""), data: { i } },
       h("span", { class: "n" }, String(i)), h("span", { class: "gr" }, g[0]),
       h("span", { class: "pt" + (omit.has(i) ? " om" : ""), lang: "pt-BR" }, omit.has(i) ? "não traduzido" : (pt[i] || "—")),
-      h("span", { class: "det" }, det.flatMap((x, j) => [j ? " · " : "", x])));
+      h("span", { class: "det" }, det.flatMap((x, j) => [j ? " · " : "", x])),
+      g[4] != null ? h("span", { class: "det" }, "edições: ", edChips(g[4])) : null);
     ol.append(li);
   });
   ol.addEventListener("click", ev => {
@@ -500,6 +530,7 @@ function painelLegenda(abrir = true) {
       ...Object.keys(NOTA_ROT).map(k => h("div", null, h("span", { class: "nt nt-" + k }, h("span", null, NOTA_SIG[k])), " ", h("b", null, NOTA_ROT[k]), ": ", NOTA_AJ[k], ".")),
       h("div", null, h("span", { class: "add-p" }, "palavra sublinhada"), ": acréscimo da tradução, sem palavra grega correspondente."),
       h("div", null, h("span", { class: "sg", style: "font-size:.9em" }, "G991"), ": número de Strong do termo; toque para ver o termo e todos os versículos em que aparece."),
+      h("div", null, h("span", { class: "ed sim" }, "SBL"), " ", h("span", { class: "ed nao" }, "TR"), ": edições do grego. Cada palavra do painel mostra em quais edições ela aparece (riscada = não traz); o texto-base é o SBLGNT."),
       h("div", null, h("b", null, "Interlinear"), ": mostra, sob cada trecho em português, as palavras gregas e o Strong. ", h("b", null, "∅"), " marca palavra grega não traduzida."),
       h("p", { style: "margin:6px 0 0;color:var(--muted)" }, "Tudo isto é rascunho de IA sem revisão humana: confira no grego e em fontes confiáveis antes de usar.")));
   if (abrir) $("#painel").classList.add("aberto");

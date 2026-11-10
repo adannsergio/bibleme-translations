@@ -258,3 +258,14 @@ select.sel-l { min-height: 34px; border-radius: 8px; border: 1px solid var(--lin
   .topo-links .btn.txt { display: none; }
 }
 @media print { .aviso, .topo, .barra, .painel, .livros { display: none; } .texto { padding: 0; } }
+
+/* Edições do grego */
+.eds { display: inline-flex; flex-wrap: wrap; gap: 3px; vertical-align: middle; }
+.ed { font: 600 .62rem var(--sans); padding: 0 5px; border-radius: 5px; border: 1px solid var(--line); line-height: 1.5; }
+.ed.sim { color: var(--fg); border-color: var(--t-cult); }
+.ed.nao { color: var(--muted); text-decoration: line-through; opacity: .65; }
+.vx { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.vx li { font-size: .88rem; }
+.vx .gr { font: 600 1.05rem var(--serif); }
+.vx a { font-weight: 600; color: var(--accent); text-decoration: none; }
+.eds-leg { border-top: 0 !important; margin-top: 6px; }

@@ -7,7 +7,7 @@ Leitor estático (HTML, CSS e JavaScript sem dependências) do **rascunho de IA*
 ## O que o leitor faz
 
 - Lê qualquer capítulo (`#/Mat/5`, `#/Jhn/3/16`) com **Strong** em cada termo, modo **interlinear**, **notas** (literal, variante, cultural, acréscimo, não traduzido, tradução contextual) e palavras acrescentadas sublinhadas.
-- Painel do versículo: **grego palavra a palavra** (lema, Strong, glosa, morfologia em português, trecho que a traduz), notas e **versículos relacionados** (citações nas notas, referências cruzadas do OpenBible, paralelos de vocabulário).
+- Painel do versículo: **grego palavra a palavra** (lema, Strong, glosa, morfologia em português, trecho que a traduz e **em quais edições do grego a palavra aparece**), as palavras que outras edições trazem a mais, notas e **versículos relacionados** (citações nas notas, referências cruzadas do OpenBible, paralelos de vocabulário).
 - Página de cada termo (`#/g/26`): léxico, como o rascunho o traduziu e todos os versículos em que aparece.
 - Busca: referência (`Jo 3:16`), Strong (`G26`), grego (`πίστις`), português (`amor`).
 - Tema claro e escuro, tamanho de texto, funciona em celular. Nada é enviado a servidor algum; só `localStorage` guarda as preferências.
@@ -18,10 +18,10 @@ Arquivos JSON compactos, carregados sob demanda. Gerados a partir dos rascunhos 
 
 | Arquivo | Conteúdo |
 |---|---|
-| `livros.json` | livros, capítulos, estado da revisão, contadores e fontes |
+| `livros.json` | livros, capítulos, estado da revisão (`rev`, `caps_ap`) e rodadas de revisão de IA (`rev_n`), contadores e fontes |
 | `refs.json` | `[livro, cap, verso]` de cada versículo, na ordem canônica (índice usado por `strong-indice.json`) |
 | `texto.json` | texto em português puro, por livro, capítulo e verso (busca e pré-visualização) |
-| `livros/<Cod>.json` | por versículo: `t` = tokens do texto (`["u", texto, [ids gregos], espaço]` unidade alinhada · `["f", …]` acréscimo · `["p", …]` pontuação · `["o", "", [ids]]` palavra grega não traduzida · `["n", tipo, texto]` nota) e `g` = palavras gregas (`[forma, Strong, morfologia, lema]`) |
+| `livros/<Cod>.json` | por versículo: `t` = tokens do texto (`["u", texto, [ids gregos], espaço]` unidade alinhada · `["f", …]` acréscimo · `["p", …]` pontuação · `["o", "", [ids]]` palavra grega não traduzida · `["n", tipo, texto]` nota), `g` = palavras gregas (`[forma, Strong, morfologia, lema, edições?]`; `edições` é uma máscara de bits de `info.edicoes` e só aparece quando a palavra não está em todas as edições comparadas) e `x` = palavras que outras edições trazem e o SBLGNT não (`[forma, Strong, morfologia, edições]`) |
 | `rel/<Cod>.json` | versículos relacionados: `[referência OpenBible, código do projeto, origens (bits 1 nota · 2 OpenBible · 4 vocabulário), votos, similaridade %, Strong em comum, tipo]` |
 | `lexico.json` | por Strong: lema, transliteração, glosa e sentidos (TBESG), usos e como o rascunho o traduziu |
 | `strong-indice.json` | por Strong: índices (de `refs.json`) dos versículos que o usam |
@@ -31,7 +31,7 @@ Os códigos de livro são os do TAGNT (`Mat`, `Mrk`, `Luk`, `Jhn`, `Act`, `Rom`,
 
 ## Fontes e licenças
 
-- **Texto grego:** [SBLGNT](https://github.com/LogosBible/SBLGNT), Michael W. Holmes (ed.), Society of Biblical Literature e Logos Bible Software, 2010. CC BY 4.0.
+- **Texto grego:** [SBLGNT](https://github.com/LogosBible/SBLGNT), Michael W. Holmes (ed.), Society of Biblical Literature e Logos Bible Software, 2010. CC BY 4.0. É uma edição crítica, não um manuscrito único; o leitor não consulta manuscritos individuais.
 - **Strong, lema, morfologia e glosas:** [STEPBible-Data](https://github.com/STEPBible/STEPBible-Data) (TAGNT e TBESG), Tyndale House, Cambridge, e STEPBible.org. CC BY 4.0. Os dados foram reformatados, recortados e combinados com o alinhamento deste projeto (as glosas em inglês vêm do TBESG, baseado em Abbott-Smith). O arquivo original não é republicado.
 - **Referências cruzadas:** [OpenBible.info](https://www.openbible.info/labs/cross-references/), CC BY. Só as referências, sem texto.
 - **Tradução em português:** rascunho de IA (Claude, da Anthropic, e Codex, da OpenAI). Licença pretendida do projeto: CC BY 4.0, sujeita à revisão humana e à conferência de originalidade.

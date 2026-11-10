@@ -106,6 +106,14 @@
       <li><h3>Revisão cruzada</h3><p>Uma IA revisa a outra, livro a livro, com respostas e novas rodadas. Isso acha erros, mas <b>não é revisão humana</b>.</p></li>
       <li><h3>Triagem de semelhança</h3><p>Uma ferramenta compara o rascunho com textos de referência locais para apontar trechos suspeitos. É uma triagem: não prova originalidade.</p></li>
     </ol>
+    <h3 id="manuscrito">De qual manuscrito vem o grego?</h3>
+    <p style="max-width:46rem;color:var(--muted)">De nenhum em particular. O texto grego é o <b>SBLGNT</b> (Michael W. Holmes, SBL e Logos, 2010), uma <b>edição crítica</b>: um texto estabelecido por um editor a partir de toda a tradição de manuscritos, que difere da edição padrão (Nestle-Aland/UBS) em mais de 540 pontos. Strong, lema e morfologia vêm do <b>TAGNT</b> (STEPBible, Tyndale House), que compara <b>oito edições impressas</b> (NA28, NA27, Tyndale House GNT, SBLGNT, Westcott-Hort, Tregelles, Textus Receptus e o texto bizantino) e informa, para cada palavra, em quais delas ela aparece. Este projeto não consultou manuscritos individuais (Sinaítico, Vaticano, papiros) nem imagens deles.</p>
+    <ul style="max-width:46rem">
+      <li><b>Palavra a palavra:</b> no <a href="../leitor/">leitor</a>, abra um versículo e veja <i>Grego palavra a palavra</i>. As palavras que não estão em todas as edições mostram quais edições as trazem (riscada = não traz).</li>
+      <li><b>O que o SBLGNT não traz:</b> o painel lista “Outras edições trazem a mais”, com as palavras e as edições (exemplo: <a href="../leitor/#/Mrk/1/1">Marcos 1:1</a>, “Filho de Deus”).</li>
+      <li><b>Variantes:</b> as notas <span class="tag t-var">V</span> dizem onde as edições divergem. Elas citam edições (RP, TR, WH, Tregelles, NA28), não manuscritos.</li>
+    </ul>
+
     <h3>Os seis tipos de nota</h3>
     <div class="scroll-x"><table class="tbl">
       <thead><tr><th>Tipo</th><th>Quando aparece</th></tr></thead>
@@ -144,10 +152,10 @@
   <div class="wrap">
     <span class="eyebrow">Estado da revisão</span>
     <h2>Livro a livro.</h2>
-    <p class="lead">“Revisado pela outra IA” significa que a IA parceira conferiu o livro e o autor respondeu. Nenhum livro foi revisado por uma pessoa.</p>
+    <p class="lead">“Revisão de IA: 2x” é o número de rodadas de revisão cruzada feitas pela IA parceira (cada veredito, “ajustes” ou “aprovado”, conta uma rodada). Nenhum livro foi revisado por uma pessoa.</p>
     <div class="scroll-x"><table class="tbl" id="tbl-rev">
-      <thead><tr><th>Livro</th><th class="n">Capítulos</th><th class="n">Versículos</th><th>Revisão</th></tr></thead>
-      <tbody><tr><td colspan="4">Carregando… (precisa de JavaScript)</td></tr></tbody>
+      <thead><tr><th>Livro</th><th class="n">Capítulos</th><th class="n">Versículos</th><th>Revisão de IA</th><th>Situação</th></tr></thead>
+      <tbody><tr><td colspan="5">Carregando… (precisa de JavaScript)</td></tr></tbody>
     </table></div>
   </div>
 </section>
@@ -174,7 +182,7 @@
     <span class="eyebrow">Fontes e licenças</span>
     <h2>De onde vêm os dados.</h2>
     <div class="grid">
-      <div class="card"><h3>Texto grego</h3><p><a href="https://github.com/LogosBible/SBLGNT">SBL Greek New Testament</a>, de Michael W. Holmes (ed.), Society of Biblical Literature e Logos Bible Software, 2010. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p></div>
+      <div class="card"><h3>Texto grego</h3><p><a href="https://github.com/LogosBible/SBLGNT">SBL Greek New Testament</a>, de Michael W. Holmes (ed.), Society of Biblical Literature e Logos Bible Software, 2010. Edição crítica, não um manuscrito único (<a href="#manuscrito">veja acima</a>). <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p></div>
       <div class="card"><h3>Strong, lema e morfologia</h3><p><a href="https://github.com/STEPBible/STEPBible-Data">STEPBible-Data</a> (TAGNT e TBESG), de Tyndale House, Cambridge, e STEPBible.org. CC BY 4.0. Os dados foram reformatados, recortados e combinados com o alinhamento deste projeto; as glosas em inglês vêm do TBESG (baseado em Abbott-Smith).</p></div>
       <div class="card"><h3>Referências cruzadas</h3><p><a href="https://www.openbible.info/labs/cross-references/">OpenBible.info</a> (CC BY). Só as referências, sem texto bíblico.</p></div>
       <div class="card"><h3>A tradução em português</h3><p>Rascunho de IA, em quarentena. A licença pretendida do projeto é <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br">CC BY 4.0</a>, sujeita à revisão humana e à conferência de originalidade; até lá, trate como rascunho. Sugestão de citação: <i>bibleme Traduções, rascunho de IA do NT (pt-BR)</i> + link desta página.</p></div>
@@ -237,15 +245,16 @@
     var tb = document.querySelector("#tbl-rev tbody");
     tb.innerHTML = "";
     d.livros.forEach(function (l) {
-      var tr = document.createElement("tr"), rev = "sem revisão", cls = "";
-      if (l.rev === "aprovado") { rev = "revisado pela outra IA" + (l.caps_ap && l.caps_ap !== "–" ? " (" + l.caps_ap.replace("/", " de ") + " capítulos)" : ""); cls = "rv-ok"; }
-      else if (l.rev === "ajustes") { rev = "ajustes em revisão (aguarda a 2ª rodada)"; cls = "rv-aj"; }
+      var tr = document.createElement("tr"), sit = "ainda sem revisão cruzada", cls = "";
+      if (l.rev === "aprovado") { sit = "aprovado pela IA revisora" + (l.caps_ap && l.caps_ap !== "–" ? " (" + l.caps_ap.replace("/", " de ") + " capítulos)" : ""); cls = "rv-ok"; }
+      else if (l.rev === "ajustes") { sit = "ajustes pedidos; aguarda a próxima rodada"; cls = "rv-aj"; }
       var a = document.createElement("a"); a.href = "../leitor/#/" + l.id + "/1"; a.textContent = l.nome;
       var td1 = document.createElement("td"); td1.appendChild(a);
       var td2 = document.createElement("td"); td2.className = "n"; td2.textContent = l.cap.length;
       var td3 = document.createElement("td"); td3.className = "n"; td3.textContent = l.versos;
-      var td4 = document.createElement("td"); td4.className = cls; td4.textContent = rev;
-      tr.append(td1, td2, td3, td4); tb.appendChild(tr);
+      var td4 = document.createElement("td"); td4.className = cls; td4.textContent = "revisão de IA: " + (l.rev_n || 0) + "x";
+      var td5 = document.createElement("td"); td5.className = cls; td5.textContent = sit;
+      tr.append(td1, td2, td3, td4, td5); tb.appendChild(tr);
     });
   }).catch(function () { /* sem os dados, ficam os números do texto estático */ });
 })();
