@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sobre o rascunho do Novo Testamento · bibleme Traduções</title>
+<meta name="description" content="Como foi feito o rascunho de IA do Novo Testamento em português (do grego SBLGNT), o que ele traz (Strong, interlinear, notas, versículos relacionados), o que ainda falta e as fontes usadas.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f1e3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161f" media="(prefers-color-scheme: dark)">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232a251c'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='22' font-weight='700' text-anchor='middle' fill='%23f7f1e3'%3Eb%3C/text%3E%3Crect x='9' y='26' width='14' height='2' rx='1' fill='%23c2476a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .quarentena { margin-top: 28px; padding: 16px 20px; border: 1px solid var(--accent); background: var(--accent-soft); border-radius: 14px; max-width: 52rem; }
+  .quarentena p { margin: 0; }
+  .quarentena p + p { margin-top: .6em; }
+  .tbl { width: 100%; border-collapse: collapse; margin-top: 18px; font-size: .95rem; }
+  .tbl th, .tbl td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .tbl th { font: 600 .78rem var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .tbl td.n, .tbl th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  .scroll-x { overflow-x: auto; }
+  .nums { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); margin-top: 30px; }
+  .nums div { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .nums b { display: block; font: 600 1.9rem var(--serif); line-height: 1.1; }
+  .nums span { color: var(--muted); font-size: .9rem; }
+  .tag { display: inline-block; font: 700 .72rem var(--sans); border: 1px solid currentColor; border-radius: 6px; padding: 0 6px; margin-inline-end: 6px; }
+  .t-lit { color: #2f6f8f; } .t-var { color: #8a5a00; } .t-cult { color: #3f7a3f; } .t-add { color: #6a4aa0; } .t-omit { color: #a33a3a; } .t-trad { color: #1f7a70; }
+  @media (prefers-color-scheme: dark) { .t-lit { color: #7ec3e6; } .t-var { color: #e6b95c; } .t-cult { color: #8fd18f; } .t-add { color: #b9a1ec; } .t-omit { color: #f09a9a; } .t-trad { color: #6fd6c8; } }
+  .rv-ok { color: #3f7a3f; } .rv-aj { color: #8a5a00; }
+  @media (prefers-color-scheme: dark) { .rv-ok { color: #8fd18f; } .rv-aj { color: #e6b95c; } }
+  .doc h3 { margin-top: 1.6em; }
+  .doc ul { color: var(--muted); padding-inline-start: 1.2em; }
+  .doc li { margin: .4em 0; }
+  .doc li b, .doc td b { color: var(--fg); }
+  .doc .lead + p { max-width: 46rem; }
+  .doc .two { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-top: 24px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../"><span class="mark" aria-hidden="true">b</span>bibleme<span class="sub">&nbsp;Traduções</span></a>
+    <nav class="nav" aria-label="Principal">
+      <a class="hide-sm" href="#numeros">Números</a>
+      <a class="hide-sm" href="#metodo">Como foi feito</a>
+      <a class="hide-sm" href="#limites">Limites</a>
+      <a class="hide-sm" href="#fontes">Fontes</a>
+      <a class="btn small" href="../leitor/">Abrir o leitor</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="doc">
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Experimento · Novo Testamento</span>
+    <h1>Um rascunho de IA, <em>em quarentena</em>.</h1>
+    <p class="lead">O Novo Testamento inteiro foi traduzido do grego por duas assistentes de IA, com cada palavra grega ligada a um número de Strong. Está aberto para leitura e estudo neste site, mas <b>ainda não passou por nenhuma revisão humana</b>.</p>
+    <div class="quarentena">
+      <p><b>O que isto não é.</b> Não é texto aprovado pelo projeto, não é uma versão estável e não substitui uma tradução revisada. Pode conter erros de sentido, de gramática e de estilo, e pode lembrar traduções existentes, porque modelos de IA conseguem reproduzir trechos de memória.</p>
+      <p><b>Por que está aqui.</b> Para você ler, conferir contra o grego, achar erros e dizer o que deve mudar. A política do projeto (<a href="https://github.com/__REPO__/blob/main/rfcs/0004-processo-e-versoes.md">RFC-0004, §6</a>) trata rascunho de IA do texto bíblico como <b>material de risco</b> até a verificação de semelhança e a revisão humana. É por isso que tudo aqui está marcado como <code>[IA-rascunho]</code>.</p>
+    </div>
+    <div class="actions">
+      <a class="btn" href="../leitor/">Abrir o leitor</a>
+      <a class="btn ghost" href="../leitor/#/Jhn/1/1">Começar por João 1</a>
+      <a class="btn ghost" href="https://github.com/__REPO__/issues/new/choose">Apontar um erro</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="numeros">
+  <div class="wrap">
+    <span class="eyebrow">O que tem</span>
+    <h2>Números do rascunho.</h2>
+    <div class="nums" id="nums" aria-live="polite">
+      <div><b>27</b><span>livros do Novo Testamento</span></div>
+      <div><b>7.939</b><span>versículos (SBLGNT)</span></div>
+      <div><b>138 mil</b><span>palavras gregas, cada uma com Strong, lema e morfologia</span></div>
+      <div><b>5.406</b><span>termos (números de Strong) com léxico</span></div>
+      <div><b>146 mil</b><span>versículos relacionados, em todos os versículos</span></div>
+      <div><b>6.901</b><span>notas explicativas</span></div>
+    </div>
+    <div class="grid" style="margin-top:28px">
+      <div class="card"><h3>Strong em cada termo</h3><p>Toda palavra grega do texto está ligada ao seu número de Strong (do TAGNT), com lema e morfologia. No leitor, toque num termo para ver todos os versículos em que ele aparece e como este rascunho o traduziu.</p></div>
+      <div class="card"><h3>Palavra a palavra</h3><p>O modo interlinear mostra o grego e o Strong sob cada trecho em português. O painel do versículo lista cada palavra grega com lema, glosa, morfologia e o trecho que a traduz.</p></div>
+      <div class="card"><h3>Notas explicativas</h3><p>Seis tipos de nota (abaixo): sentido literal, variantes, contexto cultural, palavras acrescentadas, palavras não traduzidas e escolhas difíceis ou contextuais.</p></div>
+      <div class="card"><h3>Versículos relacionados</h3><p>Todo versículo tem relações: citações e alusões citadas nas notas, referências cruzadas do OpenBible.info e paralelos de vocabulário calculados pelos números de Strong.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="wrap">
+    <span class="eyebrow">Como foi feito</span>
+    <h2>Do grego, com as palavras contadas.</h2>
+    <p class="lead">O texto-base é o SBLGNT. A tradução foi escrita por duas IAs (Claude, da Anthropic, e Codex, da OpenAI) que se coordenaram por arquivos e se revisam uma à outra.</p>
+    <ol class="steps">
+      <li><h3>Do grego, sem tradução-base</h3><p>Cada livro foi traduzido a partir do texto grego, versículo por versículo. Nenhuma tradução em português serviu de base nem de apoio.</p></li>
+      <li><h3>Alinhamento obrigatório</h3><p>Cada trecho em português aponta as palavras gregas que traduz. Um validador exige que nenhuma palavra grega fique sem tradução ou sem justificativa (<code>~</code>, não traduzida) e que nenhuma seja usada duas vezes.</p></li>
+      <li><h3>Strong vem dos dados</h3><p>Quem traduz nunca digita Strong: ele vem do TAGNT, casado palavra por palavra com o SBLGNT. As 35 palavras que o casamento automático não resolveu foram tratadas à mão, com a fonte registrada.</p></li>
+      <li><h3>Notas exigidas</h3><p>O validador exige nota nos versículos com palavra acrescentada, palavra não traduzida ou termo de sentido amplo traduzido fora do padrão.</p></li>
+      <li><h3>Revisão cruzada</h3><p>Uma IA revisa a outra, livro a livro, com respostas e novas rodadas. Isso acha erros, mas <b>não é revisão humana</b>.</p></li>
+      <li><h3>Triagem de semelhança</h3><p>Uma ferramenta compara o rascunho com textos de referência locais para apontar trechos suspeitos. É uma triagem: não prova originalidade.</p></li>
+    </ol>
+    <h3>Os seis tipos de nota</h3>
+    <div class="scroll-x"><table class="tbl">
+      <thead><tr><th>Tipo</th><th>Quando aparece</th></tr></thead>
+      <tbody>
+        <tr><td><span class="tag t-lit">L</span><b>Literal</b></td><td>Sentido literal da palavra grega, alternativas de tradução, construção gramatical difícil.</td></tr>
+        <tr><td><span class="tag t-var">V</span><b>Variante</b></td><td>Leituras diferentes em outras edições do grego (TR, RP, NA28, WH, Treg), só com o que o aparato local mostra.</td></tr>
+        <tr><td><span class="tag t-cult">C</span><b>Nota cultural</b></td><td>Citações do Antigo Testamento, alusões e contexto cultural.</td></tr>
+        <tr><td><span class="tag t-add">+</span><b>Acréscimo</b></td><td>Palavra que a tradução acrescenta e o grego não traz (por exemplo, o verbo “ser” em orações sem verbo), com o motivo.</td></tr>
+        <tr><td><span class="tag t-omit">∅</span><b>Não traduzido</b></td><td>Palavra grega sem equivalente em português naquele ponto (o “que” que só introduz uma fala, partículas), com o motivo.</td></tr>
+        <tr><td><span class="tag t-trad">T</span><b>Tradução contextual</b></td><td>Termo de sentido amplo (πνεῦμα, λόγος, χάρις, ἀφίημι, βλέπω…) traduzido de modo diferente do padrão do projeto, ou fórmula difícil (μὴ γένοιτο). 92 termos são monitorados.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>Convenções do texto</h3>
+    <p style="max-width:46rem;color:var(--muted)">Valem para o texto todo, sem nota em cada versículo. São decisões <b>provisórias</b>, abertas à revisão.</p>
+    <div class="two">
+      <ul>
+        <li>Segunda pessoa: “você” (singular) e “vocês” (plural).</li>
+        <li>Presente histórico vira pretérito; aoristo vira pretérito conforme o contexto.</li>
+        <li>ἰδού: “olhe/olhem”; ἀμήν: “Em verdade” (abre fala) ou “Amém” (fecha oração); μακάριος: “feliz”.</li>
+        <li>ὅτι que introduz fala direta não é traduzido: as aspas fazem o papel.</li>
+        <li>ἀδελφοί: “irmãos e irmãs” quando o grupo inclui mulheres.</li>
+      </ul>
+      <ul>
+        <li>δοῦλος: “escravo”, sem suavizar a condição social. ἐκκλησία: “comunidade”.</li>
+        <li>εὐαγγέλιον: “boa notícia”. δικαιόω: “declarar justo”. παρακαλέω: “exortar”.</li>
+        <li>“o Filho do Homem”, “o Cristo”, “o Caminho” (ὁδός, em Atos).</li>
+        <li>Moedas e medidas sem conversão (denário, côvado, alqueire).</li>
+        <li>Aspas em até três camadas: “ ‘ “ ” ’ ”.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="revisao">
+  <div class="wrap">
+    <span class="eyebrow">Estado da revisão</span>
+    <h2>Livro a livro.</h2>
+    <p class="lead">“Revisado pela outra IA” significa que a IA parceira conferiu o livro e o autor respondeu. Nenhum livro foi revisado por uma pessoa.</p>
+    <div class="scroll-x"><table class="tbl" id="tbl-rev">
+      <thead><tr><th>Livro</th><th class="n">Capítulos</th><th class="n">Versículos</th><th>Revisão</th></tr></thead>
+      <tbody><tr><td colspan="4">Carregando… (precisa de JavaScript)</td></tr></tbody>
+    </table></div>
+  </div>
+</section>
+
+<section id="limites">
+  <div class="wrap">
+    <span class="eyebrow">Limites</span>
+    <h2>O que você precisa saber antes de confiar.</h2>
+    <ul class="lim">
+      <li><b>Sem revisão humana.</b> Nenhuma pessoa leu ou aprovou este texto. Confira no grego e em fontes confiáveis.</li>
+      <li><b>Risco de semelhança.</b> Modelos de IA podem reproduzir traduções protegidas de memória. A triagem de semelhança ajuda, mas não prova originalidade.</li>
+      <li><b>Notas automáticas.</b> As notas de acréscimo, de omissão e de tradução contextual foram geradas por regras e ainda não foram conferidas por revisor. Nem toda escolha difícil foi detectada: artigos, preposições e possessivos que o português exige dentro de um trecho não têm nota por versículo.</li>
+      <li><b>Alinhamento em revisão.</b> O casamento entre palavras gregas e trechos em português é deste projeto e pode ter imprecisões.</li>
+      <li><b>Strong é um índice, não uma definição.</b> O número liga palavras de mesma raiz, mas o sentido depende do contexto. A glosa em inglês vem do léxico breve TBESG.</li>
+      <li><b>Relacionados são uma pista de estudo.</b> As referências cruzadas do OpenBible usam a numeração do KJV e votos de leitores; os paralelos de vocabulário medem palavras em comum, não teologia. Os versículos do Antigo Testamento aparecem só como referência, porque o projeto ainda não tem esse texto.</li>
+      <li><b>Dezoito versículos fora do texto-base.</b> O SBLGNT não traz Mt 17:21, 18:11, 23:14; Mc 7:16, 9:44, 9:46, 11:26, 15:28; Lc 17:36, 23:17; Jo 5:4; At 8:37, 15:34, 24:7, 28:29; Rm 16:25-27. Eles aparecem no leitor, marcados, traduzidos do grego de outras edições. Se entram numa edição final é decisão do projeto.</li>
+      <li><b>Convenções provisórias.</b> As escolhas de vocabulário acima aguardam decisão do projeto e da comunidade.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="fontes">
+  <div class="wrap">
+    <span class="eyebrow">Fontes e licenças</span>
+    <h2>De onde vêm os dados.</h2>
+    <div class="grid">
+      <div class="card"><h3>Texto grego</h3><p><a href="https://github.com/LogosBible/SBLGNT">SBL Greek New Testament</a>, de Michael W. Holmes (ed.), Society of Biblical Literature e Logos Bible Software, 2010. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p></div>
+      <div class="card"><h3>Strong, lema e morfologia</h3><p><a href="https://github.com/STEPBible/STEPBible-Data">STEPBible-Data</a> (TAGNT e TBESG), de Tyndale House, Cambridge, e STEPBible.org. CC BY 4.0. Os dados foram reformatados, recortados e combinados com o alinhamento deste projeto; as glosas em inglês vêm do TBESG (baseado em Abbott-Smith).</p></div>
+      <div class="card"><h3>Referências cruzadas</h3><p><a href="https://www.openbible.info/labs/cross-references/">OpenBible.info</a> (CC BY). Só as referências, sem texto bíblico.</p></div>
+      <div class="card"><h3>A tradução em português</h3><p>Rascunho de IA, em quarentena. A licença pretendida do projeto é <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br">CC BY 4.0</a>, sujeita à revisão humana e à conferência de originalidade; até lá, trate como rascunho. Sugestão de citação: <i>bibleme Traduções, rascunho de IA do NT (pt-BR)</i> + link desta página.</p></div>
+    </div>
+    <div class="callout">
+      <p><b>Declaração de apoio de IA.</b> Nesta tarefa a IA produziu o texto bíblico traduzido (a frase-padrão “não foi usada para produzir texto bíblico traduzido” <b>não se aplica</b>). Foram usadas Claude (Anthropic) e Codex (OpenAI) para pesquisa, rascunho da tradução, notas, ferramentas de validação e revisão cruzada. Nenhuma tradução publicada foi usada como base. Revisão humana: <b>pendente</b>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="center" id="fim">
+  <div class="wrap">
+    <h2>Leia, confira e diga o que está errado.</h2>
+    <p class="lead">A revisão humana é o que falta. Toda correção, por pequena que seja, vale.</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn" href="../leitor/">Abrir o leitor</a>
+      <a class="btn ghost" href="https://github.com/__REPO__/issues/new/choose">Abrir uma Issue</a>
+      <a class="btn ghost" href="../">Página do projeto</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="../"><span class="mark" aria-hidden="true">b</span>bibleme Traduções</a>
+      <p style="margin-top:12px">Texto, dados e documentação sob <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br">CC BY 4.0</a> (o rascunho, enquanto não for revisado, é só rascunho). Código sob MIT.</p>
+    </div>
+    <div>
+      <h4>Projeto</h4>
+      <ul>
+        <li><a href="https://github.com/__REPO__">Repositório</a></li>
+        <li><a href="https://github.com/__REPO__/tree/main/rfcs">Propostas (RFCs)</a></li>
+        <li><a href="https://github.com/__REPO__/blob/main/docs/direitos-autorais-e-referencias.md">Direitos autorais</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Leitor</h4>
+      <ul>
+        <li><a href="../leitor/">Abrir o leitor</a></li>
+        <li><a href="../leitor/#/g/26">Exemplo: termo G26 (ágape)</a></li>
+        <li><a href="../leitor/#/Rom/8">Exemplo: Romanos 8</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  function fmt(n) { return Number(n).toLocaleString("pt-BR"); }
+  fetch("../leitor/dados/livros.json").then(function (r) { return r.json(); }).then(function (d) {
+    var i = d.info, n = i.notas, tot = n.lit + n.var + n.cult + n.add + n.omit + n.trad;
+    var nums = document.getElementById("nums");
+    nums.innerHTML = "";
+    [[d.livros.length, "livros do Novo Testamento"], [fmt(i.versos), "versículos (SBLGNT)"], [fmt(i.palavras_gregas), "palavras gregas, cada uma com Strong, lema e morfologia"],
+     [fmt(i.strongs), "termos (números de Strong) com léxico"], [fmt(i.relacoes), "relações entre versículos, em todos os versículos"], [fmt(tot), "notas explicativas"]]
+      .forEach(function (x) { var el = document.createElement("div"); el.innerHTML = "<b></b><span></span>"; el.firstChild.textContent = x[0]; el.lastChild.textContent = x[1]; nums.appendChild(el); });
+    var tb = document.querySelector("#tbl-rev tbody");
+    tb.innerHTML = "";
+    d.livros.forEach(function (l) {
+      var tr = document.createElement("tr"), rev = "sem revisão", cls = "";
+      if (l.rev === "aprovado") { rev = "revisado pela outra IA" + (l.caps_ap && l.caps_ap !== "–" ? " (" + l.caps_ap.replace("/", " de ") + " capítulos)" : ""); cls = "rv-ok"; }
+      else if (l.rev === "ajustes") { rev = "ajustes em revisão (aguarda a 2ª rodada)"; cls = "rv-aj"; }
+      var a = document.createElement("a"); a.href = "../leitor/#/" + l.id + "/1"; a.textContent = l.nome;
+      var td1 = document.createElement("td"); td1.appendChild(a);
+      var td2 = document.createElement("td"); td2.className = "n"; td2.textContent = l.cap.length;
+      var td3 = document.createElement("td"); td3.className = "n"; td3.textContent = l.versos;
+      var td4 = document.createElement("td"); td4.className = cls; td4.textContent = rev;
+      tr.append(td1, td2, td3, td4); tb.appendChild(tr);
+    });
+  }).catch(function () { /* sem os dados, ficam os números do texto estático */ });
+})();
+</script>
+</body>
+</html>
