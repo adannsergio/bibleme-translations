@@ -2,7 +2,7 @@
 
 Leitor estático (HTML, CSS e JavaScript sem dependências) do **rascunho de IA** do Novo Testamento em português, traduzido do grego (SBLGNT). Publicado junto com a página do projeto pelo workflow `.github/workflows/pages.yml`.
 
-> **Quarentena.** O texto foi produzido por IA, **não passou por revisão humana** e não é texto aprovado do projeto. A política do projeto ([RFC-0004, §6](../../rfcs/0004-processo-e-versoes.md)) trata rascunho de IA do texto bíblico como material de risco até a verificação de semelhança e a revisão humana. Veja [`../traducao/`](../traducao/index.html).
+> **Quarentena.** O texto foi feito com uso de IA (que pode incluir escrita e revisão), **ainda não passou por revisão humana formal** e não é texto aprovado do projeto. A política do projeto ([RFC-0004, §6](../../rfcs/0004-processo-e-versoes.md)) trata rascunho de IA do texto bíblico como material de risco até a verificação de semelhança e a revisão humana. Veja [`../traducao/`](../traducao/index.html).
 
 ## O que o leitor faz
 

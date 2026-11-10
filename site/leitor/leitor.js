@@ -42,7 +42,7 @@ const NOTA_ROT = { lit: "Literal", var: "Variante", cult: "Nota cultural", add: 
 const NOTA_SIG = { lit: "L", var: "V", cult: "C", add: "+", omit: "∅", trad: "T" };
 const NOTA_AJ = {
   lit: "sentido literal do grego ou outras maneiras de entender",
-  var: "outra leitura em manuscritos ou edições do grego",
+  var: "outra leitura em edições do grego (o leitor não colaciona manuscritos individuais)",
   cult: "citação do Antigo Testamento ou contexto cultural",
   add: "palavra da tradução que o grego não traz (o português exige)",
   omit: "palavra grega sem equivalente em português neste ponto",
@@ -205,7 +205,7 @@ function blocoVersao() {
 function rodape() {
   return h("footer", { class: "card", style: "margin-top:32px;font-size:.82rem;color:var(--muted)" },
     blocoVersao(),
-    h("p", { style: "margin:0 0 6px" }, h("b", null, "Rascunho de IA em quarentena. "), "Tradução produzida por IA a partir do grego e ainda sem revisão humana; não é texto aprovado do projeto. ",
+    h("p", { style: "margin:0 0 6px" }, h("b", null, "Rascunho de IA em quarentena. "), "Tradução feita com uso de IA (que pode incluir escrita e revisão) a partir do grego, ainda sem revisão humana formal; não é texto aprovado do projeto. ",
       h("a", { href: "../traducao/" }, "Como foi feito e o que falta →")),
     h("p", { style: "margin:0" }, "Texto grego: ", h("a", { href: "https://github.com/LogosBible/SBLGNT" }, "SBLGNT"), " (SBL e Logos, CC BY 4.0), uma edição crítica e não um manuscrito único. Strong, lema, morfologia e as edições de cada palavra: ",
       h("a", { href: "https://github.com/STEPBible/STEPBible-Data" }, "STEPBible TAGNT/TBESG"), " (Tyndale House e STEPBible.org, CC BY 4.0), reformatados e combinados com o alinhamento deste projeto. Referências cruzadas: ",
@@ -223,7 +223,7 @@ function renderHome() {
   main.replaceChildren(
     h("div", { class: "largo" },
       h("h1", { style: "font-size:clamp(2rem,6vw,3rem);margin-bottom:.2em" }, "Novo Testamento, palavra a palavra"),
-      h("p", { class: "lead" }, "Um rascunho de IA do Novo Testamento em português, traduzido do grego (SBLGNT), com Strong em cada termo, interlinear, notas explicativas e versículos relacionados. Está em quarentena: ", h("b", null, "nenhuma pessoa o revisou ainda"), "."),
+      h("p", { class: "lead" }, "Um rascunho do Novo Testamento em português, feito com uso de IA e traduzido do grego (SBLGNT), com Strong em cada termo, interlinear, notas explicativas e versículos relacionados. Está em quarentena: ", h("b", null, "ainda sem revisão humana formal"), "."),
       h("div", { class: "stats" },
         h("span", null, h("b", null, info.versos.toLocaleString("pt-BR")), " versículos"),
         h("span", null, h("b", null, info.palavras_gregas.toLocaleString("pt-BR")), " palavras gregas com Strong"),
@@ -547,7 +547,7 @@ function painelLegenda(abrir = true) {
       h("div", null, h("span", { class: "sg", style: "font-size:.9em" }, "G991"), ": número de Strong do termo; toque para ver o termo e todos os versículos em que aparece."),
       h("div", null, h("span", { class: "ed sim" }, "SBL"), " ", h("span", { class: "ed nao" }, "TR"), ": edições do grego. Cada palavra do painel mostra em quais edições ela aparece (riscada = não traz); o texto-base é o SBLGNT."),
       h("div", null, h("b", null, "Interlinear"), ": mostra, sob cada trecho em português, as palavras gregas e o Strong. ", h("b", null, "∅"), " marca palavra grega não traduzida."),
-      h("p", { style: "margin:6px 0 0;color:var(--muted)" }, "Tudo isto é rascunho de IA sem revisão humana: confira no grego e em fontes confiáveis antes de usar.")));
+      h("p", { style: "margin:6px 0 0;color:var(--muted)" }, "Tudo isto é rascunho feito com uso de IA e sem revisão humana formal: confira no grego e em fontes confiáveis antes de usar.")));
   if (abrir) $("#painel").classList.add("aberto");
 }
 

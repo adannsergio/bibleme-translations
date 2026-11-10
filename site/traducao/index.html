@@ -46,6 +46,7 @@
     <nav class="nav" aria-label="Principal">
       <a class="hide-sm" href="#numeros">Números</a>
       <a class="hide-sm" href="#metodo">Como foi feito</a>
+      <a class="hide-sm" href="#robustez">Robustez</a>
       <a class="hide-sm" href="#limites">Limites</a>
       <a class="hide-sm" href="#fontes">Fontes</a>
       <a class="btn small" href="../leitor/">Abrir o leitor</a>
@@ -59,7 +60,7 @@
   <div class="wrap">
     <span class="eyebrow">Experimento · Novo Testamento</span>
     <h1>Um rascunho de IA, <em>em quarentena</em>.</h1>
-    <p class="lead">O Novo Testamento inteiro foi traduzido do grego por duas assistentes de IA, com cada palavra grega ligada a um número de Strong. Está aberto para leitura e estudo neste site, mas <b>ainda não passou por nenhuma revisão humana</b>.</p>
+    <p class="lead">O Novo Testamento inteiro foi traduzido do grego <b>com uso de IA, que pode incluir a escrita e a revisão dos textos</b>, e cada palavra grega está ligada a um número de Strong. Está aberto para leitura e estudo neste site, mas <b>ainda não passou por revisão humana formal</b>.</p>
     <div class="quarentena">
       <p><b>O que isto não é.</b> Não é texto aprovado pelo projeto, não é uma versão estável e não substitui uma tradução revisada. Pode conter erros de sentido, de gramática e de estilo, e pode lembrar traduções existentes, porque modelos de IA conseguem reproduzir trechos de memória.</p>
       <p><b>Por que está aqui.</b> Para você ler, conferir contra o grego, achar erros e dizer o que deve mudar. A política do projeto (<a href="https://github.com/__REPO__/blob/main/rfcs/0004-processo-e-versoes.md">RFC-0004, §6</a>) trata rascunho de IA do texto bíblico como <b>material de risco</b> até a verificação de semelhança e a revisão humana. É por isso que tudo aqui está marcado como <code>[IA-rascunho]</code>.</p>
@@ -97,13 +98,13 @@
   <div class="wrap">
     <span class="eyebrow">Como foi feito</span>
     <h2>Do grego, com as palavras contadas.</h2>
-    <p class="lead">O texto-base é o SBLGNT. A tradução foi escrita por duas IAs (Claude, da Anthropic, e Codex, da OpenAI) que se coordenaram por arquivos e se revisam uma à outra.</p>
+    <p class="lead">O texto-base é o SBLGNT. O trabalho usou IA (Claude, da Anthropic, e Codex, da OpenAI), que pode incluir escrita e revisão dos textos, coordenada por arquivos e com registro de cada etapa. Pela política do projeto (<a href="https://github.com/__REPO__/blob/main/rfcs/0004-processo-e-versoes.md#6-uso-de-ia-no-processo">RFC-0004</a>), a IA não é autora e quem submete o texto responde por ele.</p>
     <ol class="steps">
       <li><h3>Do grego, sem tradução-base</h3><p>Cada livro foi traduzido a partir do texto grego, versículo por versículo. Nenhuma tradução em português serviu de base nem de apoio.</p></li>
       <li><h3>Alinhamento obrigatório</h3><p>Cada trecho em português aponta as palavras gregas que traduz. Um validador exige que nenhuma palavra grega fique sem tradução ou sem justificativa (<code>~</code>, não traduzida) e que nenhuma seja usada duas vezes.</p></li>
       <li><h3>Strong vem dos dados</h3><p>Quem traduz nunca digita Strong: ele vem do TAGNT, casado palavra por palavra com o SBLGNT. As 35 palavras que o casamento automático não resolveu foram tratadas à mão, com a fonte registrada.</p></li>
       <li><h3>Notas exigidas</h3><p>O validador exige nota nos versículos com palavra acrescentada, palavra não traduzida ou termo de sentido amplo traduzido fora do padrão.</p></li>
-      <li><h3>Revisão cruzada</h3><p>Uma IA revisa a outra, livro a livro, com respostas e novas rodadas. Isso acha erros, mas <b>não é revisão humana</b>.</p></li>
+      <li><h3>Revisão cruzada por IA</h3><p>Uma ferramenta de IA revisa o trabalho da outra, livro a livro, com respostas e novas rodadas, e depois vêm as passadas por lente. Isso acha erros, mas <b>não é revisão humana</b>.</p></li>
       <li><h3>Triagem de semelhança</h3><p>Uma ferramenta compara o rascunho com textos de referência locais para apontar trechos suspeitos. É uma triagem: não prova originalidade.</p></li>
     </ol>
     <h3 id="manuscrito">De qual manuscrito vem o grego?</h3>
@@ -148,11 +149,27 @@
   </div>
 </section>
 
-<section class="alt" id="revisao">
+<section class="alt" id="robustez">
+  <div class="wrap">
+    <span class="eyebrow">Fontes e robustez</span>
+    <h2>De onde vem cada coisa, e o que foi conferido.</h2>
+    <p class="lead">“Robusto” aqui quer dizer <b>rastreável e conferível</b>, não “pronto”: cada decisão deixa registro e tudo o que uma máquina consegue checar é checado. Isso reduz erros e mostra o cuidado do processo, mas <b>não substitui a revisão por pessoas</b>.</p>
+    <div class="grid">
+      <div class="card"><h3>Fontes</h3><p>Texto grego: SBLGNT. Strong, lema, morfologia e léxico: STEPBible TAGNT e TBESG. Referências cruzadas: OpenBible.info. Conferência independente de Strong e morfologia: Macula Greek (Clear Bible). Nenhuma tradução publicada foi usada como base nem como apoio. Detalhes e licenças em <a href="#fontes">Fontes e licenças</a>.</p></div>
+      <div class="card"><h3>Cobertura total, conferida por máquina</h3><p>As 137.741 palavras do SBLGNT têm tradução (ou justificativa de não tradução) e Strong, e nenhuma é usada duas vezes. A validação dos 27 livros dá 0 erros, e a saída gerada passa em testes de espaços, aspas e pontuação.</p></div>
+      <div class="card"><h3>Duas fontes de Strong e morfologia</h3><p>Cada palavra foi comparada com o Macula Greek, que tem a mesma contagem de palavras por versículo. As diferenças são, em grande parte, de convenção (um Strong por forma flexionada, classes gramaticais diferentes); 949 palavras (0,7%) ficaram como candidatas a conferir.</p></div>
+      <div class="card"><h3>Revisão em camadas</h3><p>Revisão cruzada por IA em rodadas, com contagem pública por livro (“revisão de IA: Nx”), e meta de dez revisões por capítulo em dez lentes: fidelidade, alinhamento, português, notas, variantes, consistência, neutralidade, retrotradução cega, relacionados e regressão. Nas lentes de julgamento, quem escreveu o capítulo não o revisa.</p></div>
+      <div class="card"><h3>Achados e lições registrados</h3><p>Os 215 achados de revisões anteriores (36 deles bloqueavam a aprovação) estão numa base com tipo e severidade, e as lições (quinze até agora) viram regras de validação, glossário e convenções. É uma base viva, que também vai orientar o Antigo Testamento.</p></div>
+      <div class="card"><h3>Transparência</h3><p>Tudo é marcado como rascunho, a versão e o commit aparecem no leitor, a citação por tipo de uso está na RFC-0010 e o uso de IA segue a RFC-0004. O que falta está dito: revisão humana formal e triagem de semelhança do NT inteiro.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="revisao">
   <div class="wrap">
     <span class="eyebrow">Estado da revisão</span>
     <h2>Livro a livro.</h2>
-    <p class="lead">“Revisão de IA: 2x” é o número de rodadas de revisão cruzada feitas pela IA parceira (cada veredito, “ajustes” ou “aprovado”, conta uma rodada). Nenhum livro foi revisado por uma pessoa.</p>
+    <p class="lead">“Revisão de IA: 2x” é o número de rodadas de revisão cruzada feitas por IA (cada veredito, “ajustes” ou “aprovado”, conta uma rodada). Nenhum livro passou ainda por revisão humana formal.</p>
     <div class="scroll-x"><table class="tbl" id="tbl-rev">
       <thead><tr><th>Livro</th><th class="n">Capítulos</th><th class="n">Versículos</th><th>Revisão de IA</th><th>Situação</th></tr></thead>
       <tbody><tr><td colspan="5">Carregando… (precisa de JavaScript)</td></tr></tbody>
@@ -160,12 +177,12 @@
   </div>
 </section>
 
-<section id="limites">
+<section class="alt" id="limites">
   <div class="wrap">
     <span class="eyebrow">Limites</span>
     <h2>O que você precisa saber antes de confiar.</h2>
     <ul class="lim">
-      <li><b>Sem revisão humana.</b> Nenhuma pessoa leu ou aprovou este texto. Confira no grego e em fontes confiáveis.</li>
+      <li><b>Sem revisão humana formal.</b> O texto ainda não passou pela revisão por pessoas (revisores dos originais e da língua) que o processo do projeto exige. Confira no grego e em fontes confiáveis.</li>
       <li><b>Risco de semelhança.</b> Modelos de IA podem reproduzir traduções protegidas de memória. A triagem de semelhança ajuda, mas não prova originalidade.</li>
       <li><b>Notas automáticas.</b> As notas de acréscimo, de omissão e de tradução contextual foram geradas por regras e ainda não foram conferidas por revisor. Nem toda escolha difícil foi detectada: artigos, preposições e possessivos que o português exige dentro de um trecho não têm nota por versículo.</li>
       <li><b>Alinhamento em revisão.</b> O casamento entre palavras gregas e trechos em português é deste projeto e pode ter imprecisões.</li>
@@ -177,7 +194,7 @@
   </div>
 </section>
 
-<section class="alt" id="fontes">
+<section id="fontes">
   <div class="wrap">
     <span class="eyebrow">Fontes e licenças</span>
     <h2>De onde vêm os dados.</h2>
@@ -191,7 +208,7 @@
       <p><b>Versão e como citar.</b> Este rascunho ainda <b>não tem release</b> (é uma pré-release <code>0.x</code>, em quarentena). A versão publicada agora é o commit <code class="sha">__SHA__</code>, de <span class="dia">__DIA__</span>. Pela <a href="https://github.com/__REPO__/blob/main/rfcs/0010-citacao-por-tipo-de-uso.md">RFC-0010</a> (aceita em 2026-11-10), uso digital cita o commit: <code>bibleme NT pt-BR (rascunho de IA) · main@<span class="sha">__SHA__</span> · CC BY 4.0</code>. Edição impressa ou vendida só pode usar o nome &ldquo;bibleme [Versão]&rdquo; como versão oficial com uma <b>release</b>, e ainda não há nenhuma: um texto daqui, impresso, deve citar o commit.</p>
     </div>
     <div class="callout">
-      <p><b>Declaração de apoio de IA.</b> Nesta tarefa a IA produziu o texto bíblico traduzido (a frase-padrão “não foi usada para produzir texto bíblico traduzido” <b>não se aplica</b>). Foram usadas Claude (Anthropic) e Codex (OpenAI) para pesquisa, rascunho da tradução, notas, ferramentas de validação e revisão cruzada. Nenhuma tradução publicada foi usada como base. Revisão humana: <b>pendente</b>.</p>
+      <p><b>Declaração de uso de IA.</b> Este trabalho usa IA, e esse uso pode incluir a escrita e a revisão dos textos: pesquisa, rascunho da tradução, notas, ferramentas de validação e revisão cruzada (Claude, da Anthropic, e Codex, da OpenAI). Por isso a frase-padrão “não foi usada para produzir texto bíblico traduzido” <b>não se aplica</b>. Pela política do projeto, a IA não é autora e quem submete o texto responde por ele. Nenhuma tradução publicada foi usada como base. Revisão humana formal: <b>pendente</b>.</p>
     </div>
   </div>
 </section>
