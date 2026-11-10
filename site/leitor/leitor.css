@@ -12,6 +12,7 @@
   --accent-ink: #ffffff;
   --accent-soft: rgba(156, 47, 78, .1);
   --sel: rgba(156, 47, 78, .13);
+  --wj: #b3261e;
   --warn-bg: #fff3c9;
   --warn-fg: #4a3a00;
   --warn-line: #d9b84a;
@@ -25,14 +26,14 @@
   :root:not([data-tema="claro"]) {
     --bg: #14161f; --bg2: #0e1016; --bg-a: rgba(20, 22, 31, .92); --fg: #f1ece1; --muted: #b3aebd; --line: rgba(255, 255, 255, .14);
     --card: rgba(255, 255, 255, .05); --accent: #e0839f; --accent-ink: #1a1017; --accent-soft: rgba(224, 131, 159, .14); --sel: rgba(224, 131, 159, .17);
-    --warn-bg: #3a3100; --warn-fg: #ffe9a0; --warn-line: #7a6510;
+    --warn-bg: #3a3100; --warn-fg: #ffe9a0; --warn-line: #7a6510; --wj: #ff8a80;
     --t-lit: #7ec3e6; --t-var: #e6b95c; --t-cult: #8fd18f; --t-add: #b9a1ec; --t-omit: #f09a9a; --t-trad: #6fd6c8;
   }
 }
 :root[data-tema="escuro"] {
   --bg: #14161f; --bg2: #0e1016; --bg-a: rgba(20, 22, 31, .92); --fg: #f1ece1; --muted: #b3aebd; --line: rgba(255, 255, 255, .14);
   --card: rgba(255, 255, 255, .05); --accent: #e0839f; --accent-ink: #1a1017; --accent-soft: rgba(224, 131, 159, .14); --sel: rgba(224, 131, 159, .17);
-  --warn-bg: #3a3100; --warn-fg: #ffe9a0; --warn-line: #7a6510;
+  --warn-bg: #3a3100; --warn-fg: #ffe9a0; --warn-line: #7a6510; --wj: #ff8a80;
   --t-lit: #7ec3e6; --t-var: #e6b95c; --t-cult: #8fd18f; --t-add: #b9a1ec; --t-omit: #f09a9a; --t-trad: #6fd6c8;
 }
 
@@ -269,3 +270,7 @@ select.sel-l { min-height: 34px; border-radius: 8px; border: 1px solid var(--lin
 .vx .gr { font: 600 1.05rem var(--serif); }
 .vx a { font-weight: 600; color: var(--accent); text-decoration: none; }
 .eds-leg { border-top: 0 !important; margin-top: 6px; }
+
+/* Camadas opcionais (piloto): palavras de Jesus e pronomes reverenciais; ligadas pelos botões da barra de leitura */
+.com-wj .wj { color: var(--wj); }
+.com-rv .rvp { text-transform: capitalize; }

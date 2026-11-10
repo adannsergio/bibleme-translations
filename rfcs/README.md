@@ -16,6 +16,7 @@ Uma **RFC** (pedido de comentários) é uma proposta escrita para uma decisão q
 | [0008](0008-recursos-de-estudo.md) | Recursos de estudo que a comunidade pode construir | Proposta | pode esperar |
 | [0009](0009-estrutura-de-dados-lexicos-e-dicionarios.md) | Estrutura de dados para Strong, relacionados, léxicos e dicionários | Proposta | a **primeira release** |
 | [0010](0010-citacao-por-tipo-de-uso.md) | Como citar por tipo de uso: release para impressão e comércio, commit ou `latest` para uso digital | **Aceita** (2026-11-10) | a **primeira release** |
+| [0011](0011-camadas-interpretativas-opcionais.md) | Camadas interpretativas opcionais: palavras de Jesus e pronomes reverenciais (piloto em Marcos) | Proposta | a **primeira release** |
 
 **Por onde começar a ler:** 0001 e 0002 (o que traduzimos e como), depois 0003 e 0004. As demais podem esperar.
 

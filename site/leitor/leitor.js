@@ -76,6 +76,7 @@ const SEM_FUNC = /^(T-|PREP|CONJ|PRT|COND|ADV|INJ|P-)/;   // morfologia de palav
 const D = {};                 // dados carregados
 const cache = {};
 const cfg = { strong: store.get("strong", false), inter: store.get("inter", false), notas: store.get("notas", true), add: store.get("add", true),
+              wj: store.get("wj", false), rv: store.get("rv", false),
               tema: store.get("tema", "auto"), tam: store.get("tam", 1.2) };
 const cur = { view: "", livro: null, cap: 0, v: 0, ids: [], nota: null };
 let token = 0;
@@ -146,6 +147,10 @@ function aplicarCfg() {
   t.classList.toggle("sem-notas", !cfg.notas);
   t.classList.toggle("sem-strong", !cfg.strong);
   t.classList.toggle("sem-add", !cfg.add);
+  t.classList.toggle("com-wj", cfg.wj);
+  t.classList.toggle("com-rv", cfg.rv);
+  $("#t-wj").setAttribute("aria-pressed", String(cfg.wj));
+  $("#t-rv").setAttribute("aria-pressed", String(cfg.rv));
   for (const [id, k] of [["t-strong", "strong"], ["t-inter", "inter"], ["t-notas", "notas"], ["t-add", "add"]]) $("#" + id).setAttribute("aria-pressed", String(cfg[k]));
   const root = document.documentElement;
   if (cfg.tema === "auto") root.removeAttribute("data-tema"); else root.setAttribute("data-tema", cfg.tema);
@@ -258,10 +263,12 @@ async function mostrarCap(id, cap, vs) {
   const mudou = !(cur.view === "cap" && cur.livro === id && cur.cap === cap);
   if (mudou) {
     $("#texto").replaceChildren(h("p", { class: "carregando" }, "Carregando " + meta.nome + "…"));
-    try { cur.data = await getLivro(id); } catch (e) { if (my === token) $("#texto").replaceChildren(aviso("Não foi possível carregar " + meta.nome + ". " + e.message)); return; }
+    cur.cam = null;
+    try { cur.data = await getLivro(id); if (D.camadas && D.camadas[id]) cur.cam = await fetchJSON("camadas/" + id + ".json").catch(() => null); } catch (e) { if (my === token) $("#texto").replaceChildren(aviso("Não foi possível carregar " + meta.nome + ". " + e.message)); return; }
     if (my !== token) return;
     cur.view = "cap"; cur.livro = id; cur.cap = cap; cur.ids = [];
     renderCap(meta, cur.data, cap);
+    $("#t-wj").hidden = $("#t-rv").hidden = !cur.cam;
     window.scrollTo(0, 0);
   }
   topo({ cap: true, titulo: `${meta.nome} ${cap}` });
@@ -298,25 +305,48 @@ function renderCap(meta, data, cap) {
   aplicarCfg();
 }
 
+const CAT_PRON = { J: "Jesus", D: "Deus", E: "o Espírito" };
+/** Pronomes escritos que levam maiúscula reverencial quando o referente é divino (camada opcional; o CSS faz a maiúscula). */
+function pronFrag(text, info) {
+  const re = /(?<![\p{L}])(ele|dele|nele|lhe|seu|sua|seus|suas)(?![\p{L}])|(?<=-)(o|lo|no)(?![\p{L}])/giu;
+  const frag = document.createDocumentFragment();
+  let last = 0;
+  for (const m of text.matchAll(re)) {
+    frag.append(text.slice(last, m.index));
+    frag.append(h("span", { class: "rvp", title: `Pronome reverencial: refere-se a ${CAT_PRON[info[1]] || info[1]} (proposta automática, certeza ${info[2]})` }, m[0]));
+    last = m.index + m[0].length;
+  }
+  frag.append(text.slice(last));
+  return frag;
+}
+
 function renderVerso(v, data) {
   const span = h("span", { class: "verso", data: { v: v.v }, id: "v" + v.v });
   span.append(h("button", { class: "vn", type: "button", "aria-label": "Versículo " + v.v, title: "Selecionar o versículo " + v.v }, String(v.v)));
+  const chave = v.c + "." + v.v;
+  const wjR = (cur.cam && cur.cam.wj[chave]) || [];
+  const rvM = new Map(((cur.cam && cur.cam.rv[chave]) || []).map(x => [x[0], x]));
+  let target = span, wjEl = null, wjFim = -1;
   let nIdx = 0, lastPt = null;
-  for (const t of v.t) {
+  v.t.forEach((t, ti) => {
     const k = t[0];
+    if (wjEl && ti > wjFim) { target = span; wjEl = null; }
+    if (!wjEl) {
+      const r = wjR.find(x => ti >= x[0] && ti <= x[1]);
+      if (r && k !== "n") { wjEl = h("span", { class: "wj", title: `Palavras de Jesus (proposta automática, certeza ${r[2]})` }); span.append(wjEl); target = wjEl; wjFim = r[1]; }
+    }
     if (k !== "n") lastPt = (k === "p" ? lastPt : null);
-    if (k === "u") { const parts = renderUnit(v, t); span.append(...parts); lastPt = cfg.inter ? parts[parts.length - 1].firstChild : null; continue; }
-    else if (k === "f") {
-      if (t[3]) span.append(" ");
+    if (k === "u") { const parts = renderUnit(v, t, rvM.get(ti)); target.append(...parts); lastPt = cfg.inter ? parts[parts.length - 1].firstChild : null; return; }
+    if (k === "f") {
+      if (t[3]) target.append(" ");
       const pt = h("span", { class: "pt" }, t[1]);
-      span.append(h("span", { class: "add-p" + (cfg.inter ? " free-u" : ""), title: "Acréscimo da tradução: sem palavra grega correspondente" },
+      target.append(h("span", { class: "add-p" + (cfg.inter ? " free-u" : ""), title: "Acréscimo da tradução: sem palavra grega correspondente" },
         cfg.inter ? [pt, h("span", { class: "gr" }, "·")] : t[1]));
     } else if (k === "p") {
-      if (lastPt && !t[3]) lastPt.append(t[1]); else { if (t[3]) span.append(" "); span.append(t[1]); }
-    }
-    else if (k === "o") {
+      if (lastPt && !t[3]) lastPt.append(t[1]); else { if (t[3]) target.append(" "); target.append(t[1]); }
+    } else if (k === "o") {
       if (cfg.inter) {
-        span.append(" ", h("span", { class: "omit-u", data: { ids: t[2].join(",") }, title: "Palavra grega não traduzida" },
+        target.append(" ", h("span", { class: "omit-u", data: { ids: t[2].join(",") }, title: "Palavra grega não traduzida" },
           h("span", { class: "pt" }, "∅"), h("span", { class: "gr", lang: "grc" }, t[2].map(i => v.g[i - 1][0]).join(" ")),
           h("span", { class: "gs" }, strongsOf(v, t[2], false).map(s => "G" + s).join(" "))));
       }
@@ -324,30 +354,45 @@ function renderVerso(v, data) {
       span.append(h("button", { class: "nt nt-" + t[1], type: "button", data: { n: nIdx }, title: NOTA_ROT[t[1]] + ": " + NOTA_AJ[t[1]], "aria-label": "Nota: " + NOTA_ROT[t[1]] }, h("span", null, NOTA_SIG[t[1]])));
       nIdx++;
     }
-  }
+  });
   return span;
 }
 
-function renderUnit(v, t) {
+function renderUnit(v, t, rvInfo) {
   const [, txt, ids, sp] = t;
   const m = /^([^\p{L}\p{N}]*)([\s\S]*?)([^\p{L}\p{N}]*)$/u.exec(txt);
   const pre = m[1], core = m[2], post = m[3];
+  const tx = x => (rvInfo ? pronFrag(x, rvInfo) : x);
   const u = h("span", { class: "u", data: { ids: ids.join(",") } });
   const out = [];
   if (sp) out.push(" ");
   if (cfg.inter) {
-    u.append(h("span", { class: "pt" }, txt),
+    u.append(h("span", { class: "pt" }, tx(txt)),
       h("span", { class: "gr", lang: "grc" }, ids.map(i => (v.g[i - 1] ? v.g[i - 1][0] : "")).join(" ")),
       h("span", { class: "gs" }, strongsOf(v, ids, false).map(s => "G" + s).join(" ")));
   } else {
     if (pre) out.push(pre);
-    u.append(core || txt);
+    u.append(tx(core || txt));
     const ss = strongsOf(v, ids, true);
     if (ss.length) u.append(h("sup", { class: "sg" }, ss.map((s, i) => [i ? " " : "", h("a", { href: "#/g/" + s, "data-g": s }, "G" + s)])));
   }
   out.push(u);
   if (post && !cfg.inter) out.push(post);
   return out;
+}
+
+/** Seção do painel com o que as camadas opcionais (piloto) dizem sobre o versículo. */
+function painelCamadas(V) {
+  if (!cur.cam) return null;
+  const chave = V.c + "." + V.v;
+  const wj = cur.cam.wj[chave] || [], rv = cur.cam.rv[chave] || [];
+  if (!wj.length && !rv.length) return null;
+  const itens = [];
+  wj.forEach(r => itens.push(h("li", null, h("b", null, "Palavras de Jesus"), `: fala ${r[3]}, certeza ${r[2]}${r[4] ? "; verbo " + r[4] : ""}.`)));
+  rv.forEach(r => itens.push(h("li", null, h("b", null, "Pronome reverencial"), ": ", h("span", { lang: "grc" }, r[3]), ` → ${CAT_PRON[r[1]] || r[1]} (certeza ${r[2]}).`)));
+  return h("details", { open: true }, h("summary", null, h("span", null, "Camadas opcionais", h("span", { class: "n" }, "piloto"))),
+    h("p", { class: "leg", style: "margin:0 0 6px" }, cur.cam.estado + ". Podem errar: confira no grego."),
+    h("ul", { class: "leg", style: "margin:0;padding-inline-start:1.1em" }, itens));
 }
 
 /* ------------------------------------------------------------------ seleção de versículo */
@@ -418,6 +463,7 @@ function renderPainel() {
       h("button", { class: "btn sm", type: "button", onclick: ev => copiar(location.href, "Copie o link:", ev.currentTarget) }, "Copiar link")),
     h("details", { open: true }, h("summary", null, h("span", null, "Grego palavra a palavra", h("span", { class: "n" }, String(V.g.length)))), painelGrego(V, pal)),
     h("details", { open: nts.length > 0 }, h("summary", null, h("span", null, "Notas", h("span", { class: "n" }, String(nts.length)))), notas),
+    painelCamadas(V),
     h("details", { open: true }, h("summary", null, h("span", null, "Versículos relacionados")), relBox));
   painelRel(relBox, meta, V);
   if (cur.nota != null) { const n = $(".nota.sel", box); if (n) n.scrollIntoView({ block: "nearest" }); }
@@ -545,6 +591,8 @@ function painelLegenda(abrir = true) {
       ...Object.keys(NOTA_ROT).map(k => h("div", null, h("span", { class: "nt nt-" + k }, h("span", null, NOTA_SIG[k])), " ", h("b", null, NOTA_ROT[k]), ": ", NOTA_AJ[k], ".")),
       h("div", null, h("span", { class: "add-p" }, "palavra sublinhada"), ": acréscimo da tradução, sem palavra grega correspondente."),
       h("div", null, h("span", { class: "sg", style: "font-size:.9em" }, "G991"), ": número de Strong do termo; toque para ver o termo e todos os versículos em que aparece."),
+      h("div", null, h("span", { style: "color:var(--wj)" }, "Texto em vermelho"), ": palavras de Jesus (camada opcional, em piloto; botão \"Palavras de Jesus\")."),
+      h("div", null, h("span", null, "Ele, Seu, Dele"), ": pronomes com maiúscula reverencial quando se referem a Deus, a Jesus ou ao Espírito (camada opcional, em piloto; botão \"Pronomes reverenciais\")."),
       h("div", null, h("span", { class: "ed sim" }, "SBL"), " ", h("span", { class: "ed nao" }, "TR"), ": edições do grego. Cada palavra do painel mostra em quais edições ela aparece (riscada = não traz); o texto-base é o SBLGNT."),
       h("div", null, h("b", null, "Interlinear"), ": mostra, sob cada trecho em português, as palavras gregas e o Strong. ", h("b", null, "∅"), " marca palavra grega não traduzida."),
       h("p", { style: "margin:6px 0 0;color:var(--muted)" }, "Tudo isto é rascunho feito com uso de IA e sem revisão humana formal: confira no grego e em fontes confiáveis antes de usar.")));
@@ -716,7 +764,7 @@ function ligar() {
   $("#cap-titulo").setAttribute("role", "button"); $("#cap-titulo").setAttribute("tabindex", "0");
   $("#cap-titulo").addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); abrirGaveta("caps", cur.livro); } });
   $("#busca").addEventListener("submit", e => { e.preventDefault(); buscar($("#q").value); });
-  for (const [id, k] of [["t-strong", "strong"], ["t-inter", "inter"], ["t-notas", "notas"], ["t-add", "add"]]) $("#" + id).addEventListener("click", () => alternar(k));
+  for (const [id, k] of [["t-strong", "strong"], ["t-inter", "inter"], ["t-notas", "notas"], ["t-add", "add"], ["t-wj", "wj"], ["t-rv", "rv"]]) $("#" + id).addEventListener("click", () => alternar(k));
   $("#b-legenda").addEventListener("click", () => painelLegenda(true));
   $("#b-cfg").addEventListener("click", () => { const c = $("#cfg"); c.hidden = !c.hidden; $("#b-cfg").setAttribute("aria-expanded", String(!c.hidden)); });
   $$("#cfg [data-tema]").forEach(b => b.addEventListener("click", () => { cfg.tema = b.dataset.tema; store.set("tema", cfg.tema); aplicarCfg(); }));
@@ -771,6 +819,7 @@ async function boot() {
   try {
     const [li, refs, texto, lexico, morf] = await Promise.all(["livros.json", "refs.json", "texto.json", "lexico.json", "morf.json"].map(fetchJSON));
     D.info = li.info; D.livros = li.livros; D.refs = refs; D.texto = texto; D.lexico = lexico; D.morf = morf;
+    D.camadas = await fetchJSON("camadas.json").catch(() => ({}));   // camadas opcionais (piloto): palavras de Jesus e pronomes reverenciais
     D.byId = Object.fromEntries(D.livros.map((l, i) => [l.id, { ...l, i }]));
     montarAlias();
   } catch (e) {

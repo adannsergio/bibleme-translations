@@ -10,6 +10,7 @@ Leitor estático (HTML, CSS e JavaScript sem dependências) do **rascunho de IA*
 - Painel do versículo: **grego palavra a palavra** (lema, Strong, glosa, morfologia em português, trecho que a traduz e **em quais edições do grego a palavra aparece**), as palavras que outras edições trazem a mais, notas e **versículos relacionados** (citações nas notas, referências cruzadas do OpenBible, paralelos de vocabulário).
 - Página de cada termo (`#/g/26`): léxico, como o rascunho o traduziu e todos os versículos em que aparece.
 - Busca: referência (`Jo 3:16`), Strong (`G26`), grego (`πίστις`), português (`amor`).
+- **Camadas opcionais em piloto** (Marcos): botões "Palavras de Jesus" (vermelho) e "Pronomes reverenciais" (maiúscula), desligados por padrão.
 - Tema claro e escuro, tamanho de texto, funciona em celular. Nada é enviado a servidor algum; só `localStorage` guarda as preferências.
 
 ## Dados (`dados/`)
@@ -26,6 +27,7 @@ Arquivos JSON compactos, carregados sob demanda. Gerados a partir dos rascunhos 
 | `lexico.json` | por Strong: lema, transliteração, glosa e sentidos (TBESG), usos e como o rascunho o traduziu |
 | `strong-indice.json` | por Strong: índices (de `refs.json`) dos versículos que o usam |
 | `morf.json` | código de morfologia do TAGNT → rótulo em português |
+| `camadas.json` e `camadas/<Cod>.json` | camadas opcionais em piloto ([RFC-0011](../../rfcs/0011-camadas-interpretativas-opcionais.md)): `wj` = palavras de Jesus (faixas de tokens por versículo: `[início, fim, certeza, fala, verbo]`) e `rv` = pronomes reverenciais (`[token, categoria, certeza, forma grega]`); só existem para os livros já gerados (hoje, Marcos); propostas automáticas, sem revisão |
 
 Os códigos de livro são os do TAGNT (`Mat`, `Mrk`, `Luk`, `Jhn`, `Act`, `Rom`, `1Co`, …).
 
