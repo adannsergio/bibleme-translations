@@ -188,8 +188,23 @@ function chipRev(m) {
 }
 
 /* ------------------------------------------------------------------ rodapé de fontes */
+/** Versão do texto publicado: o workflow troca __SHA__, __DIA__ e __REPO__ nas meta tags (RFC-0010); localmente ficam os marcadores. */
+function versaoInfo() {
+  const meta = n => { const e = document.querySelector(`meta[name="${n}"]`); const v = e ? e.content : ""; return v && !v.startsWith("__") ? v : ""; };
+  return { sha: meta("bibleme-commit"), dia: meta("bibleme-dia"), repo: meta("bibleme-repo") };
+}
+function blocoVersao() {
+  const v = versaoInfo();
+  if (!v.sha) return h("p", { style: "margin:0 0 6px" }, h("b", null, "Versão do texto: "), "rascunho de IA sem release (pré-release 0.x, em quarentena); cópia local, sem commit.");
+  const url = new URL("../traducao/", location.href).href;
+  const commit = v.repo ? h("a", { href: `https://github.com/${v.repo}/commit/${v.sha}` }, v.sha) : v.sha;
+  return h("p", { style: "margin:0 0 6px" }, h("b", null, "Versão do texto: "), "rascunho de IA sem release (pré-release 0.x, em quarentena) · commit ", commit, ` · publicado em ${v.dia}. `,
+    h("b", null, "Como citar "), v.repo ? h("a", { href: `https://github.com/${v.repo}/blob/main/rfcs/0010-citacao-por-tipo-de-uso.md` }, "(proposta da RFC-0010, em comentários)") : "(proposta da RFC-0010)", ": ",
+    h("code", null, `bibleme NT pt-BR (rascunho de IA) · main@${v.sha} · CC BY 4.0 · ${url}`));
+}
 function rodape() {
   return h("footer", { class: "card", style: "margin-top:32px;font-size:.82rem;color:var(--muted)" },
+    blocoVersao(),
     h("p", { style: "margin:0 0 6px" }, h("b", null, "Rascunho de IA em quarentena. "), "Tradução produzida por IA a partir do grego e ainda sem revisão humana; não é texto aprovado do projeto. ",
       h("a", { href: "../traducao/" }, "Como foi feito e o que falta →")),
     h("p", { style: "margin:0" }, "Texto grego: ", h("a", { href: "https://github.com/LogosBible/SBLGNT" }, "SBLGNT"), " (SBL e Logos, CC BY 4.0), uma edição crítica e não um manuscrito único. Strong, lema, morfologia e as edições de cada palavra: ",

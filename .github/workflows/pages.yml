@@ -28,8 +28,12 @@ jobs:
 
       # O código-fonte usa __REPO__ onde vai o endereço do repositório (dono/nome),
       # para o site acompanhar uma eventual mudança de nome ou de organização.
-      - name: Preencher o endereço do repositório
-        run: grep -rl '__REPO__' site | xargs -r sed -i "s#__REPO__#${GITHUB_REPOSITORY}#g"
+      # __SHA__ e __DIA__ levam o commit (7 caracteres) e a data (UTC) desta publicação, para o site mostrar a versão do texto (RFC-0010).
+      - name: Preencher o endereço do repositório, o commit e a data
+        run: |
+          grep -rl '__REPO__' site | xargs -r sed -i "s#__REPO__#${GITHUB_REPOSITORY}#g"
+          SHA="${GITHUB_SHA::7}"; DIA="$(date -u +%Y-%m-%d)"
+          grep -rlE '__SHA__|__DIA__' site | xargs -r sed -i "s#__SHA__#${SHA}#g; s#__DIA__#${DIA}#g"
 
       - uses: actions/configure-pages@v5
 

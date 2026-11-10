@@ -188,6 +188,9 @@
       <div class="card"><h3>A tradução em português</h3><p>Rascunho de IA, em quarentena. A licença pretendida do projeto é <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br">CC BY 4.0</a>, sujeita à revisão humana e à conferência de originalidade; até lá, trate como rascunho. Sugestão de citação: <i>bibleme Traduções, rascunho de IA do NT (pt-BR)</i> + link desta página.</p></div>
     </div>
     <div class="callout">
+      <p><b>Versão e como citar.</b> Este rascunho ainda <b>não tem release</b> (é uma pré-release <code>0.x</code>, em quarentena). A versão publicada agora é o commit <code class="sha">__SHA__</code>, de <span class="dia">__DIA__</span>. Pela <a href="https://github.com/__REPO__/blob/main/rfcs/0010-citacao-por-tipo-de-uso.md">proposta da RFC-0010</a> (em comentários), uso digital cita o commit: <code>bibleme NT pt-BR (rascunho de IA) · main@<span class="sha">__SHA__</span> · CC BY 4.0</code>. Uso impresso ou comercial só usaria o nome com uma <b>release</b>, e ainda não há nenhuma.</p>
+    </div>
+    <div class="callout">
       <p><b>Declaração de apoio de IA.</b> Nesta tarefa a IA produziu o texto bíblico traduzido (a frase-padrão “não foi usada para produzir texto bíblico traduzido” <b>não se aplica</b>). Foram usadas Claude (Anthropic) e Codex (OpenAI) para pesquisa, rascunho da tradução, notas, ferramentas de validação e revisão cruzada. Nenhuma tradução publicada foi usada como base. Revisão humana: <b>pendente</b>.</p>
     </div>
   </div>
@@ -257,6 +260,9 @@
       tr.append(td1, td2, td3, td4, td5); tb.appendChild(tr);
     });
   }).catch(function () { /* sem os dados, ficam os números do texto estático */ });
+})();
+(function () {
+  document.querySelectorAll(".sha, .dia").forEach(function (e) { if (e.textContent.indexOf("__") === 0) e.textContent = "(cópia local)"; });
 })();
 </script>
 </body>
