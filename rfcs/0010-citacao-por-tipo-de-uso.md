@@ -1,6 +1,6 @@
 # RFC-0010: Como citar por tipo de uso: release para impressão e comércio, commit ou `latest` para uso digital
 
-- **Estado:** Proposta
+- **Estado:** Aceita (2026-11-10)
 - **Autor(es):** Fundador (ideia); rascunho redigido com apoio de IA
 - **Aberta em:** 2026-11-10
 - **Decide:** Conselho (no início, o fundador)
@@ -25,7 +25,7 @@ Hoje a citação pede só "bibleme [Versão] [idioma]", sem dizer **qual** texto
 | **Release** (congelada) | Uma tag Git, imutável, com os arquivos de todos os formatos, `SOURCES`, `AUTHORS`, registro de mudanças, relatório de semelhança, **soma de verificação (SHA-256)** e **DOI** (RFC-0004, §2) | Página de releases do repositório, API com `?release=1.2`, espelhos |
 | **Latest** (viva) | O estado mais recente de `main` | Ramo `main`, alias `latest`, API sem `?release` ou com `?release=latest` |
 
-Todo arquivo gerado (Markdown, JSON, SQLite, USFM) e toda resposta da API trazem, além da atribuição, os campos **`release`** (ou `null` se o texto não for de uma release), **`commit`** (hash curto) e **`gerado_em`**. Assim, quem copia um texto sabe de onde ele veio sem precisar adivinhar.
+Todo arquivo gerado (Markdown, JSON, SQLite, USFM) e toda resposta da API trazem, além da atribuição, os campos **`release`** (ou `null` se o texto não for de uma release), **`commit`** (hash curto) e **`generated_at`** (data). Assim, quem copia um texto sabe de onde ele veio sem precisar adivinhar.
 
 ### 2. O que citar, por tipo de uso
 
@@ -85,4 +85,6 @@ Os avisos que acompanham o texto (autoria, direitos, licença, ausência de gara
 
 ## Decisão
 
-*(Preenchido ao fim do prazo.)*
+**Aceita pelo fundador (Conselho) em 2026-11-10**, a pedido dele, **antes do fim do prazo de comentários** (2026-11-24). Foi aplicada no mesmo dia em: [docs/licenca.md](../docs/licenca.md) ("Você precisa", "Como citar", "Nome e versões modificadas", perguntas frequentes e lista de revisão jurídica), RFC-0004 (§2), RFC-0005 (§2), RFC-0006 (campos `release`, `commit` e `generated_at`), página inicial (pt e en), leitor e página "Sobre".
+
+Os comentários continuam abertos até 2026-11-24 e podem levar a ajustes, por emenda a esta RFC ou por outra RFC. **Pendências:** (a) confirmação de advogado da cláusula do nome (§3); (b) as questões em aberto acima; (c) acrescentar `release` e `commit` ao exemplo de cabeçalho USFM da [RFC-0003](0003-formato-e-camadas.md) (arquivo ainda em edição pelo fundador).

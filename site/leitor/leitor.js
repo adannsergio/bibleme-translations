@@ -199,7 +199,7 @@ function blocoVersao() {
   const url = new URL("../traducao/", location.href).href;
   const commit = v.repo ? h("a", { href: `https://github.com/${v.repo}/commit/${v.sha}` }, v.sha) : v.sha;
   return h("p", { style: "margin:0 0 6px" }, h("b", null, "Versão do texto: "), "rascunho de IA sem release (pré-release 0.x, em quarentena) · commit ", commit, ` · publicado em ${v.dia}. `,
-    h("b", null, "Como citar "), v.repo ? h("a", { href: `https://github.com/${v.repo}/blob/main/rfcs/0010-citacao-por-tipo-de-uso.md` }, "(proposta da RFC-0010, em comentários)") : "(proposta da RFC-0010)", ": ",
+    h("b", null, "Como citar "), v.repo ? h("a", { href: `https://github.com/${v.repo}/blob/main/rfcs/0010-citacao-por-tipo-de-uso.md` }, "(RFC-0010, aceita em 2026-11-10)") : "(RFC-0010)", ": ",
     h("code", null, `bibleme NT pt-BR (rascunho de IA) · main@${v.sha} · CC BY 4.0 · ${url}`));
 }
 function rodape() {

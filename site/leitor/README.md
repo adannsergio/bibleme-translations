@@ -38,7 +38,7 @@ Os códigos de livro são os do TAGNT (`Mat`, `Mrk`, `Luk`, `Jhn`, `Act`, `Rom`,
 
 ## Versão publicada
 
-O workflow do Pages troca `__SHA__`, `__DIA__` e `__REPO__` (nas `meta` de `index.html` e no HTML de `../traducao/`) pelo commit, pela data e pelo repositório da publicação, e o rodapé do leitor mostra a versão e o modelo de citação da [RFC-0010](../../rfcs/0010-citacao-por-tipo-de-uso.md) (proposta). Localmente os marcadores ficam como estão e o leitor diz "cópia local".
+O workflow do Pages troca `__SHA__`, `__DIA__` e `__REPO__` (nas `meta` de `index.html` e no HTML de `../traducao/`) pelo commit, pela data e pelo repositório da publicação, e o rodapé do leitor mostra a versão e o modelo de citação da [RFC-0010](../../rfcs/0010-citacao-por-tipo-de-uso.md) (aceita em 2026-11-10). Localmente os marcadores ficam como estão e o leitor diz "cópia local".
 
 ## Rodar localmente
 

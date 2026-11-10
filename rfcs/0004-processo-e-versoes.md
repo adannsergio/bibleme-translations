@@ -38,6 +38,7 @@ O estado fica em dados do repositório e aparece em quadros e no JSON ([RFC-0006
 - `MINOR`: correções (erros, tipografia, notas), com registro de mudanças. `MAJOR`: mudanças amplas de texto, anunciadas com antecedência.
 - Cada release traz o texto em todos os formatos, o `SOURCES`, o `AUTHORS` e o registro de mudanças, e recebe um **DOI** (por exemplo, no Zenodo).
 - Apps e APIs devem **fixar uma release**; há também o alias `latest`.
+- **Citação por tipo de uso:** mídia durável (impresso, gravação, produto vendido) cita uma **release**; o digital pode citar o `latest`, com o commit e a data de acesso ([RFC-0010](0010-citacao-por-tipo-de-uso.md)).
 - **Cadência por blocos:** lançar quando um bloco coerente (Evangelhos, Salmos, Pentateuco) estiver estável, em vez de esperar a Bíblia toda.
 - **Errata pública** e **link de sugestão por verso**: qualquer app pode abrir a Issue de sugestão já preenchida com a referência.
 - **Relatório público de semelhança por release**, com a métrica e a linha de base descritas ([política](../docs/direitos-autorais-e-referencias.md#verificação-de-semelhança)).

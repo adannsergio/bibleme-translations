@@ -35,6 +35,8 @@ Os formatos de consumo são **gerados em CI** a partir do USFM e das camadas de 
 | **EPUB e PDF** | Leitura e impressão | Fase 2 |
 | **`llms.txt`** | Descoberta por IA | Arquivo na raiz do site que explica o corpus, a licença e como citar |
 
+Todo arquivo gerado e toda resposta da API trazem `release` (ou `null`), `commit` e `generated_at`, para a citação por tipo de uso da [RFC-0010](0010-citacao-por-tipo-de-uso.md).
+
 Exemplo do Markdown "leitura" (exemplo de formato, não é texto da tradução):
 
 ```markdown
@@ -43,7 +45,9 @@ translation: bibleme-[versao]-pt-BR
 language: pt-BR
 book: PSA
 chapter: 117
-release: "0.1"
+release: "0.1"          # null quando o texto não é de uma release (RFC-0010)
+commit: "a1b2c3d"
+generated_at: 2027-03-01
 status: rascunho
 license: CC BY 4.0
 attribution: "bibleme [Versão] pt-BR · © Contribuidores do projeto bibleme Traduções · CC BY 4.0 · https://www.bibleme.com.br/translations"

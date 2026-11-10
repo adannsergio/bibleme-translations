@@ -33,6 +33,8 @@ Define como as versões se chamam (**bibleme + versão + idioma**), quem é dono
 |---|---|
 | Citar o texto sem alterações: "bibleme [Versão] pt-BR" | Livre, com os avisos de atribuição |
 | Modificar o texto | Diga que modificou; **não use o nome como se fosse a versão oficial** ([política](../docs/licenca.md#nome-e-versões-modificadas)) |
+| Mídia durável (impresso, gravação, produto vendido) com o nome "bibleme [Versão]" | Só com uma **release inalterada**, citando o número ([RFC-0010](0010-citacao-por-tipo-de-uso.md)) |
+| Texto de `main` (fora de release) em mídia durável | Cite o **commit**; **não use o nome como versão oficial** (RFC-0010) |
 | Nome de empresa, produto, app, domínio ou conta de rede social | Exige autorização |
 | Sugerir endosso ou parceria oficial | Proibido (a própria CC BY, seção 2(a)(6), proíbe) |
 

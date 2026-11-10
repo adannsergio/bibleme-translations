@@ -17,7 +17,7 @@ Os **textos, dados e a documentação** deste projeto estão sob [Creative Commo
 
 **Você precisa**:
 
-- dizer qual versão você usou (**bibleme + versão + idioma**);
+- dizer qual versão você usou (**bibleme + versão + idioma**) e **qual texto exato**: a **release** (por exemplo, `1.2`) ou, no uso digital que acompanha o texto vivo, o **commit** ([veja por tipo de uso](#qual-versão-citar-por-tipo-de-uso));
 - incluir o **link do projeto** e indicar a **licença** (CC BY 4.0, com link);
 - **dizer que alterou**, se alterou o texto, e manter o registro de alterações anteriores.
 
@@ -33,18 +33,30 @@ A CC BY pede que os avisos que **acompanham o texto** continuem acompanhando: qu
 **Modelo curto** (para citações e telas apertadas):
 
 ```
-bibleme [Versão] [idioma] · CC BY 4.0 · https://www.bibleme.com.br/translations
+bibleme [Versão] [idioma] [release] · CC BY 4.0 · https://www.bibleme.com.br/translations
 ```
 
 **Modelo completo** (créditos, página "Sobre", livro):
 
 ```
-Texto bíblico: bibleme [Versão] [idioma]. © Contribuidores do projeto bibleme Traduções.
+Texto bíblico: bibleme [Versão] [idioma] [release]. © Contribuidores do projeto bibleme Traduções.
 Licenciado sob CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
 Disponível em https://www.bibleme.com.br/translations. Texto fornecido "como está", sem garantias.
 ```
 
 **Se você alterou o texto**, acrescente: `Texto adaptado por [seu nome]; alterações: [resumo].`
+
+### Qual versão citar, por tipo de uso
+
+A citação informa **qual texto exato** você usou ([RFC-0010](../rfcs/0010-citacao-por-tipo-de-uso.md), aceita em 2026-11-10). O texto tem duas vidas: `main` é o texto vivo e muda; uma **release** é uma versão congelada, com número, autores, soma de verificação e DOI ([RFC-0004](../rfcs/0004-processo-e-versoes.md)). O projeto oferece **as duas formas de acesso**, sempre.
+
+| Uso | O que citar | Exemplo |
+|---|---|---|
+| **Mídia durável:** impresso, áudio ou vídeo gravado, produto físico, qualquer edição **vendida** | A **release** | `bibleme [Versão] pt-BR 1.2 · CC BY 4.0 · https://www.bibleme.com.br/translations` |
+| **Digital que acompanha o projeto:** app, site, leitor, servidor, assistente de IA | Uma release **ou** o `latest`; no `latest`, o **commit** e a **data de acesso** | `bibleme [Versão] pt-BR · latest (main@a1b2c3d, acessado em 2027-03-01) · CC BY 4.0 · https://www.bibleme.com.br/translations` |
+| **Texto de `main` (fora de release) em mídia durável** | O **commit**, sem usar o nome como versão oficial | `Baseado em bibleme [Versão] pt-BR, commit a1b2c3d (sem release)` |
+
+Todo arquivo gerado e toda resposta da API trazem os campos `release` (ou `null`), `commit` e `generated_at`, para você copiar a versão sem adivinhar. Quem precisa do texto estável (planos de leitura, citações salvas) deve **fixar uma release**; quem quer o texto vivo usa o `latest`.
 
 > **O endereço oficial de atribuição é `https://www.bibleme.com.br/translations`** ([RFC-0005](../rfcs/0005-nome-marca-e-url.md)). Ele vai ficar impresso e embutido em milhares de cópias, por isso o projeto o trata como infraestrutura permanente e o **mantém enquanto possível**, com redirecionamento se algum dia mudar.
 
@@ -56,6 +68,9 @@ A licença CC não concede direitos de marca e proíbe sugerir que alguém foi e
 - Você pode **distribuir o texto sem alterações** com esse nome.
 - Se você **alterar** o texto, diga que alterou e **não o apresente como a versão oficial**. Uma fórmula que funciona: *"baseada na bibleme [Versão] [idioma], modificada por [você]"*. Você pode dar um nome próprio à sua adaptação.
 - Usar "bibleme" como nome de empresa, produto ou domínio exige autorização, definida na RFC-0005.
+- **Mídia durável** (impresso, áudio ou vídeo gravado, produto físico, edição vendida): o nome "bibleme [Versão]" **como versão oficial** só pode ser usado se o texto for uma **release inalterada**, citando o número dela. Imprimir ou vender texto de `main` é permitido pela licença; nesse caso cite o **commit** e **não** use o nome como versão oficial.
+- **Pré-releases** (`0.x`, por exemplo textos ainda em quarentena) **não** autorizam o nome como versão oficial em mídia durável.
+- Isto é uma política sobre o **nome**; a CC BY continua permitindo usar o texto. A redação final desta cláusula aguarda a revisão jurídica (veja o fim deste guia).
 
 ## Por que CC BY 4.0
 
@@ -82,7 +97,7 @@ A licença CC não concede direitos de marca e proíbe sugerir que alguém foi e
 
 ## Perguntas frequentes
 
-**Posso vender uma edição impressa?** Sim, com o crédito.
+**Posso vender uma edição impressa?** Sim, com o crédito. Para usar o nome "bibleme [Versão]" na edição, o texto precisa ser uma **release** inalterada, citada pelo número (se for texto de `main`, cite o commit e não use o nome como versão oficial).
 **Posso usar num app pago ou com assinatura?** Sim, com o crédito.
 **Posso colocar numa API e cobrar pelo acesso?** Sim. A licença permite. (Nós mesmos pensamos em fazê-lo, veja a [RFC-0007](../rfcs/0007-sustentabilidade.md).)
 **Preciso pedir permissão?** Não.
@@ -92,4 +107,4 @@ A licença CC não concede direitos de marca e proíbe sugerir que alguém foi e
 
 ## Antes da primeira release
 
-Recomendamos que um advogado de propriedade intelectual revise: esta licença, a política de [direitos autorais e referências](direitos-autorais-e-referencias.md), a declaração de originalidade e a política de marca.
+Recomendamos que um advogado de propriedade intelectual revise: esta licença, a política de [direitos autorais e referências](direitos-autorais-e-referencias.md), a declaração de originalidade, a política de marca e a cláusula do nome em mídia durável ([RFC-0010](../rfcs/0010-citacao-por-tipo-de-uso.md)).

@@ -15,11 +15,11 @@ Uma **RFC** (pedido de comentários) é uma proposta escrita para uma decisão q
 | [0007](0007-sustentabilidade.md) | Sustentabilidade: API paga a preço de custo e doações | Proposta | a **primeira cobrança** |
 | [0008](0008-recursos-de-estudo.md) | Recursos de estudo que a comunidade pode construir | Proposta | pode esperar |
 | [0009](0009-estrutura-de-dados-lexicos-e-dicionarios.md) | Estrutura de dados para Strong, relacionados, léxicos e dicionários | Proposta | a **primeira release** |
-| [0010](0010-citacao-por-tipo-de-uso.md) | Como citar por tipo de uso: release para impressão e comércio, commit ou `latest` para uso digital | Proposta | a **primeira release** |
+| [0010](0010-citacao-por-tipo-de-uso.md) | Como citar por tipo de uso: release para impressão e comércio, commit ou `latest` para uso digital | **Aceita** (2026-11-10) | a **primeira release** |
 
 **Por onde começar a ler:** 0001 e 0002 (o que traduzimos e como), depois 0003 e 0004. As demais podem esperar.
 
-Todas começam como **Proposta**, redigidas pelo fundador, com apoio de IA, como ponto de partida. Nenhuma está decidida.
+Todas começam como **Proposta**, redigidas pelo fundador, com apoio de IA, como ponto de partida. **Só a RFC-0010 foi decidida até agora** (aceita pelo fundador em 2026-11-10, antes do fim do prazo de comentários); as demais seguem em comentários.
 
 ## Como uma RFC anda
 
