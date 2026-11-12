@@ -381,7 +381,7 @@ function renderUnit(v, t, rvInfo) {
   return out;
 }
 
-/** Seção do painel com o que as camadas opcionais (piloto) dizem sobre o versículo. */
+/** Seção do painel com o que as camadas opcionais dizem sobre o versículo. */
 function painelCamadas(V) {
   if (!cur.cam) return null;
   const chave = V.c + "." + V.v;
@@ -390,7 +390,7 @@ function painelCamadas(V) {
   const itens = [];
   wj.forEach(r => itens.push(h("li", null, h("b", null, "Palavras de Jesus"), `: fala ${r[3]}, certeza ${r[2]}${r[4] ? "; verbo " + r[4] : ""}.`)));
   rv.forEach(r => itens.push(h("li", null, h("b", null, "Pronome reverencial"), ": ", h("span", { lang: "grc" }, r[3]), ` → ${CAT_PRON[r[1]] || r[1]} (certeza ${r[2]}).`)));
-  return h("details", { open: true }, h("summary", null, h("span", null, "Camadas opcionais", h("span", { class: "n" }, "piloto"))),
+  return h("details", { open: true }, h("summary", null, h("span", null, "Camadas opcionais", h("span", { class: "n" }, "proposta automática"))),
     h("p", { class: "leg", style: "margin:0 0 6px" }, cur.cam.estado + ". Podem errar: confira no grego."),
     h("ul", { class: "leg", style: "margin:0;padding-inline-start:1.1em" }, itens));
 }
@@ -591,8 +591,8 @@ function painelLegenda(abrir = true) {
       ...Object.keys(NOTA_ROT).map(k => h("div", null, h("span", { class: "nt nt-" + k }, h("span", null, NOTA_SIG[k])), " ", h("b", null, NOTA_ROT[k]), ": ", NOTA_AJ[k], ".")),
       h("div", null, h("span", { class: "add-p" }, "palavra sublinhada"), ": acréscimo da tradução, sem palavra grega correspondente."),
       h("div", null, h("span", { class: "sg", style: "font-size:.9em" }, "G991"), ": número de Strong do termo; toque para ver o termo e todos os versículos em que aparece."),
-      h("div", null, h("span", { style: "color:var(--wj)" }, "Texto em vermelho"), ": palavras de Jesus (camada opcional, em piloto; botão \"Palavras de Jesus\")."),
-      h("div", null, h("span", null, "Ele, Seu, Dele"), ": pronomes com maiúscula reverencial quando se referem a Deus, a Jesus ou ao Espírito (camada opcional, em piloto; botão \"Pronomes reverenciais\")."),
+      h("div", null, h("span", { style: "color:var(--wj)" }, "Texto em vermelho"), ": palavras de Jesus (camada opcional, proposta automática; botão \"Palavras de Jesus\")."),
+      h("div", null, h("span", null, "Ele, Seu, Dele"), ": pronomes com maiúscula reverencial quando se referem a Deus, a Jesus ou ao Espírito (camada opcional, proposta automática; botão \"Pronomes reverenciais\")."),
       h("div", null, h("span", { class: "ed sim" }, "SBL"), " ", h("span", { class: "ed nao" }, "TR"), ": edições do grego. Cada palavra do painel mostra em quais edições ela aparece (riscada = não traz); o texto-base é o SBLGNT."),
       h("div", null, h("b", null, "Interlinear"), ": mostra, sob cada trecho em português, as palavras gregas e o Strong. ", h("b", null, "∅"), " marca palavra grega não traduzida."),
       h("p", { style: "margin:6px 0 0;color:var(--muted)" }, "Tudo isto é rascunho feito com uso de IA e sem revisão humana formal: confira no grego e em fontes confiáveis antes de usar.")));
@@ -819,7 +819,7 @@ async function boot() {
   try {
     const [li, refs, texto, lexico, morf] = await Promise.all(["livros.json", "refs.json", "texto.json", "lexico.json", "morf.json"].map(fetchJSON));
     D.info = li.info; D.livros = li.livros; D.refs = refs; D.texto = texto; D.lexico = lexico; D.morf = morf;
-    D.camadas = await fetchJSON("camadas.json").catch(() => ({}));   // camadas opcionais (piloto): palavras de Jesus e pronomes reverenciais
+    D.camadas = await fetchJSON("camadas.json").catch(() => ({}));   // camadas opcionais: palavras de Jesus e pronomes reverenciais
     D.byId = Object.fromEntries(D.livros.map((l, i) => [l.id, { ...l, i }]));
     montarAlias();
   } catch (e) {

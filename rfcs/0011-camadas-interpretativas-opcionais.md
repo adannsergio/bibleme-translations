@@ -1,6 +1,6 @@
 # RFC-0011: Camadas interpretativas opcionais: palavras de Jesus e pronomes reverenciais
 
-- **Estado:** Proposta
+- **Estado:** Proposta (com uma decisão do fundador, ver **Decisão**)
 - **Autor(es):** Fundador (ideias); rascunho redigido com apoio de IA
 - **Aberta em:** 2026-11-10
 - **Decide:** Conselho (no início, o fundador)
@@ -8,7 +8,7 @@
 
 ## Resumo
 
-Propomos duas **camadas opcionais** sobre o texto: **palavras de Jesus** (edição "Red-Letter") e **pronomes reverenciais** (maiúscula nos pronomes que se referem a Deus, a Jesus e ao Espírito). Elas **não fazem parte do texto-base**, que continua neutro: são dados ancorados nas palavras do original, com **certeza** e **estado de revisão**, que cada leitor ou app decide mostrar ou não. Um **piloto em Marcos** já está no leitor (com os dois botões desligados por padrão).
+Propomos duas **camadas opcionais** sobre o texto: **palavras de Jesus** (edição "Red-Letter") e **pronomes reverenciais** (maiúscula nos pronomes que se referem a Deus, a Jesus e ao Espírito). Elas **não fazem parte do texto-base**, que continua neutro: são dados ancorados nas palavras do original, com **certeza** e **estado de revisão**, que cada leitor ou app decide mostrar ou não. O piloto começou em Marcos e o fundador decidiu estendê-lo a **todo o Novo Testamento** (ver [Decisão](#decisão)); os dois botões do leitor continuam desligados por padrão, e cada marca segue `proposto-auto` até passar pelas duas revisões independentes do item 4.
 
 ## Problema
 
@@ -73,6 +73,10 @@ Foram geradas as duas camadas para Marcos (16 capítulos, 673 versículos), por 
 - **Achado de qualidade do texto:** a comparação revelou **aspas que não fechavam** nos rascunhos (Mc 4:8 e 16:18, já corrigidos; e 26 outras posições no resto do NT), que passaram a ser testadas automaticamente.
 - **Fonte e limites:** as propostas dependem das anotações do Macula Greek e das aspas do rascunho; as duas podem errar, e a ferramenta não substitui a revisão.
 
+## Expansão para todo o NT (2026-11-12)
+
+Rodadas `propor` → `validar` → `exportar` nos 26 livros restantes (Marcos já tinha saído no piloto). `validar` deu **0 erros** em todos; os avisos (verbo de fala de Jesus sem fala marcada no versículo nem nos dois anteriores) ficam, como esperado, em discurso indireto ou ensino sem citação direta. Totais do NT inteiro, ainda **proposto-auto**: **582 falas** agrupadas, **1.662 versículos** com trecho de palavras de Jesus, **1.228 pronomes reverenciais** propostos (a maior parte em Mateus, Lucas e João; as cartas têm poucas ou nenhuma fala direta de Jesus, como esperado, e concentram pronomes reverenciais por "Deus").
+
 ## Alternativas consideradas
 
 | Alternativa | Por que não |
@@ -102,4 +106,9 @@ Foram geradas as duas camadas para Marcos (16 capítulos, 673 versículos), por 
 
 ## Decisão
 
-*(Preenchido ao fim do prazo.)*
+**Decisão do fundador em 2026-11-12** (a comunidade ainda pode comentar até o fim do prazo):
+
+- **Escopo do piloto:** estendido de Marcos para **todo o Novo Testamento** (27 livros). Mecanismo e cautelas inalterados: camadas fora do texto-base, botões desligados por padrão, e cada marca permanece `proposto-auto` — o leitor continua mostrando a certeza e o aviso de "proposta automática, sem revisão" enquanto o item 4 (duas revisões independentes por camada e por capítulo) não for cumprido.
+- **O que isso não decide:** nenhuma das questões em aberto (1-7); em particular, "aceito" continua exigindo as duas revisões independentes por camada e capítulo, ainda pendentes para o NT inteiro.
+
+O restante (aceite formal da RFC, questões em aberto) segue aberto até o fim do prazo de comentários.

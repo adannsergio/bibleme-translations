@@ -13,9 +13,6 @@
   --accent-soft: rgba(156, 47, 78, .1);
   --sel: rgba(156, 47, 78, .13);
   --wj: #b3261e;
-  --warn-bg: #fff3c9;
-  --warn-fg: #4a3a00;
-  --warn-line: #d9b84a;
   --t-lit: #2f6f8f; --t-var: #8a5a00; --t-cult: #3f7a3f; --t-add: #6a4aa0; --t-omit: #a33a3a; --t-trad: #1f7a70;
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -26,7 +23,7 @@
   :root:not([data-tema="claro"]) {
     --bg: #14161f; --bg2: #0e1016; --bg-a: rgba(20, 22, 31, .92); --fg: #f1ece1; --muted: #b3aebd; --line: rgba(255, 255, 255, .14);
     --card: rgba(255, 255, 255, .05); --accent: #e0839f; --accent-ink: #1a1017; --accent-soft: rgba(224, 131, 159, .14); --sel: rgba(224, 131, 159, .17);
-    --warn-bg: #3a3100; --warn-fg: #ffe9a0; --warn-line: #7a6510; --wj: #ff8a80;
+    --wj: #ff8a80;
     --t-lit: #7ec3e6; --t-var: #e6b95c; --t-cult: #8fd18f; --t-add: #b9a1ec; --t-omit: #f09a9a; --t-trad: #6fd6c8;
   }
 }
@@ -50,10 +47,6 @@ p { margin: 0 0 1em; }
 .skip:focus { left: 8px; }
 .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 [hidden] { display: none !important; }
-
-/* Aviso permanente */
-.aviso { background: var(--warn-bg); color: var(--warn-fg); border-bottom: 1px solid var(--warn-line); font-size: .86rem; padding: 7px 16px; text-align: center; line-height: 1.4; }
-.aviso a { color: inherit; font-weight: 600; }
 
 /* Topo */
 .topo-wrap { position: sticky; top: 0; z-index: 60; }
@@ -258,7 +251,7 @@ select.sel-l { min-height: 34px; border-radius: 8px; border: 1px solid var(--lin
   .busca { order: 5; flex-basis: 100%; max-width: none; margin-inline-start: 0; }
   .topo-links .btn.txt { display: none; }
 }
-@media print { .aviso, .topo, .barra, .painel, .livros { display: none; } .texto { padding: 0; } }
+@media print { .topo, .barra, .painel, .livros { display: none; } .texto { padding: 0; } }
 
 /* Edições do grego */
 .eds { display: inline-flex; flex-wrap: wrap; gap: 3px; vertical-align: middle; }
