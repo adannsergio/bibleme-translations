@@ -35,7 +35,7 @@ O GitHub já trata contribuições a um repositório com licença como licenciad
 
 ## Antes de traduzir ou sugerir texto
 
-1. Leia a [filosofia de tradução](rfcs/0002-filosofia-de-traducao.md) em vigor (mesmo em rascunho, ela orienta as escolhas).
+1. Leia a [filosofia de tradução](rfcs/0002-filosofia-de-traducao.md) e o [guia de estilo do seu idioma](docs/guias-de-estilo/README.md) (mesmo em rascunho, eles orientam as escolhas).
 2. Trabalhe a partir do **texto original** ([RFC-0001](rfcs/0001-textos-base.md)).
 3. **Escreva sua versão antes de consultar** outras traduções. Depois pode compará-las para achar erros, mas não adote soluções peculiares delas.
 4. Escreva a **justificativa** da escolha quando ela não for óbvia (palavra do original, número de Strong, gramática, contexto).
@@ -48,6 +48,17 @@ O GitHub já trata contribuições a um repositório com licença como licenciad
 - Texto vai nos arquivos de `texts/` no formato definido na [RFC-0003](rfcs/0003-formato-e-camadas.md). Arquivos de `dist/` (Markdown, JSON) são **gerados** e nunca editados à mão.
 - Siga o [modelo de PR](.github/pull_request_template.md).
 - Uma revisão pode pedir que você reescreva trechos que se pareçam demais com uma tradução protegida. Isso não é acusação: é o processo funcionando.
+
+## Estrutura do repositório
+
+```
+texts/                        (a criar) <idioma>/<versão>/<LIVRO>.usfm — o texto, escrito uma vez
+data/                         (a criar) dados neutros de idioma (relacionados, léxicos)
+rfcs/                         propostas abertas para discussão (veja rfcs/README.md para o estado de cada uma)
+docs/                         licença, direitos autorais, registro de fontes, guias de estilo
+site/                         landing page (GitHub Pages)
+.github/                      modelos de Issue e de PR, publicação do site
+```
 
 ## Idiomas das conversas
 

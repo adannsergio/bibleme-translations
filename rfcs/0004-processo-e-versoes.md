@@ -34,7 +34,7 @@ O estado fica em dados do repositório e aparece em quadros e no JSON ([RFC-0006
 ### 2. Releases
 
 - O ramo `main` é o **texto vivo**. Qualquer pessoa pode ler, mas ele muda.
-- Uma **release** é uma versão congelada e citável: `bibleme [Versão] [idioma] MAJOR.MINOR` (por exemplo, `1.0`, `1.1`).
+- Uma **release** é uma versão congelada e citável: `[Versão] [idioma] MAJOR.MINOR` (por exemplo, `1.0`, `1.1`).
 - `MINOR`: correções (erros, tipografia, notas), com registro de mudanças. `MAJOR`: mudanças amplas de texto, anunciadas com antecedência.
 - Cada release traz o texto em todos os formatos, o `SOURCES`, o `AUTHORS` e o registro de mudanças, e recebe um **DOI** (por exemplo, no Zenodo).
 - Apps e APIs devem **fixar uma release**; há também o alias `latest`.

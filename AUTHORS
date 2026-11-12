@@ -1,0 +1,19 @@
+# AUTHORS
+
+Esta release (Essencial pt-BR 0.1 "Primícias") tem autoria humana única até aqui:
+
+- Adann — fundador-mantenedor, decide as RFCs e os critérios editoriais, responde pelo texto submetido.
+
+## Sobre o apoio de IA
+
+Parte do rascunho e das passadas de revisão deste texto foi produzida com apoio de modelos de IA (Claude, Anthropic),
+sob supervisão e responsabilidade do autor humano acima — ver a declaração de uso de IA no leitor publicado e o
+[RFC-0004](rfcs/0004-processo-e-versoes.md) §6. **A IA não é autora**: quem submete a contribuição responde por ela
+(ver [CONTRIBUTING.md](CONTRIBUTING.md#declaração-de-originalidade)). Os commits que tiveram apoio de IA trazem a
+assinatura `Co-Authored-By` do modelo usado, visível no histórico do Git, que é o registro de autoria do projeto
+(ver [docs/licenca.md](docs/licenca.md#autoria-e-contribuições)).
+
+## Próximas releases
+
+A cada nova pessoa que contribuir com texto, nota ou revisão de forma relevante, o nome entra aqui. Veja
+[CONTRIBUTING.md](CONTRIBUTING.md) para como contribuir.

@@ -50,7 +50,7 @@ commit: "a1b2c3d"
 generated_at: 2027-03-01
 status: rascunho
 license: CC BY 4.0
-attribution: "bibleme [Versão] pt-BR · © Contribuidores do projeto bibleme Traduções · CC BY 4.0 · https://www.bibleme.com.br/translations"
+attribution: "[Versão] pt-BR · © Contribuidores do projeto bibleme Traduções · CC BY 4.0 · https://www.bibleme.com.br/translations"
 ---
 
 # Salmos 117

@@ -1,0 +1,21 @@
+# SOURCES
+
+Fontes usadas nesta release (Essencial pt-BR 0.1 "Primícias"):
+
+- **Texto-base do Novo Testamento:** SBLGNT (grego), CC BY 4.0, sblgnt.com. Alterações sinalizadas: nenhuma ao texto
+  grego; a tradução para português é uma obra derivada, não uma edição do SBLGNT.
+- **Números de Strong e alinhamento morfológico:** TAGNT (OpenText.org / Tyndale House), com correções pontuais do
+  projeto registradas em `strong-correcoes.tsv` por livro e justificadas em cada caso.
+
+O registro completo, com a licença conferida na fonte oficial e o estado de verificação de cada fonte, está em
+[docs/registro-de-fontes.md](docs/registro-de-fontes.md) — este arquivo é um resumo do que entrou nesta release
+específica; aquele é a fonte da verdade, viva, para todas as fontes do projeto.
+
+## Verificação de semelhança pendente
+
+O projeto se compromete a publicar um **relatório público de semelhança** por release, comparando o texto com
+traduções protegidas conhecidas, antes de tratar um texto AI-assistido como rascunho independente e seguro
+([RFC-0004](rfcs/0004-processo-e-versoes.md) §6). **Essa verificação ainda não foi feita** nesta release — nenhum
+texto de referência protegido foi obtido localmente para a comparação. Até que isso ocorra, esta release é uma
+**pré-release de quarentena** (`0.x`), não uma edição oficial inalterada para fins de mídia durável
+(ver [docs/licenca.md](docs/licenca.md#nome-e-versões-modificadas)).

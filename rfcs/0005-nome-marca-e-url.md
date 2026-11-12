@@ -8,7 +8,7 @@
 
 ## Resumo
 
-Define como as versões se chamam (**bibleme + versão + idioma**), quem é dono do nome e **qual endereço da internet fica impresso em todas as cópias do texto**. Esta última escolha é a mais difícil de desfazer: o link de atribuição vai ficar em apps, livros e sites que ninguém mais controla.
+Define como as versões se chamam (**versão + idioma**, sem o nome "bibleme" grudado na citação — atualizado em 2026-11-12, decisão do fundador), quem é dono do nome e **qual endereço da internet fica impresso em todas as cópias do texto**. Esta última escolha é a mais difícil de desfazer: o link de atribuição vai ficar em apps, livros e sites que ninguém mais controla.
 
 ## Problema
 
@@ -20,7 +20,7 @@ Define como as versões se chamam (**bibleme + versão + idioma**), quem é dono
 
 ### 1. Padrão de nome
 
-**bibleme + versão + idioma**, por exemplo `bibleme [Versão] pt-BR`.
+**versão + idioma**, por exemplo `[Versão] pt-BR` — sem "bibleme" grudado: o nome da versão, sozinho, mais o idioma e, quando for o caso, a release (número ou codinome) identificam o texto com exatidão. "bibleme" continua sendo o nome do projeto; só não entra na citação do texto em si.
 
 - **Versão:** um nome curto, fácil de falar, sem conotação confessional, escolhido por RFC. Uma mesma *família* de versão pode existir em vários idiomas.
 - **Idioma:** código BCP 47 (`pt-BR`, `en`, `es`).
@@ -31,9 +31,9 @@ Define como as versões se chamam (**bibleme + versão + idioma**), quem é dono
 
 | Uso | Regra |
 |---|---|
-| Citar o texto sem alterações: "bibleme [Versão] pt-BR" | Livre, com os avisos de atribuição |
+| Citar o texto sem alterações: "[Versão] pt-BR" | Livre, com os avisos de atribuição |
 | Modificar o texto | Diga que modificou; **não use o nome como se fosse a versão oficial** ([política](../docs/licenca.md#nome-e-versões-modificadas)) |
-| Mídia durável (impresso, gravação, produto vendido) com o nome "bibleme [Versão]" | Só com uma **release inalterada**, citando o número ([RFC-0010](0010-citacao-por-tipo-de-uso.md)) |
+| Mídia durável (impresso, gravação, produto vendido) com o nome "[Versão]" | Só com uma **release inalterada**, citando o número ([RFC-0010](0010-citacao-por-tipo-de-uso.md)) |
 | Texto de `main` (fora de release) em mídia durável | Cite o **commit**; **não use o nome como versão oficial** (RFC-0010) |
 | Nome de empresa, produto, app, domínio ou conta de rede social | Exige autorização |
 | Sugerir endosso ou parceria oficial | Proibido (a própria CC BY, seção 2(a)(6), proíbe) |

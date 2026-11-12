@@ -8,7 +8,7 @@
 
 ## Resumo
 
-Hoje a citação pede só "bibleme [Versão] [idioma]", sem dizer **qual** texto exato foi usado. Propomos que a citação identifique sempre a versão exata e que ela dependa do uso: **mídia durável** (impresso, áudio gravado, produto vendido) cita uma **release** e é a única que pode usar o nome "bibleme [Versão]" como versão oficial; **uso digital** pode citar uma release ou o `latest` (com o commit e a data). O projeto garante acesso às **duas formas**, sempre.
+Hoje a citação pede só "[Versão] [idioma]", sem dizer **qual** texto exato foi usado. Propomos que a citação identifique sempre a versão exata e que ela dependa do uso: **mídia durável** (impresso, áudio gravado, produto vendido) cita uma **release** e é a única que pode usar o nome "[Versão]" como versão oficial; **uso digital** pode citar uma release ou o `latest` (com o commit e a data). O projeto garante acesso às **duas formas**, sempre.
 
 ## Problema
 
@@ -31,17 +31,17 @@ Todo arquivo gerado (Markdown, JSON, SQLite, USFM) e toda resposta da API trazem
 
 | Uso | O que citar | Exemplo |
 |---|---|---|
-| **Mídia durável:** impresso, áudio ou vídeo gravado, produto físico, e-book distribuído como arquivo fixo, qualquer edição **vendida** | A **release** | `bibleme [Versão] pt-BR 1.2 · CC BY 4.0 · https://www.bibleme.com.br/translations` |
-| **Digital que acompanha o projeto:** app, site, leitor, servidor, assistente de IA | Uma release **ou** o `latest`; no `latest`, o **commit** e a **data de acesso** | `bibleme [Versão] pt-BR · latest (main@a1b2c3d, acessado em 2027-03-01) · CC BY 4.0 · https://www.bibleme.com.br/translations` |
-| **Texto de `main` (fora de release) em mídia durável** | O **commit**, sem usar o nome como versão oficial | `Baseado em bibleme [Versão] pt-BR, commit a1b2c3d (sem release)` |
-| **Texto alterado** | Como já diz o guia da licença: dizer que alterou e **não** apresentar como versão oficial | `Baseada na bibleme [Versão] pt-BR 1.2, modificada por [você]` |
+| **Mídia durável:** impresso, áudio ou vídeo gravado, produto físico, e-book distribuído como arquivo fixo, qualquer edição **vendida** | A **release** | `[Versão] pt-BR 1.2 · CC BY 4.0 · https://www.bibleme.com.br/translations` |
+| **Digital que acompanha o projeto:** app, site, leitor, servidor, assistente de IA | Uma release **ou** o `latest`; no `latest`, o **commit** e a **data de acesso** | `[Versão] pt-BR · latest (main@a1b2c3d, acessado em 2027-03-01) · CC BY 4.0 · https://www.bibleme.com.br/translations` |
+| **Texto de `main` (fora de release) em mídia durável** | O **commit**, sem usar o nome como versão oficial | `Baseado em [Versão] pt-BR, commit a1b2c3d (sem release)` |
+| **Texto alterado** | Como já diz o guia da licença: dizer que alterou e **não** apresentar como versão oficial | `Baseada na [Versão] pt-BR 1.2, modificada por [você]` |
 
 Os avisos que acompanham o texto (autoria, direitos, licença, ausência de garantia e link) continuam como na [licença](../docs/licenca.md#como-citar).
 
 ### 3. O que é exigido e o que é só pedido
 
 - **Exigido pela licença:** a atribuição, que passa a **informar a versão exata** (release ou commit) em qualquer meio razoável para o uso.
-- **Condição para usar o nome** (política do nome, RFC-0005): em **mídia durável**, o nome "bibleme [Versão]" **como versão oficial** só pode ser usado se o texto for uma **release inalterada** e a citação trouxer o número dela. Isto **não impede** ninguém de imprimir ou vender texto de `main`: apenas não pode chamá-lo de versão oficial e deve citar o commit.
+- **Condição para usar o nome** (política do nome, RFC-0005): em **mídia durável**, o nome "[Versão]" **como versão oficial** só pode ser usado se o texto for uma **release inalterada** e a citação trouxer o número dela. Isto **não impede** ninguém de imprimir ou vender texto de `main`: apenas não pode chamá-lo de versão oficial e deve citar o commit.
 - **Pedido (não exigido):** que apps digitais fixem uma release quando o texto precisa ser estável (por exemplo, planos de leitura e citações salvas) e usem `latest` quando quiserem o texto vivo.
 - **Limite:** isto é norma e política de nome, não bloqueio técnico; o projeto não tem como fiscalizar. A redação final da cláusula do nome precisa de **confirmação de advogado**, que já está prevista antes da primeira release.
 
@@ -78,7 +78,7 @@ Os avisos que acompanham o texto (autoria, direitos, licença, ausência de gara
 ## Questões em aberto
 
 1. **Cláusula do nome:** a redação exata, e a confirmação jurídica. Quem é dono do nome é a questão 1 da RFC-0005.
-2. **Pré-releases em uso digital:** podem ser citadas como "bibleme [Versão] 0.x"? (Proposta: sim, sempre marcadas como pré-release.)
+2. **Pré-releases em uso digital:** podem ser citadas como "[Versão] 0.x"? (Proposta: sim, sempre marcadas como pré-release.)
 3. **Versões antigas:** por quanto tempo uma release `MAJOR` anterior recebe correções (RFC-0004, questão 5)?
 4. **Impressões de `main` que circulem:** o projeto apenas orienta, ou pede a retirada do nome? (Proposta: orienta e pede a correção da citação.)
 5. **Livros e blocos:** a release é por bloco (RFC-0004, "cadência por blocos"). Uma edição impressa que reúna blocos de releases diferentes cita cada um?

@@ -97,6 +97,7 @@ A coluna **Onde** diz se vai no USFM da tradução (**T**) ou numa camada de dad
 | Texto, com **poesia em linhas** (`\q1`, `\q2`) e parágrafos | T | 1 |
 | **Números alternativos** (`\vp`) e capítulo publicado diferente (`\cp`) | T | 1 |
 | **Palavras acrescentadas** pela língua, sem equivalente no original (`\add`), visíveis ao leitor | T | 1 |
+| **Nome divino** marcado em **toda ocorrência** (`\nd`, com o Strong H3068): a forma exibida é decisão do guia de estilo do idioma e quem consome pode trocá-la ([RFC-0002](0002-filosofia-de-traducao.md)) | T | 1 |
 | **Notas** de três tipos: alternativa literal, variante textual, esclarecimento cultural (`\f`) | T | 1 |
 | **Referências cruzadas** e **citações do AT no NT** (com a forma citada: hebraico ou grego) | T (`\x`) e D | 1 |
 | **Variantes textuais**: unidades de variação com as leituras e as testemunhas | D | 2 |
@@ -176,11 +177,11 @@ Todo PR roda: sintaxe USFM, **contagem de versos contra o esquema**, ordem dos c
 Exemplo de **formato**, escrito para este documento. **Não é texto da tradução.**
 
 ```usfm
-\id PSA bibleme [Versão] pt-BR
+\id PSA [Versão] pt-BR
 \usfm 3.0
 \ide UTF-8
 \rem Exemplo ilustrativo de formato. Não é texto da tradução.
-\rem bibleme [Versão] pt-BR · © Contribuidores do projeto bibleme Traduções · CC BY 4.0 · https://www.bibleme.com.br/translations
+\rem [Versão] pt-BR · © Contribuidores do projeto bibleme Traduções · CC BY 4.0 · https://www.bibleme.com.br/translations
 \h Salmos
 \c 117
 \s1 Convite universal ao louvor
