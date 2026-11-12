@@ -4,7 +4,7 @@
 
 Uma iniciativa aberta para produzir traduções da Bíblia de alta qualidade, sob uma licença que permite usar de graça, vender e adaptar — só pedimos a citação e o link para o projeto. Cada tradução leva o nome **versão + idioma** (por exemplo, `[Versão] pt-BR`); veja [como citar](docs/licenca.md#como-citar).
 
-> **Estado: Fase 0, fundação.** Ainda não existe texto traduzido. Estamos decidindo, em público, as regras do jogo — licença, textos de partida, filosofia de tradução, formato, processo de revisão. Veja as propostas em [`rfcs/`](rfcs/) e dê sua opinião.
+> **Estado: primeira release.** O Novo Testamento em português (**Essencial pt-BR 0.1 "Primícias"**) já está traduzido e no ar, mas como [pré-release de quarentena](https://github.com/adannsergio/bibleme-translations/releases/tag/essencial-pt-br-0.1): revisado por agentes de IA, ainda sem revisão humana formal nem verificação de semelhança. [Leia e confira](https://adannsergio.github.io/bibleme-translations/leitor/) ou veja o que falta na [página sobre o rascunho](https://adannsergio.github.io/bibleme-translations/traducao/). As regras do projeto continuam abertas a comentário em [`rfcs/`](rfcs/).
 
 [English version](README.en.md)
 
