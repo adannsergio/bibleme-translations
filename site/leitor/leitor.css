@@ -264,6 +264,7 @@ select.sel-l { min-height: 34px; border-radius: 8px; border: 1px solid var(--lin
 .vx a { font-weight: 600; color: var(--accent); text-decoration: none; }
 .eds-leg { border-top: 0 !important; margin-top: 6px; }
 
-/* Camadas opcionais (piloto): palavras de Jesus e pronomes reverenciais; ligadas pelos botões da barra de leitura */
+/* Camadas opcionais: palavras de Jesus e pronomes reverenciais; ligadas pelos botões da barra de leitura */
 .com-wj .wj { color: var(--wj); }
+.com-wj .wj.debatido { opacity: .72; text-decoration: underline dashed; text-decoration-color: currentColor; text-underline-offset: 3px; }
 .com-rv .rvp { text-transform: capitalize; }

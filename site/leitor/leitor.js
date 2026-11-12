@@ -306,6 +306,13 @@ function renderCap(meta, data, cap) {
 }
 
 const CAT_PRON = { J: "Jesus", D: "Deus", E: "o Espírito" };
+const TIPO_WJ = { "após a ressurreição": "Jesus já ressuscitado ou glorificado", "citado por outro": "citação do que Jesus disse, feita por outra pessoa" };
+/** Texto do toque/tooltip de uma faixa de "palavras de Jesus": certeza (ou o aviso de limite debatido) + tipo, quando houver. */
+function wjTitle(r) {
+  const cert = r[2] === "debatido" ? "limite da fala debatido entre leituras" : `certeza ${r[2]}`;
+  const tipo = r[5] ? `; ${TIPO_WJ[r[5]] || r[5]}` : "";
+  return `Palavras de Jesus (revisada 2x; ${cert}${tipo})`;
+}
 /** Pronomes escritos que levam maiúscula reverencial quando o referente é divino (camada opcional; o CSS faz a maiúscula). */
 function pronFrag(text, info) {
   const re = /(?<![\p{L}])(ele|dele|nele|lhe|seu|sua|seus|suas)(?![\p{L}])|(?<=-)(o|lo|no)(?![\p{L}])/giu;
@@ -333,7 +340,7 @@ function renderVerso(v, data) {
     if (wjEl && ti > wjFim) { target = span; wjEl = null; }
     if (!wjEl) {
       const r = wjR.find(x => ti >= x[0] && ti <= x[1]);
-      if (r && k !== "n") { wjEl = h("span", { class: "wj", title: `Palavras de Jesus (proposta automática, certeza ${r[2]})` }); span.append(wjEl); target = wjEl; wjFim = r[1]; }
+      if (r && k !== "n") { wjEl = h("span", { class: "wj" + (r[2] === "debatido" ? " debatido" : ""), title: wjTitle(r) }); span.append(wjEl); target = wjEl; wjFim = r[1]; }
     }
     if (k !== "n") lastPt = (k === "p" ? lastPt : null);
     if (k === "u") { const parts = renderUnit(v, t, rvM.get(ti)); target.append(...parts); lastPt = cfg.inter ? parts[parts.length - 1].firstChild : null; return; }
@@ -388,7 +395,13 @@ function painelCamadas(V) {
   const wj = cur.cam.wj[chave] || [], rv = cur.cam.rv[chave] || [];
   if (!wj.length && !rv.length) return null;
   const itens = [];
-  wj.forEach(r => itens.push(h("li", null, h("b", null, "Palavras de Jesus"), `: fala ${r[3]}, certeza ${r[2]}${r[4] ? "; verbo " + r[4] : ""}.`)));
+  wj.forEach(r => {
+    const cert = r[2] === "debatido" ? "limite debatido entre leituras" : `certeza ${r[2]}`;
+    const tipo = r[5] ? `, ${TIPO_WJ[r[5]] || r[5]}` : "";
+    const li = h("li", null, h("b", null, "Palavras de Jesus"), `: fala ${r[3]}, ${cert}${tipo}${r[4] ? "; verbo " + r[4] : ""}.`);
+    if (r[6]) li.append(h("br"), h("span", { class: "leg" }, r[6]));
+    itens.push(li);
+  });
   rv.forEach(r => itens.push(h("li", null, h("b", null, "Pronome reverencial"), ": ", h("span", { lang: "grc" }, r[3]), ` → ${CAT_PRON[r[1]] || r[1]} (certeza ${r[2]}).`)));
   return h("details", { open: true }, h("summary", null, h("span", null, "Camadas opcionais", h("span", { class: "n" }, "revisado-2"))),
     h("p", { class: "leg", style: "margin:0 0 6px" }, cur.cam.estado + ". Podem errar: confira no grego."),
@@ -592,6 +605,7 @@ function painelLegenda(abrir = true) {
       h("div", null, h("span", { class: "add-p" }, "palavra sublinhada"), ": acréscimo da tradução, sem palavra grega correspondente."),
       h("div", null, h("span", { class: "sg", style: "font-size:.9em" }, "G991"), ": número de Strong do termo; toque para ver o termo e todos os versículos em que aparece."),
       h("div", null, h("span", { style: "color:var(--wj)" }, "Texto em vermelho"), ": palavras de Jesus (camada opcional, revisada 2x, cobertura incompleta; botão \"Palavras de Jesus\")."),
+      h("div", null, h("span", { style: "color:var(--wj);opacity:.72;text-decoration:underline dashed" }, "sublinhado tracejado"), ": dentro das palavras de Jesus, trecho cujo limite é debatido entre leituras (ex. onde termina a fala a Nicodemos em Jo 3)."),
       h("div", null, h("span", null, "Ele, Seu, Dele"), ": pronomes com maiúscula reverencial quando se referem a Deus, a Jesus ou ao Espírito (camada opcional, revisada 2x, cobertura incompleta; botão \"Pronomes reverenciais\")."),
       h("div", null, h("span", { class: "ed sim" }, "SBL"), " ", h("span", { class: "ed nao" }, "TR"), ": edições do grego. Cada palavra do painel mostra em quais edições ela aparece (riscada = não traz); o texto-base é o SBLGNT."),
       h("div", null, h("b", null, "Interlinear"), ": mostra, sob cada trecho em português, as palavras gregas e o Strong. ", h("b", null, "∅"), " marca palavra grega não traduzida."),
