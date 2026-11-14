@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leitor do Novo Testamento (rascunho de IA) · bibleme Traduções</title>
-<meta name="description" content="Leitor do rascunho de IA do Novo Testamento em português, traduzido do grego (SBLGNT), com Strong palavra a palavra, interlinear, notas e versículos relacionados. Em quarentena, sem revisão humana.">
+<title>Leitor da Bíblia (rascunho de IA) · bibleme Traduções</title>
+<meta name="description" content="Leitor do rascunho de IA da Bíblia inteira em português: Novo Testamento do grego (SBLGNT), Antigo Testamento do hebraico/aramaico (TAHOT), com Strong palavra a palavra, interlinear, notas e versículos relacionados. Em quarentena, sem revisão humana.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#f7f1e3" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14161f" media="(prefers-color-scheme: dark)">
@@ -21,7 +21,7 @@
 <div class="topo-wrap">
 <header class="topo">
   <div class="topo-in">
-    <a class="marca" href="../" title="Página inicial do projeto"><span class="mk" aria-hidden="true">b</span>bibleme <small>Leitor NT</small></a>
+    <a class="marca" href="../" title="Página inicial do projeto"><span class="mk" aria-hidden="true">b</span>bibleme <small>Leitor</small></a>
     <button class="btn" id="b-livros" type="button" aria-expanded="false" aria-controls="livros">☰ Livros</button>
     <div class="cap-nav" id="cap-nav" hidden>
       <button class="btn sm" id="b-ant" type="button" aria-label="Capítulo anterior">‹</button>
@@ -30,7 +30,7 @@
     </div>
     <form class="busca" id="busca" role="search" autocomplete="off">
       <label class="vh" for="q">Buscar</label>
-      <input id="q" type="search" placeholder="João 3:16 · G26 · ágape · amor" enterkeyhint="search">
+      <input id="q" type="search" placeholder="Gênesis 1:1 · G26 · H3068 · amor" enterkeyhint="search">
       <button class="btn" type="submit">Buscar</button>
     </form>
     <span class="topo-links">
@@ -41,9 +41,9 @@
   <div class="barra" id="barra" hidden>
     <div class="barra-in">
       <button class="btn sm" id="t-strong" type="button" aria-pressed="false" title="Mostra o número de Strong ao lado de cada termo">Strong</button>
-      <button class="btn sm" id="t-inter" type="button" aria-pressed="false" title="Mostra o grego e o Strong sob cada trecho">Interlinear</button>
+      <button class="btn sm" id="t-inter" type="button" aria-pressed="false" title="Mostra o original (grego ou hebraico/aramaico) e o Strong sob cada trecho">Interlinear</button>
       <button class="btn sm" id="t-notas" type="button" aria-pressed="true" title="Marcadores de nota no texto">Notas</button>
-      <button class="btn sm" id="t-add" type="button" aria-pressed="true" title="Sublinha as palavras da tradução que não têm correspondente no grego">Acréscimos</button>
+      <button class="btn sm" id="t-add" type="button" aria-pressed="true" title="Sublinha as palavras da tradução que não têm correspondente no original">Acréscimos</button>
       <button class="btn sm" id="t-wj" type="button" aria-pressed="false" hidden title="Camada opcional, desligada por padrão: mostra em vermelho as palavras de Jesus (revisada 2x; cobertura incompleta, ver RFC-0011)">Palavras de Jesus</button>
       <button class="btn sm" id="t-rv" type="button" aria-pressed="false" hidden title="Camada opcional, desligada por padrão: maiúscula nos pronomes que se referem a Deus, a Jesus e ao Espírito (revisada 2x; cobertura incompleta, ver RFC-0011)">Pronomes reverenciais</button>
       <span class="sep"></span>
@@ -74,7 +74,7 @@
 <div class="corpo">
   <main class="texto" id="texto" tabindex="-1" aria-live="polite"><p class="carregando">Carregando…</p></main>
   <aside class="painel" id="painel" aria-label="Detalhes do versículo">
-    <div class="painel-in" id="painel-in"><p class="vazio">Toque num versículo ou num trecho do texto para ver o grego palavra a palavra, as notas e os versículos relacionados.</p></div>
+    <div class="painel-in" id="painel-in"><p class="vazio">Toque num versículo ou num trecho do texto para ver o original palavra a palavra, as notas e os versículos relacionados.</p></div>
   </aside>
 </div>
 

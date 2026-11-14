@@ -268,3 +268,11 @@ select.sel-l { min-height: 34px; border-radius: 8px; border: 1px solid var(--lin
 .com-wj .wj { color: var(--wj); }
 .com-wj .wj.debatido { opacity: .72; text-decoration: underline dashed; text-decoration-color: currentColor; text-underline-offset: 3px; }
 .com-rv .rvp { text-transform: capitalize; }
+
+/* Hebraico/aramaico (Antigo Testamento): direção e fonte, isoladas do texto em português ao redor.
+   :lang() (não [lang=]) para herdar de um ancestral com lang= (ex. <ol lang="he">) até o texto em si. */
+:lang(he), :lang(arc) {
+  direction: rtl;
+  unicode-bidi: isolate;
+  font-family: "SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif !important;
+}

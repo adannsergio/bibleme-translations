@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sobre o rascunho do Novo Testamento · bibleme Traduções</title>
-<meta name="description" content="Como foi feito o rascunho de IA do Novo Testamento em português (do grego SBLGNT), o que ele traz (Strong, interlinear, notas, versículos relacionados), o que ainda falta e as fontes usadas.">
+<title>Sobre o rascunho da Bíblia · bibleme Traduções</title>
+<meta name="description" content="Como foi feito o rascunho de IA da Bíblia inteira em português — Novo Testamento do grego (SBLGNT), Antigo Testamento do hebraico/aramaico (TAHOT) — o que cada um traz, o que ainda falta e as fontes usadas.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#f7f1e3" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14161f" media="(prefers-color-scheme: dark)">
@@ -46,6 +46,7 @@
     <nav class="nav" aria-label="Principal">
       <a class="hide-sm" href="#numeros">Números</a>
       <a class="hide-sm" href="#metodo">Como foi feito</a>
+      <a class="hide-sm" href="#metodo-at">AT</a>
       <a class="hide-sm" href="#robustez">Robustez</a>
       <a class="hide-sm" href="#limites">Limites</a>
       <a class="hide-sm" href="#fontes">Fontes</a>
@@ -58,16 +59,16 @@
 
 <section class="hero">
   <div class="wrap">
-    <span class="eyebrow">Experimento · Novo Testamento</span>
+    <span class="eyebrow">Experimento · Bíblia inteira</span>
     <h1>Um rascunho de IA, <em>em quarentena</em>.</h1>
-    <p class="lead">O Novo Testamento inteiro foi traduzido do grego <b>com uso de IA, que pode incluir a escrita e a revisão dos textos</b>, e cada palavra grega está ligada a um número de Strong. Está aberto para leitura e estudo neste site, mas <b>ainda não passou por revisão humana formal</b>.</p>
+    <p class="lead">A Bíblia inteira (Novo e Antigo Testamento) foi traduzida <b>com uso de IA, que pode incluir a escrita e a revisão dos textos</b> — o NT do grego, o AT do hebraico/aramaico — e cada palavra do original está ligada a um número de Strong. Está aberta para leitura e estudo neste site, mas <b>ainda não passou por revisão humana formal</b>; o AT, novo nesta release, <b>ainda não teve nenhuma revisão, nem de IA</b>.</p>
     <div class="quarentena">
-      <p><b>O que isto não é.</b> Não é texto aprovado pelo projeto, não é uma versão estável e não substitui uma tradução revisada. Pode conter erros de sentido, de gramática e de estilo, e pode lembrar traduções existentes, porque modelos de IA conseguem reproduzir trechos de memória.</p>
-      <p><b>Por que está aqui.</b> Para você ler, conferir contra o grego, achar erros e dizer o que deve mudar. A política do projeto (<a href="https://github.com/__REPO__/blob/main/rfcs/0004-processo-e-versoes.md">RFC-0004, §6</a>) trata rascunho de IA do texto bíblico como <b>material de risco</b> até a verificação de semelhança e a revisão humana. É por isso que tudo aqui está marcado como <code>[IA-rascunho]</code>.</p>
+      <p><b>O que isto não é.</b> Não é texto aprovado pelo projeto, não é uma versão estável e não substitui uma tradução revisada. Pode conter erros de sentido, de gramática e de estilo, e pode lembrar traduções existentes, porque modelos de IA conseguem reproduzir trechos de memória — é o caso conhecido de alguns versos do Salmo 23, ainda não corrigido (ver <a href="#limites">Limites</a>).</p>
+      <p><b>Por que está aqui.</b> Para você ler, conferir contra o original, achar erros e dizer o que deve mudar. A política do projeto (<a href="https://github.com/__REPO__/blob/main/rfcs/0004-processo-e-versoes.md">RFC-0004, §6</a>) trata rascunho de IA do texto bíblico como <b>material de risco</b> até a verificação de semelhança e a revisão humana. É por isso que tudo aqui está marcado como <code>[IA-rascunho]</code>.</p>
     </div>
     <div class="actions">
       <a class="btn" href="../leitor/">Abrir o leitor</a>
-      <a class="btn ghost" href="../leitor/#/Jhn/1/1">Começar por João 1</a>
+      <a class="btn ghost" href="../leitor/#/Gen/1/1">Começar por Gênesis 1</a>
       <a class="btn ghost" href="https://github.com/__REPO__/issues/new/choose">Apontar um erro</a>
     </div>
   </div>
@@ -78,12 +79,12 @@
     <span class="eyebrow">O que tem</span>
     <h2>Números do rascunho.</h2>
     <div class="nums" id="nums" aria-live="polite">
-      <div><b>27</b><span>livros do Novo Testamento</span></div>
-      <div><b>7.939</b><span>versículos (SBLGNT)</span></div>
-      <div><b>138 mil</b><span>palavras gregas, cada uma com Strong, lema e morfologia</span></div>
-      <div><b>5.406</b><span>termos (números de Strong) com léxico</span></div>
-      <div><b>146 mil</b><span>versículos relacionados, em todos os versículos</span></div>
-      <div><b>6.901</b><span>notas explicativas</span></div>
+      <div><b>66</b><span>livros (27 do NT + 39 do AT)</span></div>
+      <div><b>31.200</b><span>versículos (7.939 do NT + 23.261 do AT)</span></div>
+      <div><b>138 mil + 306 mil</b><span>palavras gregas e hebraicas/aramaicas, cada uma com Strong, lema e morfologia</span></div>
+      <div><b>13.953</b><span>termos (números de Strong) com léxico</span></div>
+      <div><b>486 mil</b><span>versículos relacionados, em todos os versículos</span></div>
+      <div><b>7.700</b><span>notas explicativas</span></div>
     </div>
     <div class="grid" style="margin-top:28px">
       <div class="card"><h3>Strong em cada termo</h3><p>Toda palavra grega do texto está ligada ao seu número de Strong (do TAGNT), com lema e morfologia. No leitor, toque num termo para ver todos os versículos em que ele aparece e como este rascunho o traduziu.</p></div>
@@ -150,6 +151,21 @@
   </div>
 </section>
 
+<section id="metodo-at">
+  <div class="wrap">
+    <span class="eyebrow">Como foi feito · Antigo Testamento</span>
+    <h2>Do hebraico/aramaico, sem nenhuma revisão ainda.</h2>
+    <p class="lead">O texto-base é o <b>Códice de Leningrado</b>, trazido pelo <b>TAHOT</b> (STEPBible, Tyndale House) já com Strong, lema e morfologia por palavra — diferente do NT, não precisou casar um texto-base com uma camada de anotação separada. O método de tradução (direto do original, sem tradução-base, com alinhamento obrigatório) é o mesmo do NT. <b>Diferença importante: o AT não passou por nenhuma revisão</b>, nem de IA — o NT teve um piso de 3 revisões cruzadas de IA por capítulo antes de sair do ar.</p>
+    <ul style="max-width:46rem">
+      <li><b>YHWH → “SENHOR”:</b> o nome divino (dStrong H3068) é escrito em caixa alta, com nota cultural só na primeira ocorrência de cada livro. “YHWH Elohim” vira “SENHOR Deus”; “Adonai YHWH”, “Senhor DEUS”.</li>
+      <li><b>Qere/Ketiv, não um aparato de edições:</b> o hebraico tem um modelo de variante diferente do grego. Onde a leitura tradicional (Qere) difere do texto escrito (Ketiv) de um jeito que muda o sentido, o rascunho segue a Qere e cita a Ketiv numa nota <span class="tag t-var">V</span>. Diferenças só de grafia não precisam de nota.</li>
+      <li><b>Objeto direto e artigo:</b> o marcador de objeto direto (H0853) e o artigo, quando não têm forma própria em português, ficam sem palavra visível (contam como cobertos, sem precisar de nota).</li>
+      <li><b>Poesia:</b> marcada por quebra de linha (Salmos, Provérbios, Jó, Cântico dos Cânticos, Lamentações e trechos poéticos dentro de livros em prosa); a distinção fina entre os dois cólons de um verso hebraico fica para uma revisão futura.</li>
+      <li><b>Só três tipos de nota</b> (Literal, Variante, Nota cultural) — o AT não usa, por ora, os tipos Acréscimo/Não traduzido/Tradução contextual do NT.</li>
+    </ul>
+  </div>
+</section>
+
 <section class="alt" id="robustez">
   <div class="wrap">
     <span class="eyebrow">Fontes e robustez</span>
@@ -170,7 +186,7 @@
   <div class="wrap">
     <span class="eyebrow">Estado da revisão</span>
     <h2>Livro a livro.</h2>
-    <p class="lead">“Revisão de IA: 2x” é o número de rodadas de revisão cruzada feitas por IA (cada veredito, “ajustes” ou “aprovado”, conta uma rodada). Nenhum livro passou ainda por revisão humana formal.</p>
+    <p class="lead">“Revisão de IA: 2x” é o número de rodadas de revisão cruzada feitas por IA (cada veredito, “ajustes” ou “aprovado”, conta uma rodada). Nenhum livro passou ainda por revisão humana formal. Os 39 livros do Antigo Testamento aparecem com “revisão de IA: 0x” — são o primeiro rascunho, sem nenhuma rodada ainda.</p>
     <div class="scroll-x"><table class="tbl" id="tbl-rev">
       <thead><tr><th>Livro</th><th class="n">Capítulos</th><th class="n">Versículos</th><th>Revisão de IA</th><th>Situação</th></tr></thead>
       <tbody><tr><td colspan="5">Carregando… (precisa de JavaScript)</td></tr></tbody>
@@ -188,7 +204,8 @@
       <li><b>Notas automáticas.</b> As notas de acréscimo, de omissão e de tradução contextual foram geradas por regras e ainda não foram conferidas por revisor. Nem toda escolha difícil foi detectada: artigos, preposições e possessivos que o português exige dentro de um trecho não têm nota por versículo.</li>
       <li><b>Alinhamento em revisão.</b> O casamento entre palavras gregas e trechos em português é deste projeto e pode ter imprecisões.</li>
       <li><b>Strong é um índice, não uma definição.</b> O número liga palavras de mesma raiz, mas o sentido depende do contexto. A glosa em inglês vem do léxico breve TBESG.</li>
-      <li><b>Relacionados são uma pista de estudo.</b> As referências cruzadas do OpenBible usam a numeração do KJV e votos de leitores; os paralelos de vocabulário medem palavras em comum, não teologia. Os versículos do Antigo Testamento aparecem só como referência, porque o projeto ainda não tem esse texto.</li>
+      <li><b>Relacionados são uma pista de estudo.</b> As referências cruzadas do OpenBible usam a numeração do KJV e votos de leitores; os paralelos de vocabulário medem palavras em comum, não teologia.</li>
+      <li><b>Antigo Testamento sem nenhuma revisão.</b> Diferente do NT (piso de 3 revisões cruzadas de IA por capítulo), o AT é o primeiro rascunho, só validado mecanicamente. Achado conhecido e não corrigido: vários versos do Salmo 23 (1, 3, 6) saíram parecidos com uma tradução em português já publicada — o hebraico é curto e simples, mas é o padrão que a regra de originalidade do projeto pede para reformular. Outros versos muito citados (Gn 1.1, Sl 1, 91, 100, 121, 139) ainda não foram conferidos.</li>
       <li><b>Dezoito versículos fora do texto-base.</b> O SBLGNT não traz Mt 17:21, 18:11, 23:14; Mc 7:16, 9:44, 9:46, 11:26, 15:28; Lc 17:36, 23:17; Jo 5:4; At 8:37, 15:34, 24:7, 28:29; Rm 16:25-27. Eles aparecem no leitor, marcados, traduzidos do grego de outras edições. Se entram numa edição final é decisão do projeto.</li>
       <li><b>Convenções provisórias.</b> As escolhas de vocabulário acima aguardam decisão do projeto e da comunidade.</li>
     </ul>
@@ -200,16 +217,18 @@
     <span class="eyebrow">Fontes e licenças</span>
     <h2>De onde vêm os dados.</h2>
     <div class="grid">
-      <div class="card"><h3>Texto grego</h3><p><a href="https://github.com/LogosBible/SBLGNT">SBL Greek New Testament</a>, de Michael W. Holmes (ed.), Society of Biblical Literature e Logos Bible Software, 2010. Edição crítica, não um manuscrito único (<a href="#manuscrito">veja acima</a>). <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p></div>
-      <div class="card"><h3>Strong, lema e morfologia</h3><p><a href="https://github.com/STEPBible/STEPBible-Data">STEPBible-Data</a> (TAGNT e TBESG), de Tyndale House, Cambridge, e STEPBible.org. CC BY 4.0. Os dados foram reformatados, recortados e combinados com o alinhamento deste projeto; as glosas em inglês vêm do TBESG (baseado em Abbott-Smith).</p></div>
-      <div class="card"><h3>Referências cruzadas</h3><p><a href="https://www.openbible.info/labs/cross-references/">OpenBible.info</a> (CC BY). Só as referências, sem texto bíblico.</p></div>
-      <div class="card"><h3>A tradução em português</h3><p>Rascunho de IA, em quarentena. A licença do projeto é <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br">CC BY 4.0</a>, sujeita à revisão humana e à conferência de originalidade; até lá, trate como rascunho. Sugestão de citação: <i>Essencial pt-BR 0.1 (rascunho de IA)</i> + link desta página.</p></div>
+      <div class="card"><h3>Texto grego (NT)</h3><p><a href="https://github.com/LogosBible/SBLGNT">SBL Greek New Testament</a>, de Michael W. Holmes (ed.), Society of Biblical Literature e Logos Bible Software, 2010. Edição crítica, não um manuscrito único (<a href="#manuscrito">veja acima</a>). <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p></div>
+      <div class="card"><h3>Strong, lema e morfologia (NT)</h3><p><a href="https://github.com/STEPBible/STEPBible-Data">STEPBible-Data</a> (TAGNT e TBESG), de Tyndale House, Cambridge, e STEPBible.org. CC BY 4.0. Os dados foram reformatados, recortados e combinados com o alinhamento deste projeto; as glosas em inglês vêm do TBESG (baseado em Abbott-Smith).</p></div>
+      <div class="card"><h3>Texto hebraico/aramaico (AT)</h3><p>Códice de Leningrado, trazido pelo <a href="https://github.com/STEPBible/STEPBible-Data">TAHOT (STEPBible-Data)</a>, de Tyndale House, Cambridge, e STEPBible.org. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p></div>
+      <div class="card"><h3>Strong, lema e morfologia (AT)</h3><p>STEPBible TAHOT e TBESH (léxico breve, par hebraico do TBESG), mesma fonte e licença (CC BY 4.0). Reformatados e combinados com o alinhamento deste projeto.</p></div>
+      <div class="card"><h3>Referências cruzadas</h3><p><a href="https://www.openbible.info/labs/cross-references/">OpenBible.info</a> (CC BY). Só as referências, sem texto bíblico. Cobre a Bíblia inteira, NT e AT.</p></div>
+      <div class="card"><h3>A tradução em português</h3><p>Rascunho de IA, em quarentena. A licença do projeto é <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br">CC BY 4.0</a>, sujeita à revisão humana e à conferência de originalidade; até lá, trate como rascunho. Sugestão de citação: <i>Essencial pt-BR 0.2 "Integral" (rascunho de IA)</i> + link desta página.</p></div>
     </div>
     <div class="callout">
-      <p><b>Versão e como citar.</b> A primeira release é a <code>0.1 "Primícias"</code> — uma <b>pré-release</b> (prefixo <code>0.x</code>): o Novo Testamento inteiro, ainda em quarentena, sem revisão humana formal. Pela <a href="https://github.com/__REPO__/blob/main/rfcs/0010-citacao-por-tipo-de-uso.md">RFC-0010</a>, mídia durável (impresso, vendido) cita a release: <code>Essencial pt-BR 0.1 · CC BY 4.0 · bibleme.com.br/translations</code>. Uso digital pode citar a release ou o <code>latest</code> (texto vivo, que muda): <code>Essencial pt-BR · latest (main@<span class="sha">__SHA__</span>, <span class="dia">__DIA__</span>) · CC BY 4.0</code>. O nome "Essencial" só vale como versão oficial citando uma release inalterada; texto de <code>main</code> impresso deve citar o commit.</p>
+      <p><b>Versão e como citar.</b> A release atual é a <code>0.2 "Integral"</code> — ainda uma <b>pré-release</b> (prefixo <code>0.x</code>): a Bíblia inteira, em quarentena, sem revisão humana formal (e o AT, sem nenhuma revisão de IA também). A <code>0.1 "Primícias"</code> (só o NT) continua válida e congelada para quem citar só aquele texto. Pela <a href="https://github.com/__REPO__/blob/main/rfcs/0010-citacao-por-tipo-de-uso.md">RFC-0010</a>, mídia durável (impresso, vendido) cita a release: <code>Essencial pt-BR 0.2 · CC BY 4.0 · bibleme.com.br/translations</code>. Uso digital pode citar a release ou o <code>latest</code> (texto vivo, que muda): <code>Essencial pt-BR · latest (main@<span class="sha">__SHA__</span>, <span class="dia">__DIA__</span>) · CC BY 4.0</code>. O nome "Essencial" só vale como versão oficial citando uma release inalterada; texto de <code>main</code> impresso deve citar o commit.</p>
     </div>
     <div class="callout">
-      <p><b>Declaração de uso de IA.</b> Este trabalho usa IA, e esse uso pode incluir a escrita e a revisão dos textos: pesquisa, rascunho da tradução, notas, ferramentas de validação e revisão cruzada (Claude, da Anthropic, e Codex, da OpenAI). Por isso a frase-padrão “não foi usada para produzir texto bíblico traduzido” <b>não se aplica</b>. Pela política do projeto, a IA não é autora e quem submete o texto responde por ele. Nenhuma tradução publicada foi usada como base. Revisão humana formal: <b>pendente</b>.</p>
+      <p><b>Declaração de uso de IA.</b> Este trabalho usa IA, e esse uso pode incluir a escrita e a revisão dos textos: pesquisa, rascunho da tradução, notas, ferramentas de validação e revisão cruzada (Claude, da Anthropic; o NT teve também apoio do Codex, da OpenAI; o AT foi feito só pelo Claude). Por isso a frase-padrão “não foi usada para produzir texto bíblico traduzido” <b>não se aplica</b>. Pela política do projeto, a IA não é autora e quem submete o texto responde por ele. Nenhuma tradução publicada foi usada como base. Revisão humana formal: <b>pendente nos dois testamentos</b>; revisão cruzada de IA: feita no NT, <b>ainda não feita no AT</b>.</p>
     </div>
   </div>
 </section>
@@ -246,8 +265,10 @@
       <h4>Leitor</h4>
       <ul>
         <li><a href="../leitor/">Abrir o leitor</a></li>
-        <li><a href="../leitor/#/g/26">Exemplo: termo G26 (ágape)</a></li>
+        <li><a href="../leitor/#/g/G26">Exemplo: termo G26 (ágape)</a></li>
+        <li><a href="../leitor/#/g/H3068">Exemplo: termo H3068 (YHWH)</a></li>
         <li><a href="../leitor/#/Rom/8">Exemplo: Romanos 8</a></li>
+        <li><a href="../leitor/#/Gen/1">Exemplo: Gênesis 1</a></li>
       </ul>
     </div>
   </div>
@@ -257,10 +278,11 @@
 (function () {
   function fmt(n) { return Number(n).toLocaleString("pt-BR"); }
   fetch("../leitor/dados/livros.json").then(function (r) { return r.json(); }).then(function (d) {
-    var i = d.info, n = i.notas, tot = n.lit + n.var + n.cult + n.add + n.omit + n.trad;
+    var i = d.info, n = i.notas, tot = (n.lit || 0) + (n.var || 0) + (n.cult || 0) + (n.add || 0) + (n.omit || 0) + (n.trad || 0);
     var nums = document.getElementById("nums");
     nums.innerHTML = "";
-    [[d.livros.length, "livros do Novo Testamento"], [fmt(i.versos), "versículos (SBLGNT)"], [fmt(i.palavras_gregas), "palavras gregas, cada uma com Strong, lema e morfologia"],
+    [[d.livros.length, "livros (27 do NT + 39 do AT)"], [fmt(i.versos + i.versos_at), "versículos (" + fmt(i.versos) + " do NT + " + fmt(i.versos_at) + " do AT)"],
+     [fmt(i.palavras_gregas) + " + " + fmt(i.palavras_hebraicas), "palavras gregas e hebraicas/aramaicas, cada uma com Strong, lema e morfologia"],
      [fmt(i.strongs), "termos (números de Strong) com léxico"], [fmt(i.relacoes), "relações entre versículos, em todos os versículos"], [fmt(tot), "notas explicativas"]]
       .forEach(function (x) { var el = document.createElement("div"); el.innerHTML = "<b></b><span></span>"; el.firstChild.textContent = x[0]; el.lastChild.textContent = x[1]; nums.appendChild(el); });
     var tb = document.querySelector("#tbl-rev tbody");
