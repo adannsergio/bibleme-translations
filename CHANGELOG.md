@@ -3,6 +3,28 @@
 Formato livre, por release. Veja [RFC-0004](rfcs/0004-processo-e-versoes.md) para o que uma release traz e
 [RFC-0010](rfcs/0010-citacao-por-tipo-de-uso.md) para qual versão citar por tipo de uso.
 
+## Essencial pt-BR 0.4 "Depurada" — 2026-11-15
+
+Quarta release: fecha as duas pendências deixadas pela 0.3. O NT (0.1 "Primícias") não mudou nesta release.
+
+- **Reconstruído o alinhamento de 2 Reis 23**: esse capítulo tinha um bug estrutural distinto do resto do AT
+  (números de posição deslocados ou duplicados em quase toda linha, não só marcadores pontuais vazios). Revisado
+  verso a verso contra a folha hebraica; 30 dos 37 versos tinham erro e foram corrigidos, 0 ficaram sem solução.
+- **Resolvidos os 10 casos pendentes** da rodada de reparo anterior (9 em Números: 3.31, 3.48, 4.6, 4.11, 5.21,
+  7.89, 11.23, 12.11, 14.19; 1 em Ester 2.6) — numa segunda investigação, mais aprofundada, que encontrou: três
+  marcadores `~{}` vestigiais (sem texto associado, seguros para remover) e três casos de uma só palavra hebraica
+  dividida em duas palavras portuguesas não adjacentes, que precisavam compartilhar o número.
+- Com isso, a varredura project-wide de marcadores de posição vazios/malformados (`{}`/`{...}`) dá **zero** nos
+  39 livros do AT — o bug encontrado na 0.3 está 100% corrigido.
+- **Corrigido o achado de originalidade do Salmo 23** (ver `SOURCES`): os versos 1, 3 e 6 foram reescritos a
+  partir do hebraico, divergindo da redação da Almeida Revista e Atualizada identificada como muito parecida.
+  O verso 6 ganhou uma nota lit explicando a escolha de "perseguir" (hebraico רדף), verbo normalmente hostil,
+  aqui usado de modo positivo e surpreendente.
+- USFM dos 39 livros regenerado em `texts/pt-BR/Essencial/`; dados do leitor regenerados.
+- **Pendente**: revisão humana formal; verificação pública de semelhança (ainda não feita); outros versos muito
+  citados do AT (Gn 1.1, Sl 1, 91, 100, 121, 139, entre outros) ainda não foram conferidos contra traduções
+  protegidas.
+
 ## Essencial pt-BR 0.3 "Revisada" — 2026-11-15
 
 Terceira release: o AT recebe sua **primeira rodada de revisão cruzada de IA** e a correção de um bug

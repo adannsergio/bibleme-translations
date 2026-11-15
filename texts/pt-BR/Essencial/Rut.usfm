@@ -1,7 +1,7 @@
-\id RUT Essencial pt-BR 0.3 [IA-rascunho] · gerado em 2026-11-15
+\id RUT Essencial pt-BR 0.4 [IA-rascunho] · gerado em 2026-11-15
 \usfm 3.0
 \ide UTF-8
-\rem Essencial pt-BR 0.3 “Revisada” · © Contribuidores do projeto bibleme Traduções · CC BY 4.0 · https://www.bibleme.com.br/translations
+\rem Essencial pt-BR 0.4 “Depurada” · © Contribuidores do projeto bibleme Traduções · CC BY 4.0 · https://www.bibleme.com.br/translations
 \rem [IA-rascunho] Texto produzido por IA a partir do hebraico/aramaico (Códice de Leningrado), com uma rodada de revisão cruzada de IA (registro em português + especialista em hebraico/aramaico e de corpus), mas SEM REVISÃO HUMANA -- diferente do piso de 3 revisões de IA por capítulo que o Novo Testamento teve antes de sair do ar. Material de risco (RFC-0004 §6): não use como referência até a revisão humana formal e a verificação pública de semelhança com traduções protegidas.
 \rem Texto-base: Códice de Leningrado, incluído no TAHOT (STEPBible), CC BY 4.0. Strong, lema e morfologia: STEPBible TAHOT, Tyndale House Cambridge e STEPBible.org, CC BY 4.0 (STEPBible.github.io/STEPBible-Data).
 \rem Convenções gerais (lista completa em convencoes.md, tarefa 0004): YHWH (dStrong H3068) → “SENHOR” em caixa alta, nota cultural só na 1ª ocorrência do livro; Qere (leitura tradicional) seguida no texto, Ketiv citada em nota Variante quando muda o sentido; marcador de objeto direto e artigo sem equivalente em português ficam sem forma visível (contam como cobertos); poesia marcada por quebra de linha, sem distinção fina de cólon.
