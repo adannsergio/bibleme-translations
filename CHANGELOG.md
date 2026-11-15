@@ -3,6 +3,29 @@
 Formato livre, por release. Veja [RFC-0004](rfcs/0004-processo-e-versoes.md) para o que uma release traz e
 [RFC-0010](rfcs/0010-citacao-por-tipo-de-uso.md) para qual versão citar por tipo de uso.
 
+## (sem tag nova ainda) — atualização do AT em 2026-11-15
+
+A tag `essencial-pt-br-0.2` (13/11) continua válida e congelada para quem já citou essa release; esta é uma
+atualização do conteúdo no `main`, ainda sem uma tag própria.
+
+- **Revisão cruzada de IA, 1ª rodada**, nos 39 livros do AT: um agente de registro em português (perspectiva
+  do idioma-alvo) e, numa segunda passada, um agente especialista em hebraico/aramaico mais especialistas de
+  corpus por grupo de livros (Torá, Históricos, Poéticos/Sapienciais, Profetas Maiores, Profetas Menores).
+  1.092 pareceres registrados, 587 decididos como acatados (total ou parcialmente) e aplicados ao texto.
+  Ainda **sem revisão humana formal** — diferente do NT, que teve piso de 3 revisões de IA por capítulo.
+- Corrigido um **bug sistêmico de geração** (marcador de posição de palavra hebraica vazio ou malformado,
+  `{}`/`{...}`): 656 das 687 ocorrências encontradas numa varredura do texto inteiro. As 31 restantes ficam
+  documentadas e não resolvidas de propósito, por não haver como atribuir a posição com segurança: 21 no
+  capítulo 23 de 2 Reis (bug estrutural maior, de linhas inteiras, não o padrão pontual das demais), 9 em
+  Números (3.31, 3.48, 4.6, 4.11, 5.21, 7.89, 11.23, 12.11, 14.19) e 1 em Ester 2.6.
+- Achados teológicos corrigidos nesta rodada incluem: remoção de leitura messiânica antecipada em Isa 7.14 e
+  Dn 9.25-26, e correção de "Satanás" (nome próprio) para "o Acusador" (substantivo comum com artigo, conforme
+  o TAHOT) em Zc 3.1-2.
+- USFM dos 39 livros regenerado em `texts/pt-BR/Essencial/`; dados do leitor regenerados (agora com
+  referências cruzadas AT↔NT resolvidas de verdade onde antes só havia o placeholder "AT").
+- **Pendente**: o achado de originalidade do Salmo 23 (ver `SOURCES`) segue sem correção; revisão humana
+  formal e verificação pública de semelhança continuam pendentes, como já divulgado na release 0.2.
+
 ## Essencial pt-BR 0.2 "Integral" — 2026-11-13
 
 Segunda release: acrescenta o **Antigo Testamento completo** (39 livros), em pré-release de quarentena (`0.x`).

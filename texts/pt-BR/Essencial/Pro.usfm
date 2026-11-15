@@ -1,8 +1,8 @@
-\id PRO Essencial pt-BR 0.2 [IA-rascunho] · gerado em 2026-11-13
+\id PRO Essencial pt-BR 0.2 [IA-rascunho] · gerado em 2026-11-15
 \usfm 3.0
 \ide UTF-8
 \rem Essencial pt-BR 0.2 “Integral” · © Contribuidores do projeto bibleme Traduções · CC BY 4.0 · https://www.bibleme.com.br/translations
-\rem [IA-rascunho] Texto produzido por IA a partir do hebraico/aramaico (Códice de Leningrado), SEM NENHUMA REVISÃO -- nem a passada mínima que o Novo Testamento teve antes de sair do ar (piso de 3 revisões por capítulo). Material de risco (RFC-0004 §6): não use como referência até a revisão humana formal e a verificação pública de semelhança com traduções protegidas.
+\rem [IA-rascunho] Texto produzido por IA a partir do hebraico/aramaico (Códice de Leningrado), com uma rodada de revisão cruzada de IA (registro em português + especialista em hebraico/aramaico e de corpus), mas SEM REVISÃO HUMANA -- diferente do piso de 3 revisões de IA por capítulo que o Novo Testamento teve antes de sair do ar. Material de risco (RFC-0004 §6): não use como referência até a revisão humana formal e a verificação pública de semelhança com traduções protegidas.
 \rem Texto-base: Códice de Leningrado, incluído no TAHOT (STEPBible), CC BY 4.0. Strong, lema e morfologia: STEPBible TAHOT, Tyndale House Cambridge e STEPBible.org, CC BY 4.0 (STEPBible.github.io/STEPBible-Data).
 \rem Convenções gerais (lista completa em convencoes.md, tarefa 0004): YHWH (dStrong H3068) → “SENHOR” em caixa alta, nota cultural só na 1ª ocorrência do livro; Qere (leitura tradicional) seguida no texto, Ketiv citada em nota Variante quando muda o sentido; marcador de objeto direto e artigo sem equivalente em português ficam sem forma visível (contam como cobertos); poesia marcada por quebra de linha, sem distinção fina de cólon.
 \rem Notas de rodapé: Lit. (sentido literal ou forma hebraica/aramaica), Variante (Qere/Ketiv), Nota cultural (convenção do projeto ou contexto histórico). Referências cruzadas (\x): OpenBible e citações nas próprias notas.
@@ -28,13 +28,13 @@
 \q1
 \v 8 \w Ouça|strong="H8085"\w*, \add meu\add* \w filho|strong="H1121"\w*, \w a instrução|strong="H4148"\w* \w de seu pai|strong="H0001"\w*, \w e não|strong="H0408"\w* \w rejeite|strong="H5203"\w* \w o ensino|strong="H8451"\w* \w de sua mãe|strong="H0517"\w*;\x - \xo 1:8 \xt PRO 6:20; PRO 8:33; 1KI 8:57; DEU 4:9; EPH 6:1; PRO 3:1\x*
 \q1
-\v 9 \w pois|strong="H3588"\w* \w eles|strong="H1992"\w* \w são|strong="H1992"\w* \w um colar de favor|strong="H3880,H2580"\w* \w para a sua cabeça|strong="H7218"\w*, \w e colares|strong="H6060"\w* \w para o seu pescoço|strong="H1621"\w*.\x - \xo 1:9 \xt PRO 3:22; PRO 4:9; EXO 20:12; PRO 3:3; DAN 5:29; GEN 41:42\x*
+\v 9 \w pois|strong="H3588"\w* \w eles|strong="H1992"\w* \w são|strong="H1992"\w* \w uma grinalda de favor|strong="H3880,H2580"\w* \w para a sua cabeça|strong="H7218"\w*, \w e colares|strong="H6060"\w* \w para o seu pescoço|strong="H1621"\w*.\x - \xo 1:9 \xt PRO 3:22; PRO 4:9; EXO 20:12; PRO 3:3; DAN 5:29; GEN 41:42\x*
 \q1
 \v 10 \add Meu\add* \w filho|strong="H1121"\w*, \w se|strong="H0518"\w* \w os pecadores|strong="H2400"\w* \w o seduzirem|strong="H6601"\w*, \w não|strong="H0408"\w* \w consinta|strong="H0014"\w*.\x - \xo 1:10 \xt PSA 119:9; EPH 5:11; PRO 4:14; PRO 16:29; PSA 1:1; EXO 23:2\x*
 \q1
-\v 11 \w Se|strong="H0518"\w* \w disserem|strong="H0559"\w*: "\w Venha|strong="H1980"\w* \w connosco|strong="H0854"\w*, \w preparemos|strong="H0693"\w* \add uma\add* \w emboscada|strong="H0693"\w* \w para matar|strong="H1818"\w*\f + \fr 1.11: \ft Lit.: hebraico "para sangue"\f*, \w espreitemos|strong="H6845"\w* \w o inocente|strong="H5355"\w* \w sem motivo|strong="H2600"\w*;\x - \xo 1:11 \xt PRO 1:18; PRO 12:6; PRO 6:17; PSA 94:21; PRO 13:20; EXO 23:2\x*
+\v 11 \w Se|strong="H0518"\w* \w disserem|strong="H0559"\w*: "\w Venha|strong="H1980"\w* \w conosco|strong="H0854"\w*, \w preparemos|strong="H0693"\w* \add uma\add* \w emboscada|strong="H0693"\w* \w para matar|strong="H1818"\w*\f + \fr 1.11: \ft Lit.: hebraico "para sangue"\f*, \w espreitemos|strong="H6845"\w* \w o inocente|strong="H5355"\w* \w sem motivo|strong="H2600"\w*;\x - \xo 1:11 \xt PRO 1:18; PRO 12:6; PRO 6:17; PSA 94:21; PRO 13:20; EXO 23:2\x*
 \q1
-\v 12 \w que os engulamos|strong="H1104"\w* \w vivos|strong="H2416"\w* \w como o Sheol|strong="H7585"\w*\f + \fr 1.12: \ft Nota cultural: hebraico "Sheol", a morada dos mortos; aqui, imagem da morte súbita e completa\f*, \w e inteiros|strong="H8549"\w*, \w como os que descem|strong="H3381"\w* \add à\add* \w cova|strong="H0953"\w* ";\x - \xo 1:12 \xt PSA 30:3; ISA 14:15; PRO 13:20; PSA 28:1; EPH 5:7; JAS 3:6\x*
+\v 12 \w que os engulamos|strong="H1104"\w* \w vivos|strong="H2416"\w* \w como o Sheol|strong="H7585"\w*\f + \fr 1.12: \ft Nota cultural: hebraico "Sheol", a morada dos mortos; aqui, imagem da morte súbita e completa\f*, \w e inteiros|strong="H8549"\w*, \w como os que descem|strong="H3381"\w* \add à\add* \w cova|strong="H0953"\w*;\x - \xo 1:12 \xt PSA 30:3; ISA 14:15; PRO 13:20; PSA 28:1; EPH 5:7; JAS 3:6\x*
 \q1
 \v 13 \w acharemos|strong="H4672"\w* \w toda riqueza|strong="H3605,H1952"\w* \w preciosa|strong="H3368"\w*, \w enchemos|strong="H4390"\w* \w as nossas casas|strong="H1004"\w* \w de despojo|strong="H7998"\w*;\x - \xo 1:13 \xt PRO 24:4; PRO 13:20; EXO 20:15; EPH 5:7; JAS 3:6; PRO 29:24\x*
 \q1
@@ -178,7 +178,7 @@
 \q1
 \v 27 \w Não|strong="H0408"\w* \w negue|strong="H4513"\w* \w o bem|strong="H2896"\w* \w a quem é devido|strong="H1167"\w*, \w quando|strong="H1961"\w* \w estiver|strong="H1961"\w* \w em seu poder|strong="H0410,H3027"\w*\f + \fr 3.27: \ft Variante: a Ketiv tem o plural "suas mãos"; seguimos a Qere, o singular "sua mão"\f* \w fazê-lo|strong="H6213"\w*.\x - \xo 3:27 \xt GAL 6:10; JAS 2:15-16; ROM 13:8; JAS 2:16; ECC 11:4; ROM 13:7\x*
 \q1
-\v 28 \w Não|strong="H0408"\w* \w diga|strong="H0559"\w* \w ao seu próximo|strong="H7453"\w*\f + \fr 3.28: \ft Variante: a Ketiv tem o plural "aos seus próximos"; seguimos a Qere, o singular "ao seu próximo"\f*: "\w Vá|strong="H1980"\w* \w e volte|strong="H7725"\w*, \w e amanhã|strong="H4279"\w* \w darei|strong="H5414"\w* "— \w sendo que você já tem|strong="H3426"\w* \w consigo|strong="H0854"\w*.\x - \xo 3:28 \xt ROM 13:8; JAS 2:16; LEV 19:13; DEU 24:12-15; DEU 24:15; 2CO 8:11\x*
+\v 28 \w Não|strong="H0408"\w* \w diga|strong="H0559"\w* \w ao seu próximo|strong="H7453"\w*\f + \fr 3.28: \ft Variante: a Ketiv tem o plural "aos seus próximos"; seguimos a Qere, o singular "ao seu próximo"\f*: “\w Vá|strong="H1980"\w* \w e volte|strong="H7725"\w*, \w e amanhã|strong="H4279"\w* \w darei|strong="H5414"\w*” — \w sendo que você já tem|strong="H3426"\w* \w consigo|strong="H0854"\w*.\x - \xo 3:28 \xt ROM 13:8; JAS 2:16; LEV 19:13; DEU 24:12-15; DEU 24:15; 2CO 8:11\x*
 \q1
 \v 29 \w Não|strong="H0408"\w* \w planeje|strong="H2790"\w* \w mal|strong="H7451"\w* \w contra|strong="H5921"\w* \w o seu próximo|strong="H7453"\w*, \w quando|strong="H1931"\w* \w ele|strong="H1931"\w* \w habita|strong="H3427"\w* \w seguro|strong="H0983"\w* \add com\add* \w você|strong="H0854"\w*.\x - \xo 3:29 \xt ZEC 8:17; PRO 21:10; PRO 28:7; PRO 6:14; ZEC 7:10\x*
 \q1
@@ -211,7 +211,7 @@
 \q1
 \v 8 \w Exalte-a|strong="H5549"\w*, \w e ela o exaltará|strong="H7311"\w*; \w ela o honrará|strong="H3513"\w*, \w se|strong="H3588"\w* \w a abraçar|strong="H2263"\w*.\x - \xo 4:8 \xt PSA 32:8; DEU 4:9; DAN 12:3; PRO 3:13; PRO 13:1; PRO 14:29\x*
 \q1
-\v 9 \add Ela\add* \w porá|strong="H5414"\w* \w na sua cabeça|strong="H7218"\w* \w um colar de graça|strong="H3880,H2580"\w*; \w uma coroa|strong="H5850"\w* \w de beleza|strong="H8597"\w* \w ela lhe dará|strong="H4042"\w*.\x - \xo 4:9 \xt PRO 1:9; PRO 16:31; PSA 32:8; DEU 4:9; PRO 3:13; 1PE 5:4\x*
+\v 9 \add Ela\add* \w porá|strong="H5414"\w* \w na sua cabeça|strong="H7218"\w* \w uma grinalda de graça|strong="H3880,H2580"\w*; \w uma coroa|strong="H5850"\w* \w de beleza|strong="H8597"\w* \w ela lhe dará|strong="H4042"\w*."\x - \xo 4:9 \xt PRO 1:9; PRO 16:31; PSA 32:8; DEU 4:9; PRO 3:13; 1PE 5:4\x*
 \q1
 \v 10 \w Ouça|strong="H8085"\w*, \add meu\add* \w filho|strong="H1121"\w*, \w e receba|strong="H3947"\w* \w as minhas palavras|strong="H0561"\w*, \w e se multiplicarão|strong="H7235"\w* \w para você|strong="H9031"\w* \w os anos|strong="H8141"\w* \w de vida|strong="H2416"\w*.\x - \xo 4:10 \xt PRO 9:11; PSA 32:8; DEU 4:9; PRO 3:2; PRO 4:22; PSA 119:9\x*
 \q1
@@ -268,7 +268,7 @@
 \q1
 \v 9 \add para\add* \w que|strong="H6435"\w* \w não|strong="H6435"\w* \w dê|strong="H5414"\w* \w a outros|strong="H0312"\w* \w o seu vigor|strong="H1935"\w*, \w e os seus anos|strong="H8141"\w* \w a um cruel|strong="H0394"\w*;\x - \xo 5:9 \xt PSA 119:9; 1CO 6:18; MAT 5:29; PRO 31:3; PRO 13:18; PSA 25:7\x*
 \q1
-\v 10 \add para\add* \w que|strong="H6435"\w* \w não|strong="H6435"\w* \add se\add* \w farteiem|strong="H7646"\w* \w estranhos|strong="H2114"\w* \w da sua força|strong="H3581"\w*, \w e o seu trabalho|strong="H6089"\w* \w esteja na casa|strong="H1004"\w* \w de um estrangeiro|strong="H5237"\w*;\x - \xo 5:10 \xt HOS 7:9; PSA 119:9; 1CO 6:18; MAT 5:29; PRO 21:17; PRO 31:3\x*
+\v 10 \add para\add* \w que|strong="H6435"\w* \w não|strong="H6435"\w* \add se\add* \w fartem|strong="H7646"\w* \w estranhos|strong="H2114"\w* \w da sua força|strong="H3581"\w*, \w e o seu trabalho|strong="H6089"\w* \w esteja na casa|strong="H1004"\w* \w de um estrangeiro|strong="H5237"\w*;\x - \xo 5:10 \xt HOS 7:9; PSA 119:9; 1CO 6:18; MAT 5:29; PRO 21:17; PRO 31:3\x*
 \q1
 \v 11 \w e você gemerá|strong="H5098"\w* \w no seu fim|strong="H0319"\w*, \w quando|strong="H3615"\w* \add se\add* \w consumir|strong="H3615"\w* \w a sua carne|strong="H1320"\w* \w e o seu corpo|strong="H7607"\w*.\x - \xo 5:11 \xt PSA 119:9; 1CO 6:18; PRO 8:36; MAT 5:29; PRO 21:17; PRO 31:3\x*
 \q1
@@ -357,7 +357,7 @@
 \q1
 \v 30 \w Não|strong="H3808"\w* \add se\add* \w despreza|strong="H0936"\w* \w o ladrão|strong="H1590"\w* \w quando|strong="H3588"\w* \w rouba|strong="H1589"\w* \w para saciar|strong="H4390"\w* \w o seu apetite|strong="H5315"\w*, \w pois|strong="H3588"\w* \add está com\add* \w fome|strong="H7456"\w*;\x - \xo 6:30 \xt EXO 22:7; PSA 119:9; 1CO 6:18; PRO 30:9\x*
 \q1
-\v 31 \add mas\add* \w se for achado|strong="H4672"\w*, \w pagará|strong="H7999"\w* \w sete vezes|strong="H7659"\w* \w tudo|strong="H3605"\w* \w o patrimônio|strong="H1952"\w* \w da sua casa|strong="H1004"\w* \w dará|strong="H5414"\w*.\x - \xo 6:31 \xt PSA 119:9; 1CO 6:18; LUK 19:8; 2SA 12:6; EXO 22:1; JOB 20:18\x*
+\v 31 \add mas\add* \w se for achado|strong="H4672"\w*, \w pagará|strong="H7999"\w* \w sete vezes|strong="H7659"\w*; \w tudo|strong="H3605"\w* \w o patrimônio|strong="H1952"\w* \w da sua casa|strong="H1004"\w* \w dará|strong="H5414"\w*.\x - \xo 6:31 \xt PSA 119:9; 1CO 6:18; LUK 19:8; 2SA 12:6; EXO 22:1; JOB 20:18\x*
 \q1
 \v 32 \w Quem comete adultério|strong="H5003"\w* \w com uma mulher|strong="H0802"\w* \w é falto|strong="H2638"\w* \w de entendimento|strong="H3820"\w*; \w ele mesmo|strong="H1931"\w* \w destrói|strong="H7843"\w* \w a própria vida|strong="H5315"\w* \w ao fazê-lo|strong="H6213"\w*.\x - \xo 6:32 \xt PRO 7:7; PRO 9:4; PRO 10:13; PRO 12:11; LEV 20:10; PSA 119:9\x*
 \q1
@@ -374,7 +374,7 @@
 \q1
 \v 3 \w Amarre-os|strong="H7194"\w* \w aos seus dedos|strong="H5921,H0676"\w*, \w escreva-os|strong="H3789"\w* \w na tábua|strong="H5921,H3871"\w* \w do seu coração|strong="H3820"\w*.\x - \xo 7:3 \xt PRO 3:3; ISA 30:8; DEU 9:10; EXO 31:18; DEU 11:18; DEU 6:8\x*
 \q1
-\v 4 \w Diga|strong="H0559"\w* \w à sabedoria|strong="H2451"\w*: "\w Você é|strong="H0859"\w* \w minha irmã|strong="H0269"\w* ", \w e chame|strong="H7121"\w* \w o entendimento|strong="H0998"\w* \w de parente|strong="H4129"\w*.\x - \xo 7:4 \xt PRO 1:2; PSA 90:12; PRO 2:2-4; PRO 4:6-8; PRO 4:1; PRO 6:20\x*
+\v 4 \w Diga|strong="H0559"\w* \w à sabedoria|strong="H2451"\w*: “\w Você é|strong="H0859"\w* \w minha irmã|strong="H0269"\w*”, \w e chame|strong="H7121"\w* \w o entendimento|strong="H0998"\w* \w de parente|strong="H4129"\w*.\x - \xo 7:4 \xt PRO 1:2; PSA 90:12; PRO 2:2-4; PRO 4:6-8; PRO 4:1; PRO 6:20\x*
 \q1
 \v 5 \add para\add* \w guardá-lo|strong="H8104"\w* \w da mulher|strong="H0802"\w* \w estranha|strong="H2114"\w*, \w da estrangeira|strong="H5237"\w* \add que\add* \w lisonjeia|strong="H2505"\w* \w com suas palavras|strong="H0561"\w*.\x - \xo 7:5 \xt PRO 2:16; PRO 6:24; PRO 5:20; PSA 69:8; 1CO 6:18; PRO 5:3\x*
 \q1
@@ -453,7 +453,7 @@
 \q1
 \v 15 \add Por\add* \w mim|strong="H9030"\w*, \w reis|strong="H4428"\w* \w reinam|strong="H4427"\w*, \w e governantes|strong="H7336"\w* \w decretam|strong="H2710"\w* \w justiça|strong="H6664"\w*.\x - \xo 8:15 \xt ROM 13:1; DAN 2:21; REV 1:5; MAT 28:18; REV 19:16; 1TI 6:15\x*
 \q1
-\v 16 \add Por\add* \w mim|strong="H9030"\w*, \w príncipes|strong="H8269"\w* \w governam|strong="H8323"\w*, \w e nobres|strong="H5081"\w*, \w todos|strong="H3605"\w* \w os que julgam|strong="H8199"\w* \w com justiça|strong="H6664"\w*\f + \fr 8.16: \ft Variante: a Ketiv tem "אָרֶץ", "a terra"; seguimos a Qere, "צֶדֶק", "justiça"\f*.\x - \xo 8:16 \xt ISA 32:1; PSA 148:11; ROM 13:1; DAN 2:21; REV 1:5; REV 19:16\x*
+\v 16 \add Por\add* \w mim|strong="H9030"\w*, \w príncipes|strong="H8269"\w* \w governam|strong="H8323"\w*, \w e nobres|strong="H5081"\w*, \w todos|strong="H3605"\w* \w os que julgam|strong="H8199"\w* \w com justiça|strong="H6664"\w*\f + \fr 8.16: \ft Variante: o Códice de Leningrado (texto-base) traz "צֶדֶק", "justiça"; a edição Ben Chaim (2ª Bíblia Rabínica) traz "אָרֶץ", "a terra" — variante entre edições hebraicas, não Qere/Ketiv\f*.\x - \xo 8:16 \xt ISA 32:1; PSA 148:11; ROM 13:1; DAN 2:21; REV 1:5; REV 19:16\x*
 \q1
 \v 17 \w Eu|strong="H0589"\w* \w amo|strong="H0157"\w* \w os que me amam|strong="H0157"\w*\f + \fr 8.17: \ft Variante: a Ketiv tem "aqueles que a amam" (3ª pessoa); seguimos a Qere, "os que me amam" (1ª pessoa)\f*, \w e os que me buscam com empenho|strong="H7836"\w* \w me encontram|strong="H4672"\w*.\x - \xo 8:17 \xt PRO 1:28; HEB 11:6; PRO 7:15; PRO 13:24; MAT 7:7; JHN 14:23\x*
 \q1
@@ -465,7 +465,7 @@
 \q1
 \v 21 \add para\add* \w dar|strong="H5157"\w* \w como herança|strong="H5157"\w* \w aos que me amam|strong="H0157"\w* \w riqueza|strong="H3426"\w*, \w e encher|strong="H4390"\w* \w os seus tesouros|strong="H0214"\w*.\x - \xo 8:21 \xt PRO 15:6; 1TI 6:6; JHN 17:24; PRO 24:4; 1PE 1:4; GEN 15:14\x*
 \q1
-\v 22 \w O SENHOR|strong="H3068"\w* \add me\add* \w produziu|strong="H7069"\w* \w como princípio|strong="H7225"\w* \w do seu caminho|strong="H1870"\w*, \w antes|strong="H6924"\w*, \w desde então|strong="H0227"\w*, \w das suas obras|strong="H4659"\w*.\x - \xo 8:22 \xt JHN 1:1; GEN 1:1; COL 1:17; PRO 3:19; PSA 104:24; JOB 28:23\x*
+\v 22 \w O SENHOR|strong="H3068"\w* \add me\add* \w produziu|strong="H7069"\w*\f + \fr 8.22: \ft Lit.: קָנָה (H7069) tem sentido amplo — "adquirir/possuir" e, secundariamente, "criar/gerar/produzir"; os vv.23-25 usam outra raiz (חול, "dar à luz") para a mesma ideia\f* \w como princípio|strong="H7225"\w* \w do seu caminho|strong="H1870"\w*, \w antes|strong="H6924"\w*, \w desde então|strong="H0227"\w*, \w das suas obras|strong="H4659"\w*.\x - \xo 8:22 \xt JHN 1:1; GEN 1:1; COL 1:17; PRO 3:19; PSA 104:24; JOB 28:23\x*
 \q1
 \v 23 \add Desde a\add* \w eternidade|strong="H5769"\w* \add fui\add* \w estabelecida|strong="H5258"\w*, \add desde o\add* \w princípio|strong="H7218"\w*, \w desde as origens|strong="H6924"\w* \w da terra|strong="H0776"\w*.\x - \xo 8:23 \xt JHN 1:1; GEN 1:1; ISA 9:6; COL 1:17; JHN 17:24; JOB 26:7\x*
 \q1
@@ -514,7 +514,7 @@
 \q1
 \v 9 \w Ensine|strong="H5414"\w* \w o sábio|strong="H2450"\w*, \w e ele será|strong="H2449"\w* \w ainda|strong="H5750"\w* \add mais\add* \w sábio|strong="H2449"\w*; \w informe|strong="H3045"\w* \w o justo|strong="H6662"\w*, \w e ele aumentará|strong="H3254"\w* \w o aprendizado|strong="H3948"\w*.\x - \xo 9:9 \xt PRO 1:5; PRO 16:23; PRO 21:11; ACT 17:11; PRO 12:15; PRO 18:15\x*
 \q1
-\v 10 \w O princípio|strong="H8462"\w* \w da sabedoria|strong="H2451"\w* \w é o temor|strong="H3374"\w* \w do SENHOR|strong="H3068"\w*, \w e o conhecimento|strong="H1847"\w* \w do Santo|strong="H6918"\w* \w é entendimento|strong="H0998"\w*.\x - \xo 9:10 \xt JOB 28:28; PRO 1:7; PRO 2:5; PRO 30:3; PSA 111:10; ISA 11:2\x*
+\v 10 \w O princípio|strong="H8462"\w* \w da sabedoria|strong="H2451"\w* \w é o temor|strong="H3374"\w* \w do SENHOR|strong="H3068"\w*, \w e o conhecimento|strong="H1847"\w* \w do Santo|strong="H6918"\w*\f + \fr 9.10: \ft Lit.: קְדֹשִׁים (H6918), plural, lit. "dos santos/dos que são santos"; aqui tratado como epíteto de Deus (plural de majestade), diferente do sentido genérico adotado em Pv 30.3\f* \w é entendimento|strong="H0998"\w*.\x - \xo 9:10 \xt JOB 28:28; PRO 1:7; PRO 2:5; PRO 30:3; PSA 111:10; ISA 11:2\x*
 \q1
 \v 11 \w Pois|strong="H3588"\w* \add por\add* \w mim|strong="H9030"\w* \w se multiplicarão|strong="H7235"\w* \w os seus dias|strong="H3117"\w*, \w e se acrescentarão|strong="H3254"\w* \w a você|strong="H9031"\w* \w anos|strong="H8141"\w* \w de vida|strong="H2416"\w*.\x - \xo 9:11 \xt PRO 3:2; PRO 4:10; PRO 10:27; JOB 5:26; PRO 3:16; DEU 6:2\x*
 \q1
@@ -528,7 +528,7 @@
 \q1
 \v 16 "\w Quem|strong="H4310"\w* \w é ingênuo|strong="H6612"\w*? \w Volte-se|strong="H5493"\w* \add para\add* \w aqui|strong="H2008"\w*; \w e a quem falta|strong="H2638,H3820"\w* \w juízo|strong="H3820"\w*, \w ela|strong="H0559"\w* \w diz|strong="H0559"\w* \add a\add* \w ele|strong="H9033"\w*:\x - \xo 9:16 \xt PRO 9:4; PRO 7:7; 1CO 6:18; PRO 22:3; PSA 14:2; GEN 39:8\x*
 \q1
-\v 17 '\w Águas|strong="H4325"\w* \w furtadas|strong="H1589"\w* \add são\add* \w doces|strong="H4985"\w*, \w e o pão|strong="H3899"\w* \w comido em segredo|strong="H5643"\w* \w é agradável|strong="H5276"\w*.'"\x - \xo 9:17 \xt PRO 20:17; 1CO 6:18; PRO 23:31-32; EPH 5:12; PRO 22:3; JAS 1:14-15\x*
+\v 17 ‘\w Águas|strong="H4325"\w* \w furtadas|strong="H1589"\w* \add são\add* \w doces|strong="H4985"\w*, \w e o pão|strong="H3899"\w* \w comido em segredo|strong="H5643"\w* \w é agradável|strong="H5276"\w*.’"\x - \xo 9:17 \xt PRO 20:17; 1CO 6:18; PRO 23:31-32; EPH 5:12; PRO 22:3; JAS 1:14-15\x*
 \q1
 \v 18 \w E ele não|strong="H3808"\w* \w sabe|strong="H3045"\w* \w que|strong="H3588"\w* \w ali estão|strong="H7496,H8033"\w* \w os mortos|strong="H7496"\w*, \w e que nas profundezas|strong="H6012"\w* \w do Sheol|strong="H7585"\w* \w estão os seus convidados|strong="H7121"\w*.\x - \xo 9:18 \xt 1CO 6:18; PRO 7:27; PRO 20:17; PRO 22:3; PRO 2:18; ECC 7:26\x*
 \c 10
@@ -537,7 +537,7 @@
 \q1
 \v 2 \w Não|strong="H3808"\w* \w aproveitam|strong="H3276"\w* \w os tesouros|strong="H0214"\w* \w da maldade|strong="H7562"\w*, \w mas a justiça|strong="H6666"\w* \w livra|strong="H5337"\w* \w da morte|strong="H4194"\w*.\x - \xo 10:2 \xt PRO 11:4; PRO 13:11; PRO 21:6; PRO 12:28; JAS 5:20; PSA 49:6-10\x*
 \q1
-\v 3 \w O SENHOR|strong="H3068"\w* \w não|strong="H3808"\w* \add deixa passar\add* \w fome|strong="H7456"\w* \w a vida|strong="H5315"\w* \w do justo|strong="H6662"\w*, \w mas rejeita|strong="H1920"\w* \w a avidez|strong="H1942"\w* \w dos ímpios|strong="H7563"\w*.\x - \xo 10:3 \xt PSA 37:3; MAT 6:30-33; PSA 37:19; PSA 34:9-10; PSA 37:25; PSA 33:19\x*
+\v 3 \w A vida|strong="H5315"\w* \w do justo|strong="H6662"\w*, \w o SENHOR|strong="H3068"\w* \w não|strong="H3808"\w* \add deixa passar\add* \w fome|strong="H7456"\w*, \w mas rejeita|strong="H1920"\w* \w a avidez|strong="H1942"\w* \w dos ímpios|strong="H7563"\w*.\x - \xo 10:3 \xt PSA 37:3; MAT 6:30-33; PSA 37:19; PSA 34:9-10; PSA 37:25; PSA 33:19\x*
 \q1
 \v 4 \w Empobrece quem|strong="H7326,H6213"\w* \add trabalha\add* \w com mão|strong="H3709"\w* \w negligente|strong="H7423"\w*, \w mas a mão|strong="H3027"\w* \w dos diligentes|strong="H2742"\w* \w enriquece|strong="H6238"\w*.\x - \xo 10:4 \xt PRO 12:24; PRO 21:5; PRO 22:29; PRO 18:9; PRO 19:15; PRO 20:4\x*
 \q1
@@ -795,7 +795,7 @@
 \q1
 \v 13 \w Também|strong="H1571"\w* \w no riso|strong="H7814"\w* \w pode haver dor|strong="H3510"\w* \w de coração|strong="H3820"\w*, \w e o seu fim|strong="H0319"\w* \add pode ser\add* \w tristeza|strong="H8424"\w* \w após a alegria|strong="H8057"\w*.\x - \xo 14:13 \xt ECC 2:2; JAS 4:9; LUK 6:25\x*
 \q1
-\v 14 \w Dos seus próprios caminhos|strong="H1870"\w* \add se\add* \w saciará|strong="H7646"\w* \w o infiel|strong="H5472,H3820"\w* \w de coração|strong="H3820"\w*, \w e também do seu, o homem|strong="H5921,H0376"\w* \w bom|strong="H2896"\w*.\x - \xo 14:14 \xt PRO 1:31; PRO 12:14; GAL 6:8; HEB 3:12; GEN 19:26; PSA 109:17\x*
+\v 14 \w Dos seus próprios caminhos|strong="H1870"\w* \w se saciará|strong="H7646"\w* \w o infiel|strong="H5472"\w* \w de coração|strong="H3820"\w*, \w e do que lhe pertence|strong="H5921"\w*, \w também se saciará|strong="H7646"\w* \w o homem|strong="H0376"\w* \w bom|strong="H2896"\w*.\x - \xo 14:14 \xt PRO 1:31; PRO 12:14; GAL 6:8; HEB 3:12; GEN 19:26; PSA 109:17\x*
 \q1
 \v 15 \w O ingênuo|strong="H6612"\w* \w crê|strong="H0539"\w* \w em toda|strong="H3605"\w* \w palavra|strong="H1697"\w*, \w mas o prudente|strong="H6175"\w* \w atenta|strong="H0995"\w* \w para os seus passos|strong="H0838"\w*.\x - \xo 14:15 \xt PRO 27:12; PRO 22:3; PRO 14:8; 1JN 4:1; EPH 5:17; PRO 4:26\x*
 \q1
@@ -827,7 +827,7 @@
 \q1
 \v 29 \w O que é tardio|strong="H0750,H0639"\w* \w em irar-se|strong="H0639"\w* \w é grande|strong="H7227"\w* \w em entendimento|strong="H8394"\w*, \w mas o que é impulsivo|strong="H7116,H7307"\w* \w de espírito|strong="H7307"\w* \w exalta|strong="H7311"\w* \w insensatez|strong="H0200"\w*.\x - \xo 14:29 \xt PRO 14:17; JAS 1:19; PRO 16:32; EPH 4:26; PSA 37:8; ECC 7:8\x*
 \q1
-\v 30 \w Coração|strong="H3820"\w* \w tranquilo|strong="H4832"\w* \w é vida|strong="H2416"\w* \w para o corpo|strong="H1320"\w*, \w mas a invveja|strong="H7068"\w* \w é podridão|strong="H7538"\w* \w para os ossos|strong="H6106"\w*.\x - \xo 14:30 \xt PRO 12:4; PRO 4:22; PRO 17:22; JOB 5:2; PRO 3:8; PRO 4:23\x*
+\v 30 \w Coração|strong="H3820"\w* \w tranquilo|strong="H4832"\w* \w é vida|strong="H2416"\w* \w para o corpo|strong="H1320"\w*, \w mas a inveja|strong="H7068"\w* \w é podridão|strong="H7538"\w* \w para os ossos|strong="H6106"\w*.\x - \xo 14:30 \xt PRO 12:4; PRO 4:22; PRO 17:22; JOB 5:2; PRO 3:8; PRO 4:23\x*
 \q1
 \v 31 \w Quem oprime|strong="H6231"\w* \w o pobre|strong="H1800"\w* \w insulta|strong="H2778"\w* \w ao seu Criador|strong="H6213"\w*, \w mas quem se compadece|strong="H2603"\w* \w do necessitado|strong="H0034"\w* \w o honra|strong="H3513"\w*.\x - \xo 14:31 \xt DEU 24:14; PRO 19:17; PRO 22:16; MAT 25:40; PRO 3:9; PSA 12:5\x*
 \q1
@@ -919,15 +919,15 @@
 \q1
 \v 6 \w Com bondade|strong="H2617"\w* \w e fidelidade|strong="H0571"\w* \add se\add* \w expia|strong="H3722"\w* \w iniquidade|strong="H5771"\w*, \w e com o temor|strong="H3374"\w* \w do SENHOR|strong="H3068"\w* \w se aparta|strong="H5493"\w* \w do mal|strong="H7451"\w*.\x - \xo 16:6 \xt JOB 28:28; PRO 14:27; PRO 3:7; PRO 8:13; PRO 14:16; 2CO 7:1\x*
 \q1
-\v 7 \w Quando|strong="H7521"\w* \w o SENHOR|strong="H3068"\w* \add se\add* \w agrada|strong="H7521"\w* \w dos caminhos|strong="H1870"\w* \w de um homem|strong="H0376"\w*, \w também|strong="H1571"\w* \w os seus inimigos|strong="H0341"\w* \add ele leva a estar em\add* \w paz|strong="H7999"\w* \add com\add* \w ele|strong="H0854"\w*.\x - \xo 16:7 \xt 1SA 24:19; ROM 8:31; 1JN 3:22; 1PE 3:13; HEB 12:14; 2CH 17:10\x*
+\v 7 \w Quando|strong="H7521"\w* \w o SENHOR|strong="H3068"\w* \add se\add* \w agrada|strong="H7521"\w* \w dos caminhos|strong="H1870"\w* \w de um homem|strong="H0376"\w*, \w também|strong="H1571"\w* \w os seus inimigos|strong="H0341"\w* \add ele os leva a estar em\add* \w paz|strong="H7999"\w* \add com\add* \w ele|strong="H0854"\w*.\x - \xo 16:7 \xt 1SA 24:19; ROM 8:31; 1JN 3:22; 1PE 3:13; HEB 12:14; 2CH 17:10\x*
 \q1
 \v 8 \w Melhor|strong="H2896"\w* \w é o pouco|strong="H4592"\w* \w com justiça|strong="H6666"\w* \w do que grande|strong="H7230"\w* \w rendimento|strong="H8393"\w* \w sem direito|strong="H3808,H4941"\w*.\x - \xo 16:8 \xt PSA 37:16; PSA 72:1; 1TI 6:6; PRO 15:16; ECC 4:6; JER 17:11\x*
 \q1
 \v 9 \w O coração|strong="H3820"\w* \w do homem|strong="H0120"\w* \w planeja|strong="H2803"\w* \w o seu caminho|strong="H1870"\w*, \w mas o SENHOR|strong="H3068"\w* \w dirige|strong="H3559"\w* \w os seus passos|strong="H6806"\w*.\x - \xo 16:9 \xt JER 10:23; PRO 16:1; PRO 19:21; PRO 20:24; PRO 3:6; PSA 127:1\x*
 \q1
-\v 10 \w Oráculo|strong="H7081"\w* \w há nos lábios|strong="H5921,H8193"\w* \w do rei|strong="H4428"\w*; \w em juízo|strong="H4941"\w* \w não|strong="H3808"\w* \w erra|strong="H4603"\w* \w a sua boca|strong="H6310"\w*.\x - \xo 16:10 \xt PSA 119:13; JAS 1:26; ISA 32:1-2; GEN 44:15; GEN 44:5\x*
+\v 10 \w Oráculo|strong="H7081"\w*\f + \fr 16.10: \ft Lit.: divinação/magia (קֶסֶם), a mesma palavra usada para a prática pagã proibida em outros lugares do AT (ex.: Dt 18.10, 1Sm 15.23, 2Rs 17.17)\f* \w há nos lábios|strong="H5921,H8193"\w* \w do rei|strong="H4428"\w*; \w em juízo|strong="H4941"\w* \w não|strong="H3808"\w* \w erra|strong="H4603"\w* \w a sua boca|strong="H6310"\w*.\x - \xo 16:10 \xt PSA 119:13; JAS 1:26; ISA 32:1-2; GEN 44:15; GEN 44:5\x*
 \q1
-\v 11 \w A balança|strong="H6425"\w* \w e os pesos|strong="H3976"\w* \w justos pertencem|strong="H4941,H3068"\w* \w ao SENHOR|strong="H3068"\w*; \w são obra|strong="H4639"\w* sua \w todos|strong="H3605"\w* \w os pesos|strong="H0068"\w* \w da bolsa|strong="H3599"\w*.\x - \xo 16:11 \xt MIC 6:11; DEU 25:13; PRO 11:1; PRO 20:23; PHP 4:8; PRO 20:10\x*
+\v 11 \w A balança|strong="H6425"\w* \w e os pesos|strong="H3976"\w* \w justos pertencem|strong="H4941,H3068"\w* \w ao SENHOR|strong="H3068"\w*; \w todos|strong="H3605"\w* \w os pesos|strong="H0068"\w* \w da bolsa|strong="H3599"\w* \w são obra|strong="H4639"\w* \w sua|strong="H4639"\w*.\x - \xo 16:11 \xt MIC 6:11; DEU 25:13; PRO 11:1; PRO 20:23; PHP 4:8; PRO 20:10\x*
 \q1
 \v 12 \w É abominação|strong="H8441"\w* \w para os reis|strong="H4428"\w* \w cometer|strong="H6213"\w* \w maldade|strong="H7562"\w*, \w pois|strong="H3588"\w* \w pela justiça|strong="H6666"\w* \add se\add* \w estabelece|strong="H3559"\w* \w o trono|strong="H3678"\w*.\x - \xo 16:12 \xt JOB 35:8; PRO 25:5; PRO 29:14; PSA 89:14; PSA 101:8; PSA 97:2\x*
 \q1
@@ -980,9 +980,9 @@
 \q1
 \v 3 \w O crisol|strong="H4715"\w* \w é para a prata|strong="H3701"\w*, \w e o forno|strong="H3564"\w* \w é para o ouro|strong="H2091"\w*, \w mas quem prova|strong="H0974"\w* \w os corações|strong="H3826"\w* \w é o SENHOR|strong="H3068"\w*.\x - \xo 17:3 \xt PRO 27:21; ISA 48:10; JOB 23:10; ZEC 13:9; PSA 66:10; PSA 139:23\x*
 \q1
-\v 4 \w O malfeitor|strong="H7489"\w* \w atenta|strong="H7181"\w* \w ao lábio|strong="H5921,H8193"\w* \w da maldade|strong="H0205"\w*; \w o mentiroso|strong="H8267"\w* \add dá\add* \w ouvidos|strong="H0238"\w* \w à língua|strong="H5921,H3956"\w* \w destrutiva|strong="H1942"\w*.\x - \xo 17:4 \xt 2TI 4:3-4; 1JN 4:5; PRO 28:4; ISA 30:10; PRO 6:12\x*
+\v 4 \w O malfeitor|strong="H7489"\w* \w atenta|strong="H7181"\w* \w para o lábio|strong="H5921,H8193"\w* \w da maldade|strong="H0205"\w*; \w o mentiroso|strong="H8267"\w* \add dá\add* \w ouvidos|strong="H0238"\w* \w à língua|strong="H5921,H3956"\w* \w destrutiva|strong="H1942"\w*.\x - \xo 17:4 \xt 2TI 4:3-4; 1JN 4:5; PRO 28:4; ISA 30:10; PRO 6:12\x*
 \q1
-\v 5 \w Quem escarnece|strong="H3932"\w* \w do pobre|strong="H7326"\w* \w insulta|strong="H2778"\w* \w ao seu Criador|strong="H6213"\w*; \w quem se alegra|strong="H8056"\w* \w com a desgraça|strong="H0343"\w* \w não|strong="H3808"\w* \add ficará\add* \w impune|strong="H5352"\w*.\x - \xo 17:5 \xt PRO 14:31; JAS 2:6; MAT 25:45; PRO 24:17; JOB 31:29; OBA 1:12\x*
+\v 5 \w Quem escarnece|strong="H3932"\w* \w do pobre|strong="H7326"\w* \w insulta|strong="H2778"\w* \w o seu Criador|strong="H6213"\w*; \w quem se alegra|strong="H8056"\w* \w com a desgraça|strong="H0343"\w* \w não|strong="H3808"\w* \add ficará\add* \w impune|strong="H5352"\w*.\x - \xo 17:5 \xt PRO 14:31; JAS 2:6; MAT 25:45; PRO 24:17; JOB 31:29; OBA 1:12\x*
 \q1
 \v 6 \w Coroa|strong="H5850"\w* \w dos velhos|strong="H2205"\w* \w são os filhos|strong="H1121"\w* \w dos filhos|strong="H1121"\w*, \w e a honra|strong="H8597"\w* \w dos filhos|strong="H1121"\w* \w são os seus pais|strong="H0001"\w*.\x - \xo 17:6 \xt PRO 16:31; JER 13:18; ISA 62:3; ISA 28:5; JOB 42:16; PSA 128:6\x*
 \q1
@@ -1065,9 +1065,9 @@
 \q1
 \v 17 \w Justo parece|strong="H6662"\w* \w o primeiro|strong="H7223"\w* \w em sua causa|strong="H7379"\w*, \w até que venha|strong="H0935"\w*\f + \fr 18.17: \ft Variante: a Ketiv tem "יָבֹא", "ele virá"; a Qere, que seguimos, traz forma equivalente ligada ao verbo seguinte — variante sem efeito relevante no sentido\f* \w o seu próximo|strong="H7453"\w* \w e o examine|strong="H2713"\w*.\x - \xo 18:17 \xt JOB 29:16; PRO 18:13; PRO 28:11; 2SA 16:4; ACT 25:16; LUK 6:42\x*
 \q1
-\v 18 \w As contendas|strong="H4079"\w* \w a sorte|strong="H7673,H1486"\w* \add termina,\add* \w e entre os poderosos|strong="H0996,H6099"\w* \w decide|strong="H6504"\w*.\x - \xo 18:18 \xt PRO 16:33; NEH 11:1; RUT 1:17\x*
+\v 18 \w A sorte|strong="H7673,H1486"\w* \add termina\add* \w as contendas|strong="H4079"\w*, \w e entre os poderosos|strong="H0996,H6099"\w* \w decide|strong="H6504"\w*.\x - \xo 18:18 \xt PRO 16:33; NEH 11:1; RUT 1:17\x*
 \q1
-\v 19 \w Um irmão|strong="H0251"\w* \w ofendido|strong="H6586"\w* \w é mais difícil que uma cidade|strong="H7151,H5797"\w* \w fortificada|strong="H5797"\w*; \w e as contendas|strong="H4079"\w*\f + \fr 18.19: \ft Variante: a Ketiv tem "מְדוֹנִים", forma equivalente; a Qere, que seguimos, "מִדְיָנִים" — variante só de grafia\f* \w são como a tranca|strong="H1280"\w* \w de uma fortaleza|strong="H0759"\w*.\x - \xo 18:19 \xt PRO 16:32; ACT 15:39; 1SA 17:28; PRO 6:19; 1KI 12:16; GEN 37:3-5\x*
+\v 19 \w Um irmão|strong="H0251"\w* \w ofendido|strong="H6586"\w* \w é mais difícil que uma cidade|strong="H7151,H5797"\w* \w fortificada|strong="H5797"\w*; \w e as contendas|strong="H4079"\w*\f + \fr 18.19: \ft Variante: a Ketiv tem "מְדוֹנִים" (H4066); seguimos a Qere, "מִדְיָנִים" (H4079) — variante lexical, mesmo sentido ("contendas")\f* \w são como a tranca|strong="H1280"\w* \w de uma fortaleza|strong="H0759"\w*.\x - \xo 18:19 \xt PRO 16:32; ACT 15:39; 1SA 17:28; PRO 6:19; 1KI 12:16; GEN 37:3-5\x*
 \q1
 \v 20 \w Do fruto|strong="H6529"\w* \w da boca|strong="H6310,H0376"\w* \w do homem|strong="H0376"\w* \add se\add* \w farta|strong="H7646"\w* \w o seu ventre|strong="H0990"\w*; \w do produto|strong="H8393"\w* \w dos seus lábios|strong="H8193"\w* \add ele se\add* \w saciará|strong="H7646"\w*.\x - \xo 18:20 \xt PRO 12:14; PRO 22:18; PRO 13:2; PRO 12:13-14; PRO 25:11-12; JHN 4:32\x*
 \q1
@@ -1114,7 +1114,7 @@
 \q1
 \v 17 \w Quem dá|strong="H3867,H2603"\w* \w ao pobre|strong="H1800"\w* \w empresta|strong="H3867"\w* \w ao SENHOR|strong="H3068"\w*, \w e ele lhe retribuirá|strong="H1576,H7999,H9033"\w* \w a recompensa|strong="H1576"\w*.\x - \xo 19:17 \xt PRO 14:31; PSA 37:21; MAT 25:40; ACT 20:35; PSA 41:10; PRO 28:27\x*
 \q1
-\v 18 \w Discipline|strong="H3256"\w* \w o seu filho|strong="H1121"\w*, \w pois|strong="H3588"\w* \w há|strong="H3426"\w* \w esperança|strong="H8615"\w*; \w mas para o matá-lo|strong="H0413,H4191"\w* \w não|strong="H0408"\w* \w eleve o seu desejo|strong="H5375,H5315"\w*.\x - \xo 19:18 \xt PRO 29:17; PRO 23:18; PRO 24:14; EPH 6:4; PRO 13:24; HEB 12:11\x*
+\v 18 \w Discipline|strong="H3256"\w* \w o seu filho|strong="H1121"\w*, \w pois|strong="H3588"\w* \w há|strong="H3426"\w* \w esperança|strong="H8615"\w*; \w mas não|strong="H0408"\w* \w eleve o seu desejo|strong="H5375,H5315"\w* \w para matá-lo|strong="H0413,H4191"\w*.\x - \xo 19:18 \xt PRO 29:17; PRO 23:18; PRO 24:14; EPH 6:4; PRO 13:24; HEB 12:11\x*
 \q1
 \v 19 \w Quem é de grande|strong="H1419"\w*\f + \fr 19.19: \ft Variante: a Ketiv tem "גֹּרַל", "lote/porção"; seguimos a Qere, "גְּדָל", "de grande (ira)"\f* \w ira|strong="H2534"\w* \w paga|strong="H5375"\w* \w multa|strong="H6066"\w*, \w pois se o livrar|strong="H3588,H0518,H5337"\w*, \w terá que repetir|strong="H5750,H3254"\w*.\x - \xo 19:19 \xt JAS 1:19; PRO 25:28; 1SA 24:17-22; 2SA 16:5-6; PRO 29:22; 1SA 22:7-23\x*
 \q1
@@ -1155,7 +1155,7 @@
 \q1
 \v 8 \w O rei|strong="H4428"\w* \add que se\add* \w assenta|strong="H3427,H5921"\w* \w no trono|strong="H3678"\w* \w de julgamento|strong="H1779"\w* \w dissipa|strong="H2219"\w* \w com os seus olhos|strong="H5869"\w* \w todo|strong="H3605"\w* \w mal|strong="H7451"\w*.\x - \xo 20:8 \xt PSA 9:4; PRO 20:26; PRO 25:5; PSA 101:8; 1KI 7:7; PRO 29:12\x*
 \q1
-\v 9 \w Quem|strong="H4310"\w* \w dirá|strong="H0559"\w*: "\w Purifiquei|strong="H2135"\w* \w o meu coração|strong="H3820"\w*, \add estou\add* \w limpo|strong="H2891"\w* \w do meu pecado|strong="H2403"\w* "?\x - \xo 20:9 \xt PSA 51:10; 1JN 1:8; ECC 7:20; JAS 3:2; 1KI 8:46; JOB 14:4\x*
+\v 9 \w Quem|strong="H4310"\w* \w dirá|strong="H0559"\w*: “\w Purifiquei|strong="H2135"\w* \w o meu coração|strong="H3820"\w*, \add estou\add* \w limpo|strong="H2891"\w* \w do meu pecado|strong="H2403"\w*”?\x - \xo 20:9 \xt PSA 51:10; 1JN 1:8; ECC 7:20; JAS 3:2; 1KI 8:46; JOB 14:4\x*
 \q1
 \v 10 \w Pesos|strong="H0068"\w* \w e medidas|strong="H0374"\w* \add diferentes\add* \w são abominação|strong="H8441"\w* \w para o SENHOR|strong="H3068"\w*, \w ambos|strong="H1571,H8147"\w*.\x - \xo 20:10 \xt PRO 20:23; LEV 19:36; PRO 11:1; PRO 16:11; EZK 45:10; LEV 19:13\x*
 \q1
@@ -1165,7 +1165,7 @@
 \q1
 \v 13 \w Não|strong="H0408"\w* \w ame|strong="H0157"\w* \w sono|strong="H8142"\w*, \add para que\add* \w não|strong="H6435"\w* \w empobreça|strong="H3423"\w*; \w abra|strong="H6491"\w* \w os seus olhos|strong="H5869"\w* \w e se sacie|strong="H7646"\w* \w de pão|strong="H3899"\w*.\x - \xo 20:13 \xt PRO 19:15; ROM 12:11; PRO 10:4; PRO 12:11; ROM 13:11; 2TH 3:10\x*
 \q1
-\v 14 \add "Mau,\add* \w mau|strong="H7451"\w*!", \w diz|strong="H0559"\w* \w o comprador|strong="H7069"\w*; \w mas quando se vai|strong="H0235,H9033"\w*, \w então|strong="H0227"\w* \add se\add* \w vangloria|strong="H1984"\w*.\x - \xo 20:14 \xt PRO 21:6; 1TH 4:6; PRO 8:22\x*
+\v 14 \add “Mau,\add* \w mau|strong="H7451"\w*!”, \w diz|strong="H0559"\w* \w o comprador|strong="H7069"\w*; \w mas quando se vai|strong="H0235,H9033"\w*, \w então|strong="H0227"\w* \add se\add* \w vangloria|strong="H1984"\w*.\x - \xo 20:14 \xt PRO 21:6; 1TH 4:6; PRO 8:22\x*
 \q1
 \v 15 \w Há|strong="H3426"\w* \w ouro|strong="H2091"\w* \w e abundância|strong="H7230"\w* \w de joias|strong="H6443"\w*, \w mas é objeto|strong="H3627,H3366"\w* \w precioso|strong="H3366"\w* \w os lábios|strong="H8193"\w* \w do conhecimento|strong="H1847"\w*.\x - \xo 20:15 \xt PRO 31:10; PRO 24:4; PRO 10:11; PRO 25:12; PRO 8:11; PRO 16:16\x*
 \q1
@@ -1177,17 +1177,17 @@
 \q1
 \v 19 \w Quem revela|strong="H1540,H5475"\w* \add segredo\add* \w anda caluniando|strong="H1980,H7400"\w*; \w e com quem abre|strong="H6601"\w* \w os seus lábios|strong="H8193"\w* \w não|strong="H3808"\w* \w se envolva|strong="H6148"\w*.\x - \xo 20:19 \xt PRO 11:13; PRO 25:9; PRO 13:3; 1TI 5:13; LEV 19:16; PRO 18:8\x*
 \q1
-\v 20 \w Quem maldiz|strong="H7043"\w* \w o seu pai|strong="H0001"\w* \w e a sua mãe|strong="H0517"\w*, \w a sua lâmpada|strong="H5216"\w* \add se\add* \w apagará|strong="H1846"\w* \w na mais profunda|strong="H0380"\w*\f + \fr 20.20: \ft Variante: a Ketiv tem "בְּאִישׁוֹן", "no meio de"; seguimos a Qere, "בֶּאֱשׁוּן", "num tempo de" — variante só de forma, sem efeito relevante no sentido\f* \w escuridão|strong="H2822"\w*.\x - \xo 20:20 \xt EXO 21:17; PRO 24:20; PRO 13:9; LEV 20:9; PRO 30:11; JOB 29:3\x*
+\v 20 \w Quem maldiz|strong="H7043"\w* \w o seu pai|strong="H0001"\w* \w e a sua mãe|strong="H0517"\w*, \w a sua lâmpada|strong="H5216"\w* \add se\add* \w apagará|strong="H1846"\w* \w na mais profunda|strong="H0380"\w*\f + \fr 20.20: \ft Variante: a Ketiv tem "בְּאִישׁוֹן", "no meio de"; seguimos a Qere, "בֶּאֱשׁוּן", "num tempo de" — variante de sentido (H0380), mesma expressão idiomática ("pupila da escuridão")\f* \w escuridão|strong="H2822"\w*.\x - \xo 20:20 \xt EXO 21:17; PRO 24:20; PRO 13:9; LEV 20:9; PRO 30:11; JOB 29:3\x*
 \q1
 \v 21 \w A herança|strong="H5159"\w* \w obtida às pressas|strong="H0926"\w*\f + \fr 20.21: \ft Variante: a Ketiv tem "מְבֻחֶלֶת", "obtida com avidez"; seguimos a Qere, "מְבֹהֶלֶת", "obtida às pressas"\f* \w no início|strong="H7223"\w*, \w no seu fim|strong="H0319"\w* \w não|strong="H3808"\w* \add será\add* \w bendita|strong="H1288"\w*.\x - \xo 20:21 \xt PRO 10:22; PRO 13:11; 1TI 6:9; PRO 13:22; PRO 21:5; PRO 21:6\x*
 \q1
-\v 22 \w Não|strong="H0408"\w* \w diga|strong="H0559"\w*: "\w Vingarei-me|strong="H7999"\w* \w do mal|strong="H7451"\w* "; \w espere|strong="H6960"\w* \w no SENHOR|strong="H3068"\w*, \w e ele o salvará|strong="H3467,H9032"\w*.\x - \xo 20:22 \xt 1PE 3:9; 1TH 5:15; PRO 17:13; PRO 24:29; ROM 12:17; DEU 32:35\x*
+\v 22 \w Não|strong="H0408"\w* \w diga|strong="H0559"\w*: “\w Vingarei-me|strong="H7999"\w* \w do mal|strong="H7451"\w*”; \w espere|strong="H6960"\w* \w no SENHOR|strong="H3068"\w*, \w e ele o salvará|strong="H3467,H9032"\w*.\x - \xo 20:22 \xt 1PE 3:9; 1TH 5:15; PRO 17:13; PRO 24:29; ROM 12:17; DEU 32:35\x*
 \q1
 \v 23 \w São abominação|strong="H8441"\w* \w para o SENHOR|strong="H3068"\w* \w pesos|strong="H0068"\w* \add diferentes,\add* \w e balanças|strong="H3976"\w* \w de engano|strong="H4820"\w* \w não|strong="H3808"\w* \w são boas|strong="H2896"\w*.\x - \xo 20:23 \xt PRO 11:1; HOS 12:7; PRO 20:10; PRO 16:11; MIC 6:11; EZK 45:10\x*
 \q1
 \v 24 \w Do SENHOR|strong="H3068"\w* \w vêm os passos|strong="H4703"\w* \w do homem|strong="H1397"\w*; \w e o homem|strong="H0120"\w*, \w como entenderá|strong="H4100,H0995"\w* \w o seu caminho|strong="H1870"\w*?\x - \xo 20:24 \xt PSA 37:23; PRO 16:9; JER 10:23; PRO 21:1; PSA 25:12; PRO 16:1\x*
 \q1
-\v 25 \w É uma armadilha|strong="H4170"\w* \w para o homem|strong="H0120"\w* \add dizer\add* \w apressadamente|strong="H3216"\w*: "\w É sagrado|strong="H6944"\w*!", \w e só depois|strong="H0310"\w* \w dos votos|strong="H5088"\w* \w ponderar|strong="H1239"\w*.\x - \xo 20:25 \xt ECC 5:2; ECC 5:4-6; ECC 5:5; MAT 5:33; DEU 23:23; PRO 18:13\x*
+\v 25 \w É uma armadilha|strong="H4170"\w* \w para o homem|strong="H0120"\w* \add dizer\add* \w apressadamente|strong="H3216"\w*: “\w É sagrado|strong="H6944"\w*!”, \w e só depois|strong="H0310"\w* \w dos votos|strong="H5088"\w* \w ponderar|strong="H1239"\w*.\x - \xo 20:25 \xt ECC 5:2; ECC 5:4-6; ECC 5:5; MAT 5:33; DEU 23:23; PRO 18:13\x*
 \q1
 \v 26 \w O rei|strong="H4428"\w* \w sábio|strong="H2450"\w* \w dissipa|strong="H2219"\w* \w os ímpios|strong="H7563"\w*, \w e faz voltar|strong="H7725,H5921"\w* \add sobre\add* \w eles|strong="H5921"\w* \w a roda|strong="H0212"\w* \w da debulha|strong="H0212"\w*.\x - \xo 20:26 \xt PSA 101:8; PRO 20:8; 2SA 12:31; PSA 72:4; 1KI 2:6; 2SA 4:9-12\x*
 \q1
@@ -1236,7 +1236,7 @@
 \q1
 \v 18 \w É resgate|strong="H3724"\w* \w pelo justo|strong="H6662"\w* \w o ímpio|strong="H7563"\w*, \w e em lugar|strong="H8478"\w* \w dos retos|strong="H3477"\w*, \w o traidor|strong="H0898"\w*.\x - \xo 21:18 \xt PRO 11:8; ISA 43:3; ISA 53:4-5; 1PE 3:18; ISA 55:8-9; DAN 3:22\x*
 \q1
-\v 19 \w Melhor|strong="H2896"\w* \w é habitar|strong="H3427"\w* \w numa terra|strong="H0776"\w* \w deserta|strong="H4057"\w* \w do que com mulher|strong="H0802"\w* \w briguenta|strong="H4079"\w*\f + \fr 21.19: \ft Variante: a Ketiv tem "מְדוֹנִים", forma equivalente; seguimos a Qere, "מִדְיָנִים" — variante só de grafia\f* \w e irritante|strong="H3708"\w*.\x - \xo 21:19 \xt PRO 21:9; PRO 25:24; PRO 27:15; PRO 19:13; PRO 17:1; PRO 14:1\x*
+\v 19 \w Melhor|strong="H2896"\w* \w é habitar|strong="H3427"\w* \w numa terra|strong="H0776"\w* \w deserta|strong="H4057"\w* \w do que com mulher|strong="H0802"\w* \w briguenta|strong="H4079"\w*\f + \fr 21.19: \ft Variante: a Ketiv tem "מְדוֹנִים" (H4066); seguimos a Qere, "מִדְיָנִים" (H4079) — variante lexical, mesmo sentido ("contendas")\f* \w e irritante|strong="H3708"\w*.\x - \xo 21:19 \xt PRO 21:9; PRO 25:24; PRO 27:15; PRO 19:13; PRO 17:1; PRO 14:1\x*
 \q1
 \v 20 \w Tesouro|strong="H0214"\w* \w desejável|strong="H2530"\w* \w e azeite|strong="H8081"\w* \w há na casa|strong="H5116"\w* \w do sábio|strong="H2450"\w*, \w mas o homem|strong="H0120"\w* \w tolo|strong="H3684"\w* \w os devora|strong="H1104"\w*.\x - \xo 21:20 \xt PRO 24:4; MAT 25:3-4; PRO 15:6; ECC 5:19; PSA 112:3; ECC 7:11\x*
 \q1
@@ -1287,7 +1287,7 @@
 \q1
 \v 12 \w Os olhos|strong="H5869"\w* \w do SENHOR|strong="H3068"\w* \w preservam|strong="H5341"\w* \w conhecimento|strong="H1847"\w*, \w mas ele subverte|strong="H5557"\w* \w as palavras|strong="H1697"\w* \w do traidor|strong="H0898"\w*.\x - \xo 22:12 \xt 2TI 3:8-9; 2CH 16:9; ACT 13:8-12; 2TH 2:8; ACT 12:23-24; JOB 5:12-13\x*
 \q1
-\v 13 \w Diz|strong="H0559"\w* \w o preguiçoso|strong="H6102"\w*: "\w Há um leão|strong="H0738"\w* \w na rua|strong="H2351"\w*! \w No meio|strong="H8432"\w* \w das praças|strong="H7339"\w* \add serei\add* \w morto|strong="H7523"\w*!"\x - \xo 22:13 \xt PRO 26:13; ECC 11:4; PRO 6:6; NUM 13:32-33; PRO 15:19; PRO 24:31\x*
+\v 13 \w Diz|strong="H0559"\w* \w o preguiçoso|strong="H6102"\w*: “\w Há um leão|strong="H0738"\w* \w na rua|strong="H2351"\w*! \w No meio|strong="H8432"\w* \w das praças|strong="H7339"\w* \add serei\add* \w morto|strong="H7523"\w*!”\x - \xo 22:13 \xt PRO 26:13; ECC 11:4; PRO 6:6; NUM 13:32-33; PRO 15:19; PRO 24:31\x*
 \q1
 \v 14 \w É poço|strong="H7745,H6013"\w* \w profundo|strong="H6013"\w* \w a boca|strong="H6310"\w* \w das mulheres|strong="H2114"\w* \w estranhas|strong="H2114"\w*; \w quem é amaldiçoado|strong="H2194"\w* \w pelo SENHOR|strong="H3068"\w* \w cairá|strong="H5307"\w* \w ali|strong="H8033"\w*.\x - \xo 22:14 \xt PRO 23:27; ECC 7:26; 1KI 21:25; PRO 6:24-29; NEH 13:26; PRO 2:16\x*
 \q1
@@ -1301,7 +1301,7 @@
 \q1
 \v 19 \add Para\add* \w que|strong="H1961"\w* \w esteja no SENHOR|strong="H3068,H4009"\w* \w a sua confiança|strong="H4009"\w*, \w eu lhe ensino|strong="H3045"\w* \w hoje|strong="H3117"\w*, \w sim, a você|strong="H0637,H0859"\w*.\x - \xo 22:19 \xt PRO 3:5; DEU 4:5; PRO 2:2; PSA 62:8; ISA 12:2; 1PE 1:21\x*
 \q1
-\v 20 \w Não|strong="H3808"\w* \w lhe escrevi|strong="H3789,H9031"\w* \w trinta ditos|strong="H7991"\w*\f + \fr 22.20: \ft Variante: a Ketiv tem "שִׁלְשׁוֹם", "há três dias"; seguimos a Qere, "שָׁלִישִׁים", "trinta máximas"\f*, \w com conselhos|strong="H4156"\w* \w e conhecimento|strong="H1847"\w*,\x - \xo 22:20 \xt PSA 49:3; DEU 4:5; PRO 2:2; 2PE 1:19-21; PRO 8:6; 2TI 3:15-17\x*
+\v 20 \w Não|strong="H3808"\w* \w lhe escrevi|strong="H3789,H9031"\w* \w oficiais|strong="H7991"\w*\f + \fr 22.20: \ft Variante: a Ketiv tem "שִׁלְשׁוֹם", "há três dias"; seguimos a Qere, "שָׁלִישִׁים", "oficiais"\f*, \w com conselhos|strong="H4156"\w* \w e conhecimento|strong="H1847"\w*,\x - \xo 22:20 \xt PSA 49:3; DEU 4:5; PRO 2:2; 2PE 1:19-21; PRO 8:6; 2TI 3:15-17\x*
 \q1
 \v 21 \add para\add* \w lhe|strong="H3045"\w* \add fazer conhecer\add* \w a certeza|strong="H7189"\w* \w das palavras|strong="H0561"\w* \w da verdade|strong="H0571"\w*, \add para\add* \w que|strong="H7725"\w* \w responda palavras|strong="H0561"\w* \w de verdade|strong="H0571"\w* \w a quem o enviou|strong="H7971"\w*?\x - \xo 22:21 \xt PSA 49:3; PRO 2:2; 1PE 3:15; LUK 1:3-4; PRO 4:2; PRO 5:7\x*
 \q1
@@ -1326,15 +1326,15 @@
 \q1
 \v 2 \w E ponha|strong="H7760"\w* \w uma faca|strong="H7915"\w* \w na sua garganta|strong="H3930"\w*, \w se|strong="H0518"\w* \add você for\add* \w homem|strong="H0859"\w* \w de grande apetite|strong="H1167,H5315"\w*.\x - \xo 23:2 \xt PHP 3:19; MAT 18:8-9; 1CO 9:27; GEN 27:14; PSA 141:4\x*
 \q1
-\v 3 \w Não|strong="H0408"\w* \w deseje|strong="H0183"\w*\f + \fr 23.3: \ft Variante: a Ketiv tem "תְּתָאוּ", "vocês marcam"; seguimos a Qere, "תִּתְאָיו", "você deseja" — variante só de forma\f* \w as suas gulodices|strong="H4303"\w*, \w pois elas|strong="H1931"\w* \w são pão|strong="H3899"\w* \w de mentiras|strong="H3577"\w*.\x - \xo 23:3 \xt PRO 23:6; GEN 27:17; LUK 21:34; PSA 141:4; DAN 1:8; EPH 4:22\x*
+\v 3 \w Não|strong="H0408"\w* \w deseje|strong="H0183"\w*\f + \fr 23.3: \ft Variante: a Ketiv tem "תְּתָאוּ", "vocês marcam" (H8376); seguimos a Qere, "תִּתְאָיו", "você deseja" (H0183) — raízes diferentes, sentido próximo\f* \w as suas gulodices|strong="H4303"\w*, \w pois elas|strong="H1931"\w* \w são pão|strong="H3899"\w* \w de mentiras|strong="H3577"\w*.\x - \xo 23:3 \xt PRO 23:6; GEN 27:17; LUK 21:34; PSA 141:4; DAN 1:8; EPH 4:22\x*
 \q1
 \v 4 \w Não|strong="H0408"\w* \add se\add* \w canse|strong="H3021"\w* \w para se enriquecer|strong="H6238"\w*; \w do seu próprio bom senso|strong="H0998"\w*, \w desista|strong="H2308"\w*.\x - \xo 23:4 \xt PRO 3:5; MAT 6:19; HEB 13:5; PRO 28:20; 1TI 6:8-10; JHN 6:27\x*
 \q1
 \v 5 \add Acaso fará\add* \w voar|strong="H5774"\w*\f + \fr 23.5: \ft Variante: a Ketiv tem "תָעוּף", "voará"; seguimos a Qere, "הֲתָעִיף", "fará voar" — variante só de forma\f* \w os seus olhos|strong="H5869"\w* \add para\add* \w ela|strong="H9033"\w*? \w E eis que ela já não está|strong="H0369"\w*, \w pois|strong="H3588"\w* \w certamente|strong="H6213"\w* \w ela se fará|strong="H6213"\w* \w para si|strong="H9033"\w* \w asas|strong="H3671"\w*, \w como a águia|strong="H5404"\w*, \w e voará|strong="H5774"\w*\f + \fr 23.5: \ft Variante: a Ketiv tem "וְעָיֵף", forma equivalente; seguimos a Qere, "יָעוּף", "ela voará" — variante só de forma\f* \w aos céus|strong="H8064"\w*.\x - \xo 23:5 \xt EXO 19:4; DEU 4:17; MAT 6:19; COL 3:2; PSA 119:37; LUK 12:15\x*
 \q1
-\v 6 \w Não|strong="H0408"\w* \w coma|strong="H3898"\w* \w o pão|strong="H3899"\w* \w de quem tem|strong="H7451"\w* \w olho|strong="H5869"\w* \add mau,\add* \w e não|strong="H0408"\w* \w deseje|strong="H0183"\w*\f + \fr 23.6: \ft Variante: a Ketiv tem "תְּתָאוּ", forma equivalente; seguimos a Qere, "תִּתְאָיו" — variante só de forma\f* \w as suas gulodices|strong="H4303"\w*.\x - \xo 23:6 \xt PRO 23:3; GEN 27:17; 2CO 9:7; PRO 28:22; PSA 141:4; DAN 1:8-10\x*
+\v 6 \w Não|strong="H0408"\w* \w coma|strong="H3898"\w* \w o pão|strong="H3899"\w* \w de quem tem|strong="H7451"\w* \w olho|strong="H5869"\w* \add mau,\add* \w e não|strong="H0408"\w* \w deseje|strong="H0183"\w*\f + \fr 23.6: \ft Variante: a Ketiv tem "תְּתָאוּ", "vocês marcam" (H8376); seguimos a Qere, "תִּתְאָיו", "você deseja" (H0183) — raízes diferentes, sentido próximo\f* \w as suas gulodices|strong="H4303"\w*.\x - \xo 23:6 \xt PRO 23:3; GEN 27:17; 2CO 9:7; PRO 28:22; PSA 141:4; DAN 1:8-10\x*
 \q1
-\v 7 \w Pois|strong="H3588"\w* \add assim\add* \w como|strong="H3644"\w* \w calcula|strong="H8176"\w* \w em sua mente|strong="H5315"\w*, \w assim|strong="H3651"\w* \add é\add* \w ele|strong="H1931"\w*: "\w Coma|strong="H0398"\w* \w e beba|strong="H8354"\w*!", \w ele lhe diz|strong="H0559,H9032"\w*, \w mas o seu coração|strong="H3820"\w* \w não|strong="H1077"\w* \w está com você|strong="H5973"\w*.\x - \xo 23:7 \xt PSA 12:2; PSA 55:21; JDG 16:15; MAT 9:3-4; LUK 11:37-54; LUK 7:39\x*
+\v 7 \w Pois|strong="H3588"\w* \add assim\add* \w como|strong="H3644"\w* \w calcula|strong="H8176"\w* \w em sua mente|strong="H5315"\w*, \w assim|strong="H3651"\w* \add é\add* \w ele|strong="H1931"\w*: “\w Coma|strong="H0398"\w* \w e beba|strong="H8354"\w*!”, \w ele lhe diz|strong="H0559,H9032"\w*, \w mas o seu coração|strong="H3820"\w* \w não|strong="H1077"\w* \w está com você|strong="H5973"\w*.\x - \xo 23:7 \xt PSA 12:2; PSA 55:21; JDG 16:15; MAT 9:3-4; LUK 11:37-54; LUK 7:39\x*
 \q1
 \v 8 \w O pedaço|strong="H6595"\w* \w que você comeu|strong="H0398"\w*, \w você o vomitará|strong="H6958"\w*, \w e perderá|strong="H7843"\w* \w as suas palavras|strong="H1697"\w* \w agradáveis|strong="H5273"\w*.\x - \xo 23:8 \xt 2CO 9:7; JOB 20:15; DAN 11:27\x*
 \q1
@@ -1372,17 +1372,17 @@
 \q1
 \v 25 \w Que se alegre|strong="H8055"\w* \w o seu pai|strong="H0001"\w* \w e a sua mãe|strong="H0517"\w*, \w e exulte|strong="H1523"\w* \w a que o gerou|strong="H3205"\w*.\x - \xo 23:25 \xt PSA 118:24; PSA 149:2; 1CH 16:31; PRO 10:1; PSA 97:8; PSA 97:1\x*
 \q1
-\v 26 \w Dê-me|strong="H5414"\w*, \add meu\add* \w filho|strong="H1121"\w*, \w o seu coração|strong="H3820,H9030"\w*, \w e os seus olhos|strong="H5869"\w* \w observem os meus|strong="H5341"\w* \w caminhos|strong="H1870"\w*\f + \fr 23.26: \ft Variante: a Ketiv tem "תִּרְצֶנָה", "se deliciem nos"; seguimos a Qere, "תִּצֹּרְנָה", "observem" — variante só de forma\f*.\x - \xo 23:26 \xt PSA 119:2; PRO 3:1; PRO 4:23; PSA 119:145; PSA 119:34; PRO 23:19\x*
+\v 26 \w Dê-me|strong="H5414"\w*, \add meu\add* \w filho|strong="H1121"\w*, \w o seu coração|strong="H3820,H9030"\w*, \w e os seus olhos|strong="H5869"\w* \w observem os meus|strong="H5341"\w* \w caminhos|strong="H1870"\w*\f + \fr 23.26: \ft Variante: a Ketiv tem "תִּרְצֶנָה", "se deliciem nos"; seguimos a Qere, "תִּצֹּרְנָה", "observem"\f*.\x - \xo 23:26 \xt PSA 119:2; PRO 3:1; PRO 4:23; PSA 119:145; PSA 119:34; PRO 23:19\x*
 \q1
 \v 27 \w Pois|strong="H3588"\w* \w é poço|strong="H7745"\w* \w profundo|strong="H6013"\w* \w a prostituta|strong="H2181"\w*, \w e poço|strong="H0875"\w* \w estreito|strong="H6862"\w* \w a estrangeira|strong="H5237"\w*.\x - \xo 23:27 \xt PRO 22:14; ECC 7:26; PRO 2:16; GEN 39:8; NUM 31:16; GEN 39:10\x*
 \q1
 \v 28 \w Também|strong="H0637"\w* \w ela|strong="H1931"\w*, \w como um ladrão|strong="H2863"\w*, \w espreita|strong="H0693"\w*, \w e aumenta|strong="H3254"\w* \w os traidores|strong="H0898"\w* \w entre os homens|strong="H0120"\w*.\x - \xo 23:28 \xt ECC 7:26; 1CO 10:8; HOS 4:11; PRO 7:12; GEN 39:8; PRO 22:14\x*
 \q1
-\v 29 \w Para quem é|strong="H4310,H0188"\w* \add o ai?\add* \w Para quem é|strong="H4310,H0017"\w* \add o lamento?\add* \w Para quem são|strong="H4310"\w* \add as\add* \w contendas|strong="H4079"\w*\f + \fr 23.29: \ft Variante: a Ketiv tem "מְדוֹנִים", forma equivalente; seguimos a Qere, "מִדְיָנִים" — variante só de forma\f*? \w Para quem é|strong="H4310"\w* \add a\add* \w queixa|strong="H7879"\w*? \w Para quem são|strong="H4310"\w* \add as\add* \w feridas|strong="H6482"\w* \w sem motivo|strong="H2600"\w*? \w Para quem é|strong="H4310"\w* \add o\add* \w escurecimento|strong="H2448"\w* \w dos olhos|strong="H5869"\w*?\x - \xo 23:29 \xt ISA 5:11; EPH 5:18; PRO 20:1; 1SA 25:36; EST 1:11; 1PE 4:3\x*
+\v 29 \w Para quem é|strong="H4310,H0188"\w* \add o ai?\add* \w Para quem é|strong="H4310,H0017"\w* \add o lamento?\add* \w Para quem são|strong="H4310"\w* \add as\add* \w contendas|strong="H4079"\w*\f + \fr 23.29: \ft Variante: a Ketiv tem "מְדוֹנִים" (H4066); seguimos a Qere, "מִדְיָנִים" (H4079) — variante lexical, mesmo sentido ("contendas")\f*? \w Para quem é|strong="H4310"\w* \add a\add* \w queixa|strong="H7879"\w*? \w Para quem são|strong="H4310"\w* \add as\add* \w feridas|strong="H6482"\w* \w sem motivo|strong="H2600"\w*? \w Para quem é|strong="H4310"\w* \add o\add* \w escurecimento|strong="H2448"\w* \w dos olhos|strong="H5869"\w*?\x - \xo 23:29 \xt ISA 5:11; EPH 5:18; PRO 20:1; 1SA 25:36; EST 1:11; 1PE 4:3\x*
 \q1
 \v 30 \w Para os que se demoram|strong="H0309"\w* \w sobre|strong="H5921"\w* \w o vinho|strong="H3196"\w*, \w para os que vão|strong="H0935"\w* \w a examinar|strong="H2713"\w* \w a bebida misturada|strong="H4469"\w*.\x - \xo 23:30 \xt ISA 5:11; EPH 5:18; PSA 75:8; PRO 20:1; EST 1:11; 1PE 4:3\x*
 \q1
-\v 31 \w Não|strong="H0408"\w* \w olhe|strong="H7200"\w* \w para o vinho|strong="H3196"\w* \w quando|strong="H3588"\w* \add fica\add* \w vermelho|strong="H0119"\w*, \w quando|strong="H3588"\w* \w dá|strong="H5414"\w* \w o seu brilho|strong="H5869"\w* \w na taça|strong="H3563"\w*\f + \fr 23.31: \ft Variante: a Ketiv tem "בַּכִּיס", "na bolsa"; seguimos a Qere, "בַּכּוֹס", "na taça" — variante só de forma\f*, \w e desliza|strong="H1980"\w* \w suavemente|strong="H4339"\w*.\x - \xo 23:31 \xt JOB 31:1; EPH 5:18; PRO 9:17; 1JN 2:16; GEN 9:21; PRO 20:1\x*
+\v 31 \w Não|strong="H0408"\w* \w olhe|strong="H7200"\w* \w para o vinho|strong="H3196"\w* \w quando|strong="H3588"\w* \add fica\add* \w vermelho|strong="H0119"\w*, \w quando|strong="H3588"\w* \w dá|strong="H5414"\w* \w o seu brilho|strong="H5869"\w* \w na taça|strong="H3563"\w*\f + \fr 23.31: \ft Variante: a Ketiv tem "בַּכִּיס", "na bolsa"; seguimos a Qere, "בַּכּוֹס", "na taça"\f*, \w e desliza|strong="H1980"\w* \w suavemente|strong="H4339"\w*.\x - \xo 23:31 \xt JOB 31:1; EPH 5:18; PRO 9:17; 1JN 2:16; GEN 9:21; PRO 20:1\x*
 \q1
 \v 32 \w No seu fim|strong="H0319"\w*, \w como serpente|strong="H5175"\w* \add ele\add* \w morderá|strong="H5391"\w*, \w e como víbora|strong="H6848"\w* \w picará|strong="H6567"\w*.\x - \xo 23:32 \xt JER 8:17; JOB 31:1; EPH 5:18; PRO 9:17; GEN 9:21; PRO 20:1\x*
 \q1
@@ -1390,7 +1390,7 @@
 \q1
 \v 34 \w E você será|strong="H1961"\w* \w como quem se deita|strong="H7901"\w* \w no meio|strong="H3820,H3220"\w* \w do mar|strong="H3220"\w*, \w e como quem se deita|strong="H7901"\w* \w no topo|strong="H7218"\w* \w do mastro|strong="H2260"\w*.\x - \xo 23:34 \xt EPH 5:18; PRO 20:1; 1PE 4:3; 1TH 5:2-7; DEU 21:20; 1KI 16:9\x*
 \q1
-\v 35 "\w Me feriram|strong="H5221"\w* \w e não|strong="H1077"\w* \add senti\add* \w dor|strong="H2470"\w*; \w me bateram|strong="H1986"\w* \w e não|strong="H1077"\w* \w soube|strong="H3045"\w*; \w quando|strong="H4970"\w* \w despertarei|strong="H6974"\w*? \w Continuarei|strong="H3254"\w* \w a buscá-lo|strong="H1245"\w* \w ainda|strong="H5750"\w*."\x - \xo 23:35 \xt EPH 5:18; PRO 27:22; JER 5:3; PRO 20:1; ISA 56:12; 1CO 15:32-34\x*
+\v 35 “\w Me feriram|strong="H5221"\w* \w e não|strong="H1077"\w* \add senti\add* \w dor|strong="H2470"\w*; \w me bateram|strong="H1986"\w* \w e não|strong="H1077"\w* \w soube|strong="H3045"\w*; \w quando|strong="H4970"\w* \w despertarei|strong="H6974"\w*? \w Continuarei|strong="H3254"\w* \w a buscá-lo|strong="H1245"\w* \w ainda|strong="H5750"\w*.”\x - \xo 23:35 \xt EPH 5:18; PRO 27:22; JER 5:3; PRO 20:1; ISA 56:12; 1CO 15:32-34\x*
 \c 24
 \q1
 \v 1 \w Não|strong="H0408"\w* \add tenha\add* \w invveja|strong="H7065"\w* \w dos homens|strong="H0582"\w* \w maus|strong="H7451"\w*, \w e não|strong="H0408"\w* \w deseje|strong="H0183"\w* \w estar|strong="H1961"\w* \add com\add* \w eles|strong="H0854"\w*.\x - \xo 24:1 \xt PSA 37:1; PRO 3:31; PRO 24:19; PRO 23:17; 1KI 14:22; PSA 37:7\x*
@@ -1415,7 +1415,7 @@
 \q1
 \v 11 \w Livre|strong="H5337"\w* \w os que são levados|strong="H3947"\w* \w à morte|strong="H4194"\w*, \w e os que vacilam|strong="H4131"\w* \w para o massacre|strong="H2027"\w*, \w se|strong="H0518"\w* \add você puder\add* \w retê-los|strong="H2820"\w*.\x - \xo 24:11 \xt PSA 82:4; ISA 58:6-7; PRO 31:8; 1JN 3:16-17; EST 4:13; JOB 29:17\x*
 \q1
-\v 12 \w Se|strong="H3588"\w* \w disser|strong="H0559"\w*: "\w Eis|strong="H2005"\w* \add que\add* \w não|strong="H3808"\w* \w sabíamos|strong="H3045"\w* \w disto|strong="H2088"\w* "— \w acaso|strong="H3808"\w* \w quem pesa|strong="H8505"\w* \w os corações|strong="H3826"\w* \w não|strong="H1931"\w* \w percebe|strong="H0995"\w*? \w E quem guarda|strong="H5341"\w* \w a sua vida|strong="H5315"\w* \w não|strong="H1931"\w* \w sabe|strong="H3045"\w*? \w E ele retribuirá|strong="H7725"\w* \w a cada um|strong="H0120"\w* \w conforme a sua obra|strong="H6467"\w*.\x - \xo 24:12 \xt PRO 21:2; PRO 16:2; MAT 16:27; JOB 34:11; PRO 31:8; PSA 82:4\x*
+\v 12 \w Se|strong="H3588"\w* \w disser|strong="H0559"\w*: “\w Eis|strong="H2005"\w* \add que\add* \w não|strong="H3808"\w* \w sabíamos|strong="H3045"\w* \w disto|strong="H2088"\w*” — \w acaso|strong="H3808"\w* \w quem pesa|strong="H8505"\w* \w os corações|strong="H3826"\w* \w não|strong="H1931"\w* \w percebe|strong="H0995"\w*? \w E quem guarda|strong="H5341"\w* \w a sua vida|strong="H5315"\w* \w não|strong="H1931"\w* \w sabe|strong="H3045"\w*? \w E ele retribuirá|strong="H7725"\w* \w a cada um|strong="H0120"\w* \w conforme a sua obra|strong="H6467"\w*.\x - \xo 24:12 \xt PRO 21:2; PRO 16:2; MAT 16:27; JOB 34:11; PRO 31:8; PSA 82:4\x*
 \q1
 \v 13 \w Coma|strong="H0398"\w*, \add meu\add* \w filho|strong="H1121"\w*, \w mel|strong="H1706"\w*, \w pois|strong="H3588"\w* \w é bom|strong="H2896"\w*, \w e o favo|strong="H5317"\w* \w é doce|strong="H4966"\w* \w ao seu paladar|strong="H5921,H2441"\w*.\x - \xo 24:13 \xt PSA 119:103; PSA 19:10; PRO 16:24; ISA 7:15; SNG 5:1; PRO 25:16\x*
 \q1
@@ -1439,17 +1439,17 @@
 \q1
 \v 23 \w Também|strong="H1571"\w* \w estas|strong="H0428"\w* \add são palavras\add* \w dos sábios|strong="H2450"\w*: \w Fazer acepção|strong="H5234,H6440"\w* \w em julgamento|strong="H4941"\w* \w não|strong="H1077"\w* \w é bom|strong="H2896"\w*.\x - \xo 24:23 \xt DEU 16:19; DEU 1:17; PSA 16:2; JAS 2:1; LEV 19:15; PRO 28:21\x*
 \q1
-\v 24 \w Quem diz|strong="H0559"\w* \w ao ímpio|strong="H7563"\w*: \add "Você\add* \w é|strong="H0859"\w* \w justo|strong="H6662"\w* "— \w os povos|strong="H5971"\w* \w o maldirão|strong="H6895"\w*, \w as nações|strong="H3816"\w* \w o detestarão|strong="H2194"\w*.\x - \xo 24:24 \xt NUM 23:8; PRO 11:26; PSA 7:11; ROM 2:11; PRO 17:15; ISA 5:23\x*
+\v 24 \w Quem diz|strong="H0559"\w* \w ao ímpio|strong="H7563"\w*: \add “Você\add* \w é|strong="H0859"\w* \w justo|strong="H6662"\w*” — \w os povos|strong="H5971"\w* \w o maldirão|strong="H6895"\w*, \w as nações|strong="H3816"\w* \w o detestarão|strong="H2194"\w*.\x - \xo 24:24 \xt NUM 23:8; PRO 11:26; PSA 7:11; ROM 2:11; PRO 17:15; ISA 5:23\x*
 \q1
 \v 25 \w Mas aos que o repreendem|strong="H3198"\w*, \w será agradável|strong="H5276"\w*, \w e sobre eles|strong="H5921,H0935"\w* \w virá|strong="H0935"\w* \w bênção|strong="H1293"\w* \w de bem|strong="H2896"\w*.\x - \xo 24:25 \xt 1TI 5:20; PRO 10:6; 1SA 3:13; PRO 28:23\x*
 \q1
-\v 26 \w Os lábios|strong="H8193"\w* \w beija|strong="H5401"\w* \w quem responde|strong="H7725"\w* \w palavras|strong="H1697"\w* \w retas|strong="H5228"\w*.\x - \xo 24:26 \xt PRO 15:23; GEN 41:38-57; PRO 25:11; JOB 6:25; PRO 16:1\x*
+\v 26 \w Quem responde|strong="H7725"\w* \w palavras|strong="H1697"\w* \w retas|strong="H5228"\w* \w beija|strong="H5401"\w* \w os lábios|strong="H8193"\w*.\x - \xo 24:26 \xt PRO 15:23; GEN 41:38-57; PRO 25:11; JOB 6:25; PRO 16:1\x*
 \q1
 \v 27 \w Prepare|strong="H3559"\w* \w do lado de fora|strong="H2351"\w* \w o seu trabalho|strong="H4399"\w*, \w e organize-o|strong="H6257"\w* \w no campo|strong="H7704"\w* \w para si|strong="H9032"\w*; \w depois|strong="H0310"\w*, \w construa|strong="H1129"\w* \w a sua casa|strong="H1004"\w*.\x - \xo 24:27 \xt LUK 14:28; 1KI 5:17-18; 1KI 6:7; PRO 17:19\x*
 \q1
 \v 28 \w Não|strong="H0408"\w* \w seja|strong="H1961"\w* \w testemunha|strong="H5707"\w* \w sem motivo|strong="H2600"\w* \w contra o seu próximo|strong="H7453"\w*; \w e não|strong="H6601"\w* \w engane|strong="H6601"\w* \w com os seus lábios|strong="H8193"\w*.\x - \xo 24:28 \xt EPH 4:25; PRO 12:17; 1KI 21:9-13; DEU 16:19; JDG 16:10; LEV 6:2\x*
 \q1
-\v 29 \w Não|strong="H0408"\w* \w diga|strong="H0559"\w*: "\w Como|strong="H0834"\w* \add ele\add* \w fez|strong="H6213"\w* \add a\add* \w mim|strong="H9030"\w*, \w assim|strong="H3651"\w* \w farei|strong="H6213"\w* \add a\add* \w ele|strong="H9033"\w*; \w retribuirei|strong="H7725"\w* \w ao homem|strong="H0376"\w* \w conforme a sua obra|strong="H6467"\w*."\x - \xo 24:29 \xt PRO 20:22; ROM 12:19; MAT 5:39; ROM 12:17-21; 1TH 5:15; REV 20:12\x*
+\v 29 \w Não|strong="H0408"\w* \w diga|strong="H0559"\w*: “\w Como|strong="H0834"\w* \add ele\add* \w fez|strong="H6213"\w* \add a\add* \w mim|strong="H9030"\w*, \w assim|strong="H3651"\w* \w farei|strong="H6213"\w* \add a\add* \w ele|strong="H9033"\w*; \w retribuirei|strong="H7725"\w* \w ao homem|strong="H0376"\w* \w conforme a sua obra|strong="H6467"\w*.”\x - \xo 24:29 \xt PRO 20:22; ROM 12:19; MAT 5:39; ROM 12:17-21; 1TH 5:15; REV 20:12\x*
 \q1
 \v 30 \w Pelo campo|strong="H5921,H7704"\w* \w de um homem|strong="H0376"\w* \w preguiçoso|strong="H6102"\w* \w passei|strong="H5674"\w*, \w e pela vinha|strong="H5921,H3754"\w* \w de um homem|strong="H0120"\w* \w falto|strong="H2638"\w* \w de juízo|strong="H3820"\w*;\x - \xo 24:30 \xt PRO 12:11; 2TH 3:10; PRO 18:9; PRO 6:6; ROM 12:11; ISA 56:10\x*
 \q1
@@ -1474,7 +1474,7 @@
 \q1
 \v 6 \w Não|strong="H0408"\w* \add se\add* \w glorifique|strong="H1921"\w* \w diante|strong="H6440"\w* \w do rei|strong="H4428"\w*, \w e no lugar|strong="H4725"\w* \w dos grandes|strong="H1419"\w* \w não|strong="H0408"\w* \add se\add* \w coloque|strong="H5975"\w*.\x - \xo 25:6 \xt LUK 14:8; LUK 14:10; PRO 27:2; PRO 16:19; PRO 25:27; MAT 23:6\x*
 \q1
-\v 7 \w Pois|strong="H3588"\w* \w melhor|strong="H2896"\w* \w é que lhe digam|strong="H0559,H9031"\w*: "\w Suba|strong="H5927"\w* \add para\add* \w aqui|strong="H2008"\w* ", \w do que ser humilhado|strong="H8213,H6440"\w* \w diante|strong="H5081"\w* \w de um nobre|strong="H0834"\w*, \add a\add* \w quem|strong="H0834"\w* \w os seus olhos|strong="H5869"\w* \w viram|strong="H7200"\w*.\x - \xo 25:7 \xt LUK 14:8; LUK 14:7-11; LUK 14:10; 1PE 5:5; LUK 18:14; MAT 23:6\x*
+\v 7 \w Pois|strong="H3588"\w* \w melhor|strong="H2896"\w* \w é que lhe digam|strong="H0559,H9031"\w*: “\w Suba|strong="H5927"\w* \add para\add* \w aqui|strong="H2008"\w*”, \w do que ser humilhado|strong="H8213,H6440"\w* \w diante|strong="H5081"\w* \w de um nobre|strong="H0834"\w*, \add a\add* \w quem|strong="H0834"\w* \w os seus olhos|strong="H5869"\w* \w viram|strong="H7200"\w*.\x - \xo 25:7 \xt LUK 14:8; LUK 14:7-11; LUK 14:10; 1PE 5:5; LUK 18:14; MAT 23:6\x*
 \q1
 \v 8 \w Não|strong="H0408"\w* \w saia|strong="H3318"\w* \w apressadamente|strong="H4118"\w* \w para litigar|strong="H7378"\w*, \add para que\add* \w não|strong="H6435"\w* \w faça algo|strong="H4100,H6213"\w* \w no seu fim|strong="H0319"\w*, \w quando|strong="H3637"\w* \w o seu próximo|strong="H7453"\w* \w o envergonhar|strong="H0853"\w*.\x - \xo 25:8 \xt MAT 5:25; PRO 17:14; PRO 18:6; PRO 3:30; PRO 14:29; 1CO 13:4\x*
 \q1
@@ -1508,7 +1508,7 @@
 \q1
 \v 23 \w O vento|strong="H7307,H6828"\w* \add norte\add* \w traz|strong="H2342"\w* \w chuva|strong="H1653"\w*, \w e a língua|strong="H3956"\w* \w caluniadora|strong="H5643"\w* \w traz rostos|strong="H6440,H2194"\w* \w indignados|strong="H2194"\w*.\x - \xo 25:23 \xt EPH 4:26; EPH 4:31; GEN 8:1; PRO 26:20; 2CO 12:20; JOB 37:22\x*
 \q1
-\v 24 \w Melhor|strong="H2896"\w* \w é habitar|strong="H3427"\w* \w no canto|strong="H5921,H6438"\w* \w de um terraço|strong="H1406"\w* \w do que com mulher|strong="H0802"\w* \w briguenta|strong="H4079"\w*\f + \fr 25.24: \ft Variante: a Ketiv tem "מְדוֹנִים", forma equivalente; seguimos a Qere, "מִדְיָנִים" — variante só de forma\f* \w em casa|strong="H1004"\w* \w compartilhada|strong="H2269"\w*.\x - \xo 25:24 \xt PRO 21:9; PRO 21:19; PRO 27:15; PRO 19:13; PRO 7:11\x*
+\v 24 \w Melhor|strong="H2896"\w* \w é habitar|strong="H3427"\w* \w no canto|strong="H5921,H6438"\w* \w de um terraço|strong="H1406"\w* \w do que com mulher|strong="H0802"\w* \w briguenta|strong="H4079"\w*\f + \fr 25.24: \ft Variante: a Ketiv tem "מְדוֹנִים" (H4066); seguimos a Qere, "מִדְיָנִים" (H4079) — variante lexical, mesmo sentido ("contendas")\f* \w em casa|strong="H1004"\w* \w compartilhada|strong="H2269"\w*.\x - \xo 25:24 \xt PRO 21:9; PRO 21:19; PRO 27:15; PRO 19:13; PRO 7:11\x*
 \q1
 \v 25 \w Água|strong="H4325"\w* \w fresca|strong="H7119"\w* \w para a alma|strong="H5921,H5315"\w* \w cansada|strong="H5889"\w*: \w assim é a boa|strong="H8052,H2896"\w* \w notícia|strong="H2896"\w* \w de uma terra|strong="H0776"\w* \w distante|strong="H4801"\w*.\x - \xo 25:25 \xt PRO 15:30; ROM 10:15; PRO 25:13; PSA 63:1; 1CO 16:18; 1TH 3:6\x*
 \q1
@@ -1521,7 +1521,7 @@
 \q1
 \v 1 \w Como a neve|strong="H7950"\w* \w no verão|strong="H7019"\w*, \w e como a chuva|strong="H4306"\w* \w na colheita|strong="H7105"\w*, \w assim|strong="H3651"\w* \w não|strong="H3808"\w* \w convém|strong="H5000"\w* \w ao tolo|strong="H3684"\w* \w honra|strong="H3519"\w*.\x - \xo 26:1 \xt PRO 19:10; 1SA 12:17; PRO 26:8; PRO 28:16; EST 3:1-15; EST 4:6\x*
 \q1
-\v 2 \w Como a ave|strong="H6833"\w* \w para voar|strong="H5110"\w*, \w como a andorinha|strong="H1866"\w* \w para esvoaçar|strong="H5774"\w*: \w assim|strong="H3651"\w*, \w a maldição|strong="H7045"\w* \w sem causa|strong="H2600"\w* \add a\add* \w ele|strong="H9033"\w*\f + \fr 26.2: \ft Variante: a Ketiv tem "לֹא", "não"; seguimos a Qere, "לוֹ", "a ele" — variante só de forma\f* \add não\add* \w vem|strong="H0935"\w*.\x - \xo 26:2 \xt NUM 23:8; NEH 13:2; PSA 109:28; 2SA 16:12; DEU 23:4-5; 1SA 17:43\x*
+\v 2 \w Como a ave|strong="H6833"\w* \w para voar|strong="H5110"\w*, \w como a andorinha|strong="H1866"\w* \w para esvoaçar|strong="H5774"\w*: \w assim|strong="H3651"\w*, \w a maldição|strong="H7045"\w* \w sem causa|strong="H2600"\w* \add a\add* \w ele|strong="H9033"\w*\f + \fr 26.2: \ft Variante: a Ketiv tem "לֹא", "não"; seguimos a Qere, "לוֹ", "a ele"\f* \add não\add* \w vem|strong="H0935"\w*.\x - \xo 26:2 \xt NUM 23:8; NEH 13:2; PSA 109:28; 2SA 16:12; DEU 23:4-5; 1SA 17:43\x*
 \q1
 \v 3 \w Látego|strong="H7752"\w* \w para o cavalo|strong="H5483"\w*, \w freio|strong="H4964"\w* \w para o jumento|strong="H2543"\w*, \w e vara|strong="H7626"\w* \w para as costas|strong="H1460"\w* \w dos tolos|strong="H3684"\w*.\x - \xo 26:3 \xt PRO 10:13; PRO 19:29; PSA 32:9; 1CO 4:21; 2CO 13:2; JDG 8:5-7\x*
 \q1
@@ -1543,7 +1543,7 @@
 \q1
 \v 12 \add Você\add* \w vê|strong="H7200"\w* \w um homem|strong="H0376"\w* \w sábio|strong="H2450"\w* \w aos seus próprios olhos|strong="H5869"\w*? \w Mais esperança|strong="H8615"\w* \w há para o tolo|strong="H3684"\w* \w do que para ele|strong="H4480"\w*.\x - \xo 26:12 \xt PRO 29:20; PRO 26:5; ECC 10:2; ROM 12:3; PRO 3:7; GAL 6:3\x*
 \q1
-\v 13 \w Diz|strong="H0559"\w* \w o preguiçoso|strong="H6102"\w*: "\w Há um leão|strong="H7826"\w* \w no caminho|strong="H1870"\w*, \w um leão|strong="H0738"\w* \w está entre|strong="H0996"\w* \w as praças|strong="H7339"\w*!"\x - \xo 26:13 \xt PRO 22:13; PRO 6:6; ROM 12:11; PRO 20:4; PRO 19:15; PRO 19:24\x*
+\v 13 \w Diz|strong="H0559"\w* \w o preguiçoso|strong="H6102"\w*: “\w Há um leão|strong="H7826"\w* \w no caminho|strong="H1870"\w*, \w um leão|strong="H0738"\w* \w está entre|strong="H0996"\w* \w as praças|strong="H7339"\w*!”\x - \xo 26:13 \xt PRO 22:13; PRO 6:6; ROM 12:11; PRO 20:4; PRO 19:15; PRO 19:24\x*
 \q1
 \v 14 \w A porta|strong="H1817"\w* \w gira|strong="H5437"\w* \w sobre|strong="H5921"\w* \w os seus gonzos|strong="H6735"\w*, \w e o preguiçoso|strong="H6102"\w* \w sobre|strong="H5921"\w* \w a sua cama|strong="H4296"\w*.\x - \xo 26:14 \xt ROM 12:11; PRO 6:6; PRO 22:13; PRO 20:4; HEB 6:12; PRO 19:24\x*
 \q1
@@ -1555,11 +1555,11 @@
 \q1
 \v 18 \w Como um louco|strong="H3856,H3384"\w* \w que lança|strong="H3384"\w* \w flechas|strong="H2131,H2671"\w* \w e morte|strong="H4194"\w*,\x - \xo 26:18 \xt PRO 25:18; PRO 14:9; PRO 15:21; ISA 50:11; PRO 10:23; PRO 6:14\x*
 \q1
-\v 19 \w assim|strong="H3651"\w* \w é o homem|strong="H0376"\w* \w que engana|strong="H7411"\w* \w o seu próximo|strong="H7453"\w* \w e diz|strong="H0559"\w*: "\w Não|strong="H3808"\w* \w estava eu|strong="H0589"\w* \w brincando|strong="H7832"\w*?"\x - \xo 26:19 \xt PRO 10:23; EPH 5:4; PRO 14:9; PRO 15:21; 2PE 2:13; PRO 6:14\x*
+\v 19 \w assim|strong="H3651"\w* \w é o homem|strong="H0376"\w* \w que engana|strong="H7411"\w* \w o seu próximo|strong="H7453"\w* \w e diz|strong="H0559"\w*: “\w Não|strong="H3808"\w* \w estava eu|strong="H0589"\w* \w brincando|strong="H7832"\w*?”\x - \xo 26:19 \xt PRO 10:23; EPH 5:4; PRO 14:9; PRO 15:21; 2PE 2:13; PRO 6:14\x*
 \q1
 \v 20 \w Sem|strong="H0657"\w* \w lenha|strong="H6086"\w*, \w apaga-se|strong="H3518"\w* \w o fogo|strong="H0784"\w*; \w e sem|strong="H0369"\w* \w um maldizente|strong="H7279"\w*, \w cessa|strong="H8367"\w* \w contenda|strong="H4066"\w*.\x - \xo 26:20 \xt PRO 16:28; JAS 3:6; PRO 22:10; EPH 4:31; PRO 11:13; PRO 18:8\x*
 \q1
-\v 21 \w Carvão|strong="H6352"\w* \w para as brasas|strong="H1513"\w*, \w e lenha|strong="H6086"\w* \w para o fogo|strong="H0784"\w*, \w e o homem|strong="H0376"\w* \w briguento|strong="H4079"\w*\f + \fr 26.21: \ft Variante: a Ketiv tem "מְדוֹנִים", forma equivalente; seguimos a Qere, "מִדְיָנִים" — variante só de forma\f* \w para acender|strong="H2787"\w* \w contenda|strong="H7379"\w*.\x - \xo 26:21 \xt PRO 15:18; PRO 29:22; JAS 3:6; PRO 11:13; PRO 18:8; PRO 22:10\x*
+\v 21 \w Carvão|strong="H6352"\w* \w para as brasas|strong="H1513"\w*, \w e lenha|strong="H6086"\w* \w para o fogo|strong="H0784"\w*, \w e o homem|strong="H0376"\w* \w briguento|strong="H4079"\w*\f + \fr 26.21: \ft Variante: a Ketiv tem "מְדוֹנִים" (H4066); seguimos a Qere, "מִדְיָנִים" (H4079) — variante lexical, mesmo sentido ("contendas")\f* \w para acender|strong="H2787"\w* \w contenda|strong="H7379"\w*.\x - \xo 26:21 \xt PRO 15:18; PRO 29:22; JAS 3:6; PRO 11:13; PRO 18:8; PRO 22:10\x*
 \q1
 \v 22 \w As palavras|strong="H1697"\w* \w do maldizente|strong="H7279"\w* \w são como manjares|strong="H3859"\w*, \w e elas|strong="H1992"\w* \w descem|strong="H3381"\w* \w às câmaras|strong="H2315"\w* \w do ventre|strong="H0990"\w*.\x - \xo 26:22 \xt PRO 18:8; PRO 15:4; PRO 11:13; PRO 20:19; EZK 22:9; PRO 26:20\x*
 \q1
@@ -1578,7 +1578,7 @@
 \q1
 \v 1 \w Não|strong="H0408"\w* \add se\add* \w glorie|strong="H1984"\w* \w no dia|strong="H3117"\w* \w de amanhã|strong="H4279"\w*, \w pois|strong="H3588"\w* \w não|strong="H3808"\w* \w sabe|strong="H3045"\w* \w o que|strong="H4100"\w* \w trará à luz|strong="H3205"\w* \w o dia|strong="H3117"\w*.\x - \xo 27:1 \xt 1KI 20:11; JAS 4:13; HEB 3:7; LUK 12:19; JAS 4:16; 2CO 6:2\x*
 \q1
-\v 2 \add Que te\add* \w louve|strong="H1984"\w* \w um estranho|strong="H2114"\w*, \w e não|strong="H3808"\w* \w a sua própria boca|strong="H6310"\w*; \w um forasteiro|strong="H5237"\w*, \w e não|strong="H0408"\w* \w os seus próprios lábios|strong="H8193"\w*.\x - \xo 27:2 \xt PSA 69:8; LAM 5:2; 2CO 10:12; 2CO 10:18; PRO 25:27; 2CO 12:11\x*
+\v 2 \add Que o\add* \w louve|strong="H1984"\w* \w um estranho|strong="H2114"\w*, \w e não|strong="H3808"\w* \w a sua própria boca|strong="H6310"\w*; \w um forasteiro|strong="H5237"\w*, \w e não|strong="H0408"\w* \w os seus próprios lábios|strong="H8193"\w*.\x - \xo 27:2 \xt PSA 69:8; LAM 5:2; 2CO 10:12; 2CO 10:18; PRO 25:27; 2CO 12:11\x*
 \q1
 \v 3 \w O peso|strong="H3514,H0068"\w* \w da pedra|strong="H0068"\w* \w e a carga|strong="H5192"\w* \w da areia|strong="H2344"\w*; \w mas a provocação|strong="H3708"\w* \w do tolo|strong="H0191"\w* \w é mais pesada|strong="H3515"\w* \w que ambos|strong="H8147"\w*.\x - \xo 27:3 \xt DAN 3:19; JOB 6:3; 1JN 3:12; 1SA 22:18-19; PRO 17:12; PRO 18:6\x*
 \q1
@@ -1604,9 +1604,9 @@
 \q1
 \v 14 \w Quem bendiz|strong="H1288"\w* \w o seu próximo|strong="H7453"\w* \w em alta|strong="H6963,H1419"\w* \add voz,\add* \w de manhã|strong="H1242"\w* \add bem\add* \w cedo|strong="H7925"\w*, \w como maldição|strong="H7045"\w* \w lhe será contado|strong="H2803,H9033"\w*.\x - \xo 27:14 \xt 2SA 16:16-19; 1SA 29:5; ACT 12:22-23; GEN 21:14; PRO 7:11\x*
 \q1
-\v 15 \w Gotejar|strong="H1812"\w* \w contínuo|strong="H2956"\w* \w num dia|strong="H3117"\w* \w de chuva|strong="H5464"\w*: \w assim é a mulher|strong="H0802"\w* \w briguenta|strong="H4079"\w*\f + \fr 27.15: \ft Variante: a Ketiv tem "מְדוֹנִים", forma equivalente; seguimos a Qere, "מִדְיָנִים" — variante só de forma\f* — \add são\add* \w iguais|strong="H7737"\w*.\x - \xo 27:15 \xt PRO 19:13; PRO 21:19; PRO 21:9; PRO 25:24; PRO 12:4; PRO 30:23\x*
+\v 15 \w Gotejar|strong="H1812"\w* \w contínuo|strong="H2956"\w* \w num dia|strong="H3117"\w* \w de chuva|strong="H5464"\w*: \w assim é a mulher|strong="H0802"\w* \w briguenta|strong="H4079"\w*\f + \fr 27.15: \ft Variante: a Ketiv tem "מְדוֹנִים" (H4066); seguimos a Qere, "מִדְיָנִים" (H4079) — variante lexical, mesmo sentido ("contendas")\f* — \add são\add* \w iguais|strong="H7737"\w*.\x - \xo 27:15 \xt PRO 19:13; PRO 21:19; PRO 21:9; PRO 25:24; PRO 12:4; PRO 30:23\x*
 \q1
-\v 16 \w Quem a detém|strong="H6845"\w* \w detém o vento|strong="H7307"\w*, \w e o óleo|strong="H8081"\w*, \w a sua mão direita|strong="H3225"\w* \w aperta|strong="H7122"\w*.\x - \xo 27:16 \xt PRO 21:9; PRO 12:4; PRO 25:24; JHN 12:3\x*
+\v 16 \w Quem a detém|strong="H6845"\w*, \w detém o vento|strong="H7307"\w*, \w e o óleo|strong="H8081"\w*, \w a sua mão direita|strong="H3225"\w* \w aperta|strong="H7122"\w*.\x - \xo 27:16 \xt PRO 21:9; PRO 12:4; PRO 25:24; JHN 12:3\x*
 \q1
 \v 17 \w O ferro|strong="H1270"\w* \w com ferro|strong="H1270"\w* \add se\add* \w afia|strong="H2300"\w*, \w e o homem|strong="H0376"\w* \w afia|strong="H2300"\w* \w o rosto|strong="H6440"\w* \w do seu próximo|strong="H7453"\w*.\x - \xo 27:17 \xt HEB 10:24; PRO 27:9; ECC 4:9; 1SA 23:16; JOB 4:3-4; ISA 35:3-4\x*
 \q1
@@ -1677,9 +1677,9 @@
 \q1
 \v 23 \w Quem repreende|strong="H3198"\w* \w o homem|strong="H0120"\w* \w achará|strong="H4672"\w* \w favor|strong="H2580"\w* \w depois de mim|strong="H0310"\w*, \w mais do que quem lisonjeia|strong="H2505"\w* \w com a língua|strong="H3956"\w*.\x - \xo 28:23 \xt PRO 27:5; MAT 18:15; PRO 9:8; PSA 141:5; ECC 9:17; 1SA 25:33\x*
 \q1
-\v 24 \w Quem rouba|strong="H1497"\w* \w o seu pai|strong="H0001"\w* \w e a sua mãe|strong="H0517"\w* \w e diz|strong="H0559"\w*: "\w Não|strong="H0369"\w* \w é transgressão|strong="H6588"\w* "— \w é companheiro|strong="H2270,H1931"\w* \w de um homem|strong="H0376"\w* \w destruidor|strong="H7843"\w*.\x - \xo 28:24 \xt EXO 20:12; MAT 15:4-6; PRO 18:9; PRO 19:26; 1TH 4:6; JDG 17:2\x*
+\v 24 \w Quem rouba|strong="H1497"\w* \w o seu pai|strong="H0001"\w* \w e a sua mãe|strong="H0517"\w* \w e diz|strong="H0559"\w*: “\w Não|strong="H0369"\w* \w é transgressão|strong="H6588"\w*” — \w é companheiro|strong="H2270,H1931"\w* \w de um homem|strong="H0376"\w* \w destruidor|strong="H7843"\w*.\x - \xo 28:24 \xt EXO 20:12; MAT 15:4-6; PRO 18:9; PRO 19:26; 1TH 4:6; JDG 17:2\x*
 \q1
-\v 25 \w Quem é de alma|strong="H7342,H5315"\w* \add arrogante\add* \w agita|strong="H1624"\w* \w contenda|strong="H4066"\w*, \w mas quem confia|strong="H0982"\w* \w em|strong="H5921"\w* \w o SENHOR|strong="H3068"\w* \w prosperará|strong="H1878"\w*.\x - \xo 28:25 \xt PRO 29:22; PRO 15:18; PRO 11:25; PRO 15:1; ISA 58:11; ECC 7:8\x*
+\v 25 \w Quem é de alma|strong="H7342,H5315"\w* \add arrogante\add* \w agita|strong="H1624"\w* \w contenda|strong="H4066"\w*, \w mas quem confia|strong="H0982"\w* \w no SENHOR|strong="H5921,H3068"\w* \w prosperará|strong="H1878"\w*.\x - \xo 28:25 \xt PRO 29:22; PRO 15:18; PRO 11:25; PRO 15:1; ISA 58:11; ECC 7:8\x*
 \q1
 \v 26 \w Quem confia|strong="H0982"\w* \w em seu próprio coração|strong="H3820,H1931"\w* \w é tolo|strong="H3684"\w*, \w mas quem anda|strong="H1980"\w* \w com sabedoria|strong="H2451"\w*, \w ele|strong="H1931"\w* \add será\add* \w livrado|strong="H4422"\w*.\x - \xo 28:26 \xt PRO 3:5; PRO 4:23; JER 17:9; PRO 14:33; PSA 139:24; JOB 28:28\x*
 \q1
@@ -1743,7 +1743,7 @@
 \v 27 \w É abominação|strong="H8441"\w* \w para os justos|strong="H6662"\w* \w o homem|strong="H0376"\w* \w injusto|strong="H5766"\w*, \w e é abominação|strong="H8441"\w* \w para o ímpio|strong="H7563"\w* \w quem é reto|strong="H3477"\w* \w de caminho|strong="H1870"\w*.\x - \xo 29:27 \xt DEU 25:16; EZK 18:26; EZK 33:18; EZK 18:24; PSA 1:6; PSA 119:137\x*
 \c 30
 \q1
-\v 1 \w As palavras|strong="H1697"\w* \w de Agur|strong="H0094"\w*, \w filho|strong="H1121"\w* \w de Jaquê|strong="H3348"\w*: \w o oráculo|strong="H4853"\w* \w que proferiu|strong="H5002"\w* \w o homem|strong="H1397"\w* \w a Itiel|strong="H0384"\w*, \w a Itiel|strong="H0384"\w* \w e a Ucal|strong="H0401"\w*.\x - \xo 30:1 \xt 2PE 1:19-21; PRO 31:1\x*
+\v 1 \w As palavras|strong="H1697"\w* \w de Agur|strong="H0094"\w*, \w filho|strong="H1121"\w* \w de Jaquê|strong="H3348"\w*: \w o oráculo|strong="H4853"\w* \w que proferiu|strong="H5002"\w* \w o homem|strong="H1397"\w* \w a Itiel|strong="H0384"\w*\f + \fr 30.1: \ft Lit.: אִיתִיאֵל (H0384) e אֻכָל (H0401) soam, em hebraico, também como "não há Deus" e "estou exausto/consumido" — divisão alternativa das mesmas consoantes, conhecida na tradição interpretativa, que combinaria com o tom de autodepreciação de Agur nos versos seguintes; aqui lidos como os nomes próprios Itiel e Ucal\f*, \w a Itiel|strong="H0384"\w* \w e a Ucal|strong="H0401"\w*.\x - \xo 30:1 \xt 2PE 1:19-21; PRO 31:1\x*
 \q1
 \v 2 \w Pois|strong="H3588"\w* \w sou mais estúpido|strong="H1198,H0595"\w* \w que qualquer homem|strong="H0376"\w*, \w e não|strong="H3808"\w* \w tenho|strong="H9030"\w* \w entendimento humano|strong="H0998,H0120"\w*.\x - \xo 30:2 \xt JER 10:14; PSA 92:6; 1CO 8:2; JOB 42:3; ACT 8:31; PSA 139:6\x*
 \q1
@@ -1755,13 +1755,13 @@
 \q1
 \v 6 \w Não|strong="H0408"\w* \w acrescente|strong="H3254"\w* \w às suas palavras|strong="H5921,H1697"\w*, \add para que\add* \w não|strong="H6435"\w* \w ele o repreenda|strong="H3198,H9031"\w* \w e você seja considerado mentiroso|strong="H3576"\w*.\x - \xo 30:6 \xt EXO 20:19; REV 22:18; DEU 4:2; DEU 12:32; GAL 1:9; JOB 13:7-9\x*
 \q1
-\v 7 \w Duas|strong="H8147"\w* \w coisas|strong="H8147"\w* \w te peço|strong="H7592,H0854"\w*: \w não|strong="H0408"\w* \w as negues|strong="H4513"\w* \add a\add* \w mim|strong="H4480"\w*, \w antes|strong="H2962"\w* \w que eu morra|strong="H4191"\w*:\x - \xo 30:7 \xt 2KI 2:9; LUK 10:42; PSA 27:4; 1KI 3:5-9; PSA 21:2\x*
+\v 7 \w Duas|strong="H8147"\w* \w coisas|strong="H8147"\w* \w lhe peço|strong="H7592,H0854"\w*: \w não|strong="H0408"\w* \w as negue|strong="H4513"\w* \add a\add* \w mim|strong="H4480"\w*, \w antes|strong="H2962"\w* \w que eu morra|strong="H4191"\w*:\x - \xo 30:7 \xt 2KI 2:9; LUK 10:42; PSA 27:4; 1KI 3:5-9; PSA 21:2\x*
 \q1
-\v 8 \w A falsidade|strong="H7723"\w* \w e a palavra|strong="H1697"\w* \w mentirosa|strong="H3577"\w* \w afasta|strong="H7368"\w* \w de mim|strong="H4480"\w*; \w pobreza|strong="H7389"\w* \w e riqueza|strong="H6239"\w* \w não|strong="H0408"\w* \w me dês|strong="H5414,H9030"\w*; \w alimenta-me|strong="H2963"\w* \w com o pão|strong="H3899"\w* \w da minha porção|strong="H2706"\w*.\x - \xo 30:8 \xt MAT 6:11; 1TI 6:6-8; PSA 62:9-10; PSA 119:37; MAT 6:33; LUK 11:3\x*
+\v 8 \w A falsidade|strong="H7723"\w* \w e a palavra|strong="H1697"\w* \w mentirosa|strong="H3577"\w* \w afaste|strong="H7368"\w* \w de mim|strong="H4480"\w*; \w pobreza|strong="H7389"\w* \w e riqueza|strong="H6239"\w* \w não|strong="H0408"\w* \w me dê|strong="H5414,H9030"\w*; \w alimente-me|strong="H2963"\w* \w com o pão|strong="H3899"\w* \w da minha porção|strong="H2706"\w*.\x - \xo 30:8 \xt MAT 6:11; 1TI 6:6-8; PSA 62:9-10; PSA 119:37; MAT 6:33; LUK 11:3\x*
 \q1
-\v 9 \add para que\add* \w não|strong="H6435"\w* \w saciado|strong="H7646"\w*, \w eu negue|strong="H3584"\w* \w e diga|strong="H0559"\w*: "\w Quem|strong="H4310"\w* \w é o SENHOR|strong="H3068"\w*?"\w E para que|strong="H6435"\w* \w não|strong="H6435"\w* \w empobreça|strong="H3423"\w* \w e furte|strong="H1589"\w*, \w e profane|strong="H8610"\w* \w o nome|strong="H8034"\w* \w do meu Deus|strong="H0430"\w*.\x - \xo 30:9 \xt DEU 8:12; JOS 24:27; HOS 13:6; DEU 31:20; EZK 16:49-50; DEU 8:10-14\x*
+\v 9 \add para que\add* \w não|strong="H6435"\w* \w saciado|strong="H7646"\w*, \w eu negue|strong="H3584"\w* \w e diga|strong="H0559"\w*: “\w Quem|strong="H4310"\w* \w é o SENHOR|strong="H3068"\w*?” \w E para que|strong="H6435"\w* \w não|strong="H6435"\w* \w empobreça|strong="H3423"\w* \w e furte|strong="H1589"\w*, \w e profane|strong="H8610"\w* \w o nome|strong="H8034"\w* \w do meu Deus|strong="H0430"\w*.\x - \xo 30:9 \xt DEU 8:12; JOS 24:27; HOS 13:6; DEU 31:20; EZK 16:49-50; DEU 8:10-14\x*
 \q1
-\v 10 \w Não|strong="H0408"\w* \w calunie|strong="H3960"\w* \w o servo|strong="H5650"\w* \w diante|strong="H0413"\w* \w do seu senhor|strong="H0113"\w*\f + \fr 30.10: \ft Variante: a Ketiv tem o plural "seus senhores"; seguimos a Qere, o singular "seu senhor" — variante só de forma\f*, \add para que\add* \w não|strong="H6435"\w* \w ele o maldiga|strong="H7043"\w* \w e você seja culpado|strong="H0816"\w*.\x - \xo 30:10 \xt ECC 7:21; ROM 14:4; DAN 3:8-18; 2CH 24:22-24; 2SA 19:26-27; DAN 6:13\x*
+\v 10 \w Não|strong="H0408"\w* \w calunie|strong="H3960"\w* \w o servo|strong="H5650"\w* \w diante|strong="H0413"\w* \w do seu senhor|strong="H0113"\w*\f + \fr 30.10: \ft Variante: a Qere tem o plural "seus senhores" (reverencial, por um só senhor); a Ketiv tem o singular "seu senhor"\f*, \add para que\add* \w não|strong="H6435"\w* \w ele o maldiga|strong="H7043"\w* \w e você seja culpado|strong="H0816"\w*.\x - \xo 30:10 \xt ECC 7:21; ROM 14:4; DAN 3:8-18; 2CH 24:22-24; 2SA 19:26-27; DAN 6:13\x*
 \q1
 \v 11 \add Há\add* \w geração|strong="H1755"\w* \add que\add* \w maldiz|strong="H7043"\w* \w o seu pai|strong="H0001"\w* \w e não|strong="H3808"\w* \w bendiz|strong="H1288"\w* \w a sua mãe|strong="H0517"\w*.\x - \xo 30:11 \xt EXO 21:17; LEV 20:9; PRO 20:20; PSA 37:22; MAL 1:6; PRO 30:17\x*
 \q1
@@ -1771,17 +1771,17 @@
 \q1
 \v 14 \add Há\add* \w geração|strong="H1755"\w* \w cujos dentes|strong="H2719,H8127"\w* \add são espadas\add* \w e cujas queixadas|strong="H3979,H4973"\w* \add são facas,\add* \w para devorar|strong="H0398"\w* \w os aflitos|strong="H6041"\w* \w da terra|strong="H0776"\w* \w e os necessitados|strong="H0034"\w* \w dentre os homens|strong="H0120"\w*.\x - \xo 30:14 \xt JOB 29:17; JOL 1:6; PSA 57:4; PSA 3:7; AMO 8:4; PSA 14:4\x*
 \q1
-\v 15 \w A sanguessuga|strong="H5936"\w* \w tem duas|strong="H8147,H1323"\w* \add filhas:\add* "\w Dá|strong="H3051"\w*! \w Dá|strong="H3051"\w*!"\w Três|strong="H7969"\w* \w coisas|strong="H2007"\w* \w não|strong="H3808"\w* \add se\add* \w saciam|strong="H7646"\w*; \w quatro|strong="H0702"\w* \w não|strong="H3808"\w* \w dizem|strong="H0559"\w*: "\w Basta|strong="H1952"\w*!"\x - \xo 30:15 \xt PRO 27:20; PRO 30:21; PRO 30:29; PRO 6:16; ROM 16:18; ECC 5:10\x*
+\v 15 \w A sanguessuga|strong="H5936"\w* \w tem duas|strong="H8147,H1323"\w* \add filhas:\add* “\w Dá|strong="H3051"\w*! \w Dá|strong="H3051"\w*!” \w Três|strong="H7969"\w* \w coisas|strong="H2007"\w* \w não|strong="H3808"\w* \add se\add* \w saciam|strong="H7646"\w*; \w quatro|strong="H0702"\w* \w não|strong="H3808"\w* \w dizem|strong="H0559"\w*: “\w Basta|strong="H1952"\w*!”\x - \xo 30:15 \xt PRO 27:20; PRO 30:21; PRO 30:29; PRO 6:16; ROM 16:18; ECC 5:10\x*
 \q1
-\v 16 \w O Sheol|strong="H7585"\w*, \w a madre|strong="H6115,H7356"\w* \add estéril,\add* \w a terra|strong="H0776"\w* \w que não|strong="H3808"\w* \add se\add* \w farta|strong="H7646"\w* \w de água|strong="H4325"\w*, \w e o fogo|strong="H0784"\w* \w que não|strong="H3808"\w* \w diz|strong="H0559"\w*: "\w Basta|strong="H1952"\w*!"\x - \xo 30:16 \xt PRO 27:20; ISA 5:14; HAB 2:5; ECC 5:10; GEN 30:1; DEU 27:16\x*
+\v 16 \w O Sheol|strong="H7585"\w*, \w a madre|strong="H6115,H7356"\w* \add estéril,\add* \w a terra|strong="H0776"\w* \w que não|strong="H3808"\w* \add se\add* \w farta|strong="H7646"\w* \w de água|strong="H4325"\w*, \w e o fogo|strong="H0784"\w* \w que não|strong="H3808"\w* \w diz|strong="H0559"\w*: “\w Basta|strong="H1952"\w*!”\x - \xo 30:16 \xt PRO 27:20; ISA 5:14; HAB 2:5; ECC 5:10; GEN 30:1; DEU 27:16\x*
 \q1
-\v 17 \w O olho|strong="H5869"\w* \w que escarnece|strong="H3932"\w* \w do pai|strong="H0001"\w* \w e despreza|strong="H0936"\w* \w a obediência|strong="H3349"\w* \w à mãe|strong="H0517"\w*: \w os corvos|strong="H5365"\w* \w do vale|strong="H6158,H5158"\w* \add lhe arrancarão os\add* olhos, \w e os filhotes|strong="H0398,H1121"\w* \w da águia|strong="H5404"\w* \add o comerão.\add*\x - \xo 30:17 \xt PRO 23:22; EXO 20:12; MAL 1:6; EPH 6:1; PRO 1:8; PRO 30:11\x*
+\v 17 \w O olho|strong="H5869"\w* \w que escarnece|strong="H3932"\w* \w do pai|strong="H0001"\w* \w e despreza|strong="H0936"\w* \w a obediência|strong="H3349"\w* \w à mãe|strong="H0517"\w*: \w os corvos|strong="H6158"\w* \w do vale|strong="H5158"\w* \add lhe arrancarão os\add* \w olhos|strong="H5365"\w*, \w e os filhotes|strong="H0398,H1121"\w* \w da águia|strong="H5404"\w* \add o comerão.\add*\x - \xo 30:17 \xt PRO 23:22; EXO 20:12; MAL 1:6; EPH 6:1; PRO 1:8; PRO 30:11\x*
 \q1
 \v 18 \w Três|strong="H7969"\w* \w coisas|strong="H7969"\w* \w são maravilhosas|strong="H1992,H6381"\w* \w demais para mim|strong="H4480"\w*, \w e quatro|strong="H0702"\w* \w não|strong="H3808"\w* \w as compreendo|strong="H3045"\w*:\x - \xo 30:18 \xt 1CH 24:13; JOB 42:3; PRO 30:29\x*
 \q1
 \v 19 \w O caminho|strong="H1870"\w* \w da águia|strong="H5404"\w* \w nos céus|strong="H8064"\w*, \w o caminho|strong="H1870"\w* \w da serpente|strong="H5175"\w* \w sobre|strong="H5921"\w* \w a rocha|strong="H6697"\w*, \w o caminho|strong="H1870"\w* \w do navio|strong="H0591"\w* \w no meio|strong="H3820"\w* \w do mar|strong="H3220"\w*, \w e o caminho|strong="H1870"\w* \w do homem|strong="H1397"\w* \w com uma jovem|strong="H5959"\w*.\x - \xo 30:19 \xt JOB 9:26\x*
 \q1
-\v 20 \w Assim|strong="H3651"\w* \w é o caminho|strong="H1870"\w* \w da mulher|strong="H0802"\w* \w adúltera|strong="H5003"\w*: \add ela\add* \w come|strong="H0398"\w* \w e limpa|strong="H4229"\w* \w a sua boca|strong="H6310"\w* \w e diz|strong="H0559"\w*: "\w Não|strong="H3808"\w* \w fiz|strong="H6466"\w* \w maldade|strong="H0205"\w*!"\x - \xo 30:20 \xt PSA 32:5; MAL 2:14; HOS 12:8; PRO 14:9; PRO 5:6; PRO 7:13-23\x*
+\v 20 \w Assim|strong="H3651"\w* \w é o caminho|strong="H1870"\w* \w da mulher|strong="H0802"\w* \w adúltera|strong="H5003"\w*: \add ela\add* \w come|strong="H0398"\w* \w e limpa|strong="H4229"\w* \w a sua boca|strong="H6310"\w* \w e diz|strong="H0559"\w*: “\w Não|strong="H3808"\w* \w fiz|strong="H6466"\w* \w maldade|strong="H0205"\w*!”\x - \xo 30:20 \xt PSA 32:5; MAL 2:14; HOS 12:8; PRO 14:9; PRO 5:6; PRO 7:13-23\x*
 \q1
 \v 21 \w Sob|strong="H8478"\w* \w três|strong="H7969"\w* \w coisas|strong="H7969"\w* \w treme|strong="H7264"\w* \w a terra|strong="H0776"\w*, \w e sob|strong="H8478"\w* \w quatro|strong="H0702"\w* \w não|strong="H3808"\w* \w pode|strong="H3201"\w* \w suportar|strong="H5375"\w*:\x - \xo 30:21 \xt PRO 30:15; PRO 19:10; PRO 6:16\x*
 \q1
@@ -1795,7 +1795,7 @@
 \q1
 \v 26 \w os texugos|strong="H8227"\w* \w são um povo|strong="H5971"\w* \w sem poder|strong="H3808,H6099"\w*, \w mas fazem|strong="H7760"\w* \w nas rochas|strong="H5553"\w* \w a sua casa|strong="H1004"\w*;\x - \xo 30:26 \xt PSA 104:18; LEV 11:5; JOL 1:6\x*
 \q1
-\v 27 \w o rei|strong="H4428"\w* \add não\add* \w existe|strong="H0369"\w* \w para o gafanhoto|strong="H0697"\w*, \w e ele sai|strong="H3318"\w* \w dividido|strong="H2686"\w* \w todo|strong="H3605"\w*;\x - \xo 30:27 \xt PSA 105:34; JOL 2:7; EXO 10:4; JOL 1:6; JOL 2:25; PRO 6:7\x*
+\v 27 \w o rei|strong="H4428"\w* \add não\add* \w existe|strong="H0369"\w* \w para o gafanhoto|strong="H0697"\w*, \w e ele sai|strong="H3318"\w* \w todo|strong="H3605"\w* \w dividido|strong="H2686"\w*;\x - \xo 30:27 \xt PSA 105:34; JOL 2:7; EXO 10:4; JOL 1:6; JOL 2:25; PRO 6:7\x*
 \q1
 \v 28 \w a lagartixa|strong="H8079"\w* \add pode-se\add* \w agarrar|strong="H8610"\w* \w com as mãos|strong="H3027"\w*, \w e ela|strong="H1931"\w* \w está nos palácios|strong="H1964"\w* \w de um rei|strong="H4428"\w*.
 \q1
@@ -1828,7 +1828,7 @@
 \q1
 \v 9 \w Abra|strong="H6605"\w* \w a sua boca|strong="H6310"\w*, \w julgue|strong="H8199"\w* \w com justiça|strong="H6664"\w*, \w e defenda a causa|strong="H1777"\w* \w do pobre|strong="H6041"\w* \w e do necessitado|strong="H0034"\w*.\x - \xo 31:9 \xt PSA 72:2; PSA 7:8; JER 5:28; ISA 1:17; PRO 31:26; AMO 5:11-12\x*
 \q1
-\v 10 \w Mulher|strong="H0802"\w* \w capaz|strong="H2428"\w*, \w quem|strong="H4310"\w* \w a encontrará|strong="H4672"\w*? \w E muito acima|strong="H7350"\w* \w das joias|strong="H6443"\w* \w é o seu valor|strong="H4377"\w*.\x - \xo 31:10 \xt PRO 14:1; PRO 18:22; PRO 19:14; PRO 12:4; EPH 5:25-33; TIT 2:5\x*
+\v 10 \w Mulher|strong="H0802"\w*\f + \fr 31.10: \ft Nota cultural: no hebraico, este poema (31.10-31) é um acróstico alfabético de 22 versos, cada um começando pela letra seguinte do alefe ao tau — recurso de forma que o português não reproduz\f* \w capaz|strong="H2428"\w*, \w quem|strong="H4310"\w* \w a encontrará|strong="H4672"\w*? \w E muito acima|strong="H7350"\w* \w das joias|strong="H6443"\w* \w é o seu valor|strong="H4377"\w*.\x - \xo 31:10 \xt PRO 14:1; PRO 18:22; PRO 19:14; PRO 12:4; EPH 5:25-33; TIT 2:5\x*
 \q1
 \v 11 \w Confia|strong="H0982"\w* \w nela|strong="H9034"\w* \w o coração|strong="H3820"\w* \w do seu marido|strong="H1167"\w*, \w e não|strong="H3808"\w* \w lhe faltará|strong="H2637"\w* \w ganho|strong="H7998"\w*.\x - \xo 31:11 \xt PRO 14:1; PRO 18:22; 1PE 3:1-7; TIT 2:5; PRO 19:14; PRO 12:4\x*
 \q1
@@ -1846,7 +1846,7 @@
 \q1
 \v 18 \w Percebe|strong="H2938"\w* \w que|strong="H3588"\w* \w é bom|strong="H2896"\w* \w o seu lucro|strong="H5504"\w*; \w não|strong="H3808"\w* \add se\add* \w apaga|strong="H3518"\w*, \w de noite|strong="H3915"\w*\f + \fr 31.18: \ft Variante: a Ketiv tem "בַ/לַּיְלָה", forma equivalente; seguimos a Qere, "בַלַּיְלָה" — variante só de forma\f* \w a sua lâmpada|strong="H5216"\w*.\x - \xo 31:18 \xt PRO 14:1; PRO 18:22; TIT 2:5; PRO 19:14; PRO 12:4; 1TH 2:9\x*
 \q1
-\v 19 \w As suas mãos|strong="H3027"\w* \w estende|strong="H7971"\w* \w à roca|strong="H3601"\w*, \w e as suas palmas|strong="H3709"\w* \w agarram|strong="H8551"\w* \w o fuso|strong="H6418"\w*.\x - \xo 31:19 \xt PRO 14:1; PRO 18:22; TIT 2:5; PRO 19:14; PRO 12:4; EXO 35:25\x*
+\v 19 \w As suas mãos|strong="H3027"\w* \w estende|strong="H7971"\w* \w à roca|strong="H3601"\w*, \w e as suas palmas|strong="H3709"\w* \w agarra|strong="H8551"\w* \w o fuso|strong="H6418"\w*.\x - \xo 31:19 \xt PRO 14:1; PRO 18:22; TIT 2:5; PRO 19:14; PRO 12:4; EXO 35:25\x*
 \q1
 \v 20 \w A sua mão|strong="H3709"\w* \w estende|strong="H6566"\w* \w ao pobre|strong="H6041"\w*, \w e as suas mãos|strong="H3027"\w* \w estende|strong="H7971"\w* \w ao necessitado|strong="H0034"\w*.\x - \xo 31:20 \xt DEU 15:11; JOB 11:13; PSA 86:1; PSA 140:12; PSA 109:22; PRO 14:1\x*
 \q1
@@ -1866,7 +1866,7 @@
 \q1
 \v 28 \w Levantam-se|strong="H6965"\w* \w os seus filhos|strong="H1121"\w* \w e a chamam bendita|strong="H0833"\w*; \w o seu marido|strong="H1167"\w* \w a louva|strong="H1984"\w*:\x - \xo 31:28 \xt SNG 6:9; PRO 14:1; PRO 18:22; TIT 2:5; PRO 19:14; 2TI 1:5\x*
 \q1
-\v 29 "\w Muitas|strong="H7227"\w* \w filhas|strong="H1323"\w* \w agiram|strong="H6213"\w* \w com capacidade|strong="H2428"\w*, \w mas você|strong="H0859"\w* \w se elevou|strong="H5927"\w* \w sobre todas|strong="H5921,H3605"\w* \add elas."\add*\x - \xo 31:29 \xt RUT 3:11; PRO 14:1; PRO 18:22; TIT 2:5; PRO 19:14; LUK 1:28\x*
+\v 29 “\w Muitas|strong="H7227"\w* \w filhas|strong="H1323"\w* \w agiram|strong="H6213"\w* \w com capacidade|strong="H2428"\w*, \w mas você|strong="H0859"\w* \w se elevou|strong="H5927"\w* \w sobre todas|strong="H5921,H3605"\w* \add elas.”\add*\x - \xo 31:29 \xt RUT 3:11; PRO 14:1; PRO 18:22; TIT 2:5; PRO 19:14; LUK 1:28\x*
 \q1
 \v 30 \w É engano|strong="H8267"\w* \w a graça|strong="H2580"\w*, \w e é vaidade|strong="H1892"\w* \w a beleza|strong="H3308"\w*; \w a mulher|strong="H0802"\w* \w que teme|strong="H3373"\w* \w ao SENHOR|strong="H3068"\w*, \w essa|strong="H1931"\w* \add será\add* \w louvada|strong="H1984"\w*.\x - \xo 31:30 \xt PRO 1:7; 1PE 3:4-5; 1SA 16:7; PRO 14:1; PRO 18:22; PRO 11:22\x*
 \q1
