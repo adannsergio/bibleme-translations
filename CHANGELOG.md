@@ -3,10 +3,12 @@
 Formato livre, por release. Veja [RFC-0004](rfcs/0004-processo-e-versoes.md) para o que uma release traz e
 [RFC-0010](rfcs/0010-citacao-por-tipo-de-uso.md) para qual versão citar por tipo de uso.
 
-## (sem tag nova ainda) — atualização do AT em 2026-11-15
+## Essencial pt-BR 0.3 "Revisada" — 2026-11-15
 
-A tag `essencial-pt-br-0.2` (13/11) continua válida e congelada para quem já citou essa release; esta é uma
-atualização do conteúdo no `main`, ainda sem uma tag própria.
+Terceira release: o AT recebe sua **primeira rodada de revisão cruzada de IA** e a correção de um bug
+sistêmico de geração, encontrados depois da release 0.2. O NT (0.1 "Primícias") não mudou nesta release —
+a tag `essencial-pt-br-0.1` continua válida e congelada. A `essencial-pt-br-0.2` ("Integral") também continua
+válida e congelada para quem já a citou; esta release substitui o conteúdo do AT dela, não o do NT.
 
 - **Revisão cruzada de IA, 1ª rodada**, nos 39 livros do AT: um agente de registro em português (perspectiva
   do idioma-alvo) e, numa segunda passada, um agente especialista em hebraico/aramaico mais especialistas de
